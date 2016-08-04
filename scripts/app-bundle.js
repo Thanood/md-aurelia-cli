@@ -61,6 +61,10 @@ define('main',['exports', './environment'], function (exports, _environment) {
       aurelia.use.plugin('aurelia-testing');
     }
 
+    aurelia.use.plugin('aurelia-materialize-bridge', function (bridge) {
+      return bridge.useAll();
+    });
+
     aurelia.start().then(function () {
       return aurelia.setRoot();
     });

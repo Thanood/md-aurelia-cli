@@ -110,6 +110,14 @@
           "aurelia-templating-binding",
           "jquery",
           {
+            "name": "aurelia-materialize-bridge",
+            "path": "../node_modules/aurelia-materialize-bridge/dist/amd",
+            "main": "index",
+            "resources": [
+              "./**/*.{css,html}"
+            ]
+          },
+          {
             "name": "materialize-css",
             "path": "../node_modules/materialize-css/dist",
             "main": "js/materialize.min",

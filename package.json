@@ -11,6 +11,7 @@
     "aurelia-animator-css": "^1.0.0-rc.1.0.0",
     "aurelia-bootstrapper": "^1.0.0-rc.1.0.0",
     "aurelia-fetch-client": "^1.0.0-rc.1.0.0",
+    "aurelia-materialize-bridge": "^0.11.0",
     "bluebird": "^3.4.1",
     "jquery": "^2.2.4",
     "materialize-css": "github:ccloli/materialize#AMD-fix"

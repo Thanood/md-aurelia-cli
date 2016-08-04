@@ -3689,7 +3689,7 @@ K(require)||(w=require,require=void 0);g=requirejs=function(b,c,d,m){var r,q="_"
 0),importScripts(d),b.completeLoad(c)}catch(q){b.onError(F("importscripts","importScripts failed for "+c+" at "+d,q,[c]))}};E&&!w.skipDataMain&&X(document.getElementsByTagName("script"),function(b){C||(C=b.parentNode);if(O=b.getAttribute("data-main"))return u=O,w.baseUrl||-1!==u.indexOf("!")||(I=u.split("/"),u=I.pop(),T=I.length?I.join("/")+"/":"./",w.baseUrl=T),u=u.replace(U,""),g.jsExtRegExp.test(u)&&(u=O),w.deps=w.deps?w.deps.concat(u):[u],!0});define=function(b,c,d){var e,g;"string"!==typeof b&&
 (d=c,c=b,b=null);L(c)||(d=c,c=null);!c&&K(d)&&(c=[],d.length&&(d.toString().replace(qa,ka).replace(ra,function(b,d){c.push(d)}),c=(1===d.length?["require"]:["require","exports","module"]).concat(c)));S&&(e=P||pa())&&(b||(b=e.getAttribute("data-requiremodule")),g=J[e.getAttribute("data-requirecontext")]);g?(g.defQueue.push([b,c,d]),g.defQueueMap[b]=!0):V.push([b,c,d])};define.amd={jQuery:!0};g.exec=function(b){return eval(b)};g(w)}})(this);
 
-requirejs.config({"baseUrl":"src/","paths":{"text":"../scripts/text","aurelia-binding":"../node_modules\\aurelia-binding\\dist\\amd\\aurelia-binding","aurelia-bootstrapper":"../node_modules\\aurelia-bootstrapper\\dist\\amd\\aurelia-bootstrapper","aurelia-dependency-injection":"../node_modules\\aurelia-dependency-injection\\dist\\amd\\aurelia-dependency-injection","aurelia-event-aggregator":"../node_modules\\aurelia-event-aggregator\\dist\\amd\\aurelia-event-aggregator","aurelia-framework":"../node_modules\\aurelia-framework\\dist\\amd\\aurelia-framework","aurelia-history":"../node_modules\\aurelia-history\\dist\\amd\\aurelia-history","aurelia-history-browser":"../node_modules\\aurelia-history-browser\\dist\\amd\\aurelia-history-browser","aurelia-loader-default":"../node_modules\\aurelia-loader-default\\dist\\amd\\aurelia-loader-default","aurelia-loader":"../node_modules\\aurelia-loader\\dist\\amd\\aurelia-loader","aurelia-logging":"../node_modules\\aurelia-logging\\dist\\amd\\aurelia-logging","aurelia-logging-console":"../node_modules\\aurelia-logging-console\\dist\\amd\\aurelia-logging-console","aurelia-metadata":"../node_modules\\aurelia-metadata\\dist\\amd\\aurelia-metadata","aurelia-pal":"../node_modules\\aurelia-pal\\dist\\amd\\aurelia-pal","aurelia-pal-browser":"../node_modules\\aurelia-pal-browser\\dist\\amd\\aurelia-pal-browser","aurelia-polyfills":"../node_modules\\aurelia-polyfills\\dist\\amd\\aurelia-polyfills","aurelia-path":"../node_modules\\aurelia-path\\dist\\amd\\aurelia-path","aurelia-route-recognizer":"../node_modules\\aurelia-route-recognizer\\dist\\amd\\aurelia-route-recognizer","aurelia-router":"../node_modules\\aurelia-router\\dist\\amd\\aurelia-router","aurelia-templating":"../node_modules\\aurelia-templating\\dist\\amd\\aurelia-templating","aurelia-task-queue":"../node_modules\\aurelia-task-queue\\dist\\amd\\aurelia-task-queue","aurelia-templating-binding":"../node_modules\\aurelia-templating-binding\\dist\\amd\\aurelia-templating-binding","jquery":"../node_modules\\jquery\\dist\\jquery","app-bundle":"../scripts/app-bundle"},"packages":[{"name":"materialize-css","location":"../node_modules/materialize-css/dist","main":"js/materialize.min"},{"name":"aurelia-templating-router","location":"../node_modules/aurelia-templating-router/dist/amd","main":"aurelia-templating-router"},{"name":"aurelia-templating-resources","location":"../node_modules/aurelia-templating-resources/dist/amd","main":"aurelia-templating-resources"},{"name":"aurelia-testing","location":"../node_modules/aurelia-testing/dist/amd","main":"aurelia-testing"}],"stubModules":["text"],"shim":{"materialize-css":{"deps":["jquery"]}},"bundles":{"app-bundle":["app","environment","main","resources/index"]}});
+requirejs.config({"baseUrl":"src/","paths":{"text":"../scripts/text","aurelia-binding":"../node_modules\\aurelia-binding\\dist\\amd\\aurelia-binding","aurelia-bootstrapper":"../node_modules\\aurelia-bootstrapper\\dist\\amd\\aurelia-bootstrapper","aurelia-event-aggregator":"../node_modules\\aurelia-event-aggregator\\dist\\amd\\aurelia-event-aggregator","aurelia-dependency-injection":"../node_modules\\aurelia-dependency-injection\\dist\\amd\\aurelia-dependency-injection","aurelia-framework":"../node_modules\\aurelia-framework\\dist\\amd\\aurelia-framework","aurelia-history":"../node_modules\\aurelia-history\\dist\\amd\\aurelia-history","aurelia-history-browser":"../node_modules\\aurelia-history-browser\\dist\\amd\\aurelia-history-browser","aurelia-loader":"../node_modules\\aurelia-loader\\dist\\amd\\aurelia-loader","aurelia-logging":"../node_modules\\aurelia-logging\\dist\\amd\\aurelia-logging","aurelia-loader-default":"../node_modules\\aurelia-loader-default\\dist\\amd\\aurelia-loader-default","aurelia-logging-console":"../node_modules\\aurelia-logging-console\\dist\\amd\\aurelia-logging-console","aurelia-metadata":"../node_modules\\aurelia-metadata\\dist\\amd\\aurelia-metadata","aurelia-pal-browser":"../node_modules\\aurelia-pal-browser\\dist\\amd\\aurelia-pal-browser","aurelia-pal":"../node_modules\\aurelia-pal\\dist\\amd\\aurelia-pal","aurelia-path":"../node_modules\\aurelia-path\\dist\\amd\\aurelia-path","aurelia-polyfills":"../node_modules\\aurelia-polyfills\\dist\\amd\\aurelia-polyfills","aurelia-router":"../node_modules\\aurelia-router\\dist\\amd\\aurelia-router","aurelia-route-recognizer":"../node_modules\\aurelia-route-recognizer\\dist\\amd\\aurelia-route-recognizer","aurelia-task-queue":"../node_modules\\aurelia-task-queue\\dist\\amd\\aurelia-task-queue","aurelia-templating":"../node_modules\\aurelia-templating\\dist\\amd\\aurelia-templating","aurelia-templating-binding":"../node_modules\\aurelia-templating-binding\\dist\\amd\\aurelia-templating-binding","jquery":"../node_modules\\jquery\\dist\\jquery","app-bundle":"../scripts/app-bundle"},"packages":[{"name":"aurelia-materialize-bridge","location":"../node_modules/aurelia-materialize-bridge/dist/amd","main":"index"},{"name":"materialize-css","location":"../node_modules/materialize-css/dist","main":"js/materialize.min"},{"name":"aurelia-templating-resources","location":"../node_modules/aurelia-templating-resources/dist/amd","main":"aurelia-templating-resources"},{"name":"aurelia-templating-router","location":"../node_modules/aurelia-templating-router/dist/amd","main":"aurelia-templating-router"},{"name":"aurelia-testing","location":"../node_modules/aurelia-testing/dist/amd","main":"aurelia-testing"}],"stubModules":["text"],"shim":{"materialize-css":{"deps":["jquery"]}},"bundles":{"app-bundle":["app","environment","main","resources/index"]}});
 define('text',{});
 define('aurelia-binding',['exports', 'aurelia-logging', 'aurelia-pal', 'aurelia-task-queue', 'aurelia-metadata'], function (exports, _aureliaLogging, _aureliaPal, _aureliaTaskQueue, _aureliaMetadata) {
   'use strict';
@@ -9186,6 +9186,162 @@ define('aurelia-bootstrapper',['exports', 'aurelia-pal', 'aurelia-pal-browser', 
 
   run();
 });
+define('aurelia-event-aggregator',['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.EventAggregator = undefined;
+  exports.includeEventsIn = includeEventsIn;
+  exports.configure = configure;
+
+  var LogManager = _interopRequireWildcard(_aureliaLogging);
+
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+        }
+      }
+
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+
+  
+
+  var logger = LogManager.getLogger('event-aggregator');
+
+  var Handler = function () {
+    function Handler(messageType, callback) {
+      
+
+      this.messageType = messageType;
+      this.callback = callback;
+    }
+
+    Handler.prototype.handle = function handle(message) {
+      if (message instanceof this.messageType) {
+        this.callback.call(null, message);
+      }
+    };
+
+    return Handler;
+  }();
+
+  var EventAggregator = exports.EventAggregator = function () {
+    function EventAggregator() {
+      
+
+      this.eventLookup = {};
+      this.messageHandlers = [];
+    }
+
+    EventAggregator.prototype.publish = function publish(event, data) {
+      var subscribers = void 0;
+      var i = void 0;
+
+      if (!event) {
+        throw new Error('Event was invalid.');
+      }
+
+      if (typeof event === 'string') {
+        subscribers = this.eventLookup[event];
+        if (subscribers) {
+          subscribers = subscribers.slice();
+          i = subscribers.length;
+
+          try {
+            while (i--) {
+              subscribers[i](data, event);
+            }
+          } catch (e) {
+            logger.error(e);
+          }
+        }
+      } else {
+        subscribers = this.messageHandlers.slice();
+        i = subscribers.length;
+
+        try {
+          while (i--) {
+            subscribers[i].handle(event);
+          }
+        } catch (e) {
+          logger.error(e);
+        }
+      }
+    };
+
+    EventAggregator.prototype.subscribe = function subscribe(event, callback) {
+      var handler = void 0;
+      var subscribers = void 0;
+
+      if (!event) {
+        throw new Error('Event channel/type was invalid.');
+      }
+
+      if (typeof event === 'string') {
+        handler = callback;
+        subscribers = this.eventLookup[event] || (this.eventLookup[event] = []);
+      } else {
+        handler = new Handler(event, callback);
+        subscribers = this.messageHandlers;
+      }
+
+      subscribers.push(handler);
+
+      return {
+        dispose: function dispose() {
+          var idx = subscribers.indexOf(handler);
+          if (idx !== -1) {
+            subscribers.splice(idx, 1);
+          }
+        }
+      };
+    };
+
+    EventAggregator.prototype.subscribeOnce = function subscribeOnce(event, callback) {
+      var sub = this.subscribe(event, function (a, b) {
+        sub.dispose();
+        return callback(a, b);
+      });
+
+      return sub;
+    };
+
+    return EventAggregator;
+  }();
+
+  function includeEventsIn(obj) {
+    var ea = new EventAggregator();
+
+    obj.subscribeOnce = function (event, callback) {
+      return ea.subscribeOnce(event, callback);
+    };
+
+    obj.subscribe = function (event, callback) {
+      return ea.subscribe(event, callback);
+    };
+
+    obj.publish = function (event, data) {
+      ea.publish(event, data);
+    };
+
+    return ea;
+  }
+
+  function configure(config) {
+    config.instance(EventAggregator, includeEventsIn(config.aurelia));
+  }
+});
 define('aurelia-dependency-injection',['exports', 'aurelia-metadata', 'aurelia-pal'], function (exports, _aureliaMetadata, _aureliaPal) {
   'use strict';
 
@@ -9910,162 +10066,6 @@ define('aurelia-dependency-injection',['exports', 'aurelia-metadata', 'aurelia-p
         target.inject = rest;
       }
     };
-  }
-});
-define('aurelia-event-aggregator',['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.EventAggregator = undefined;
-  exports.includeEventsIn = includeEventsIn;
-  exports.configure = configure;
-
-  var LogManager = _interopRequireWildcard(_aureliaLogging);
-
-  function _interopRequireWildcard(obj) {
-    if (obj && obj.__esModule) {
-      return obj;
-    } else {
-      var newObj = {};
-
-      if (obj != null) {
-        for (var key in obj) {
-          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
-        }
-      }
-
-      newObj.default = obj;
-      return newObj;
-    }
-  }
-
-  
-
-  var logger = LogManager.getLogger('event-aggregator');
-
-  var Handler = function () {
-    function Handler(messageType, callback) {
-      
-
-      this.messageType = messageType;
-      this.callback = callback;
-    }
-
-    Handler.prototype.handle = function handle(message) {
-      if (message instanceof this.messageType) {
-        this.callback.call(null, message);
-      }
-    };
-
-    return Handler;
-  }();
-
-  var EventAggregator = exports.EventAggregator = function () {
-    function EventAggregator() {
-      
-
-      this.eventLookup = {};
-      this.messageHandlers = [];
-    }
-
-    EventAggregator.prototype.publish = function publish(event, data) {
-      var subscribers = void 0;
-      var i = void 0;
-
-      if (!event) {
-        throw new Error('Event was invalid.');
-      }
-
-      if (typeof event === 'string') {
-        subscribers = this.eventLookup[event];
-        if (subscribers) {
-          subscribers = subscribers.slice();
-          i = subscribers.length;
-
-          try {
-            while (i--) {
-              subscribers[i](data, event);
-            }
-          } catch (e) {
-            logger.error(e);
-          }
-        }
-      } else {
-        subscribers = this.messageHandlers.slice();
-        i = subscribers.length;
-
-        try {
-          while (i--) {
-            subscribers[i].handle(event);
-          }
-        } catch (e) {
-          logger.error(e);
-        }
-      }
-    };
-
-    EventAggregator.prototype.subscribe = function subscribe(event, callback) {
-      var handler = void 0;
-      var subscribers = void 0;
-
-      if (!event) {
-        throw new Error('Event channel/type was invalid.');
-      }
-
-      if (typeof event === 'string') {
-        handler = callback;
-        subscribers = this.eventLookup[event] || (this.eventLookup[event] = []);
-      } else {
-        handler = new Handler(event, callback);
-        subscribers = this.messageHandlers;
-      }
-
-      subscribers.push(handler);
-
-      return {
-        dispose: function dispose() {
-          var idx = subscribers.indexOf(handler);
-          if (idx !== -1) {
-            subscribers.splice(idx, 1);
-          }
-        }
-      };
-    };
-
-    EventAggregator.prototype.subscribeOnce = function subscribeOnce(event, callback) {
-      var sub = this.subscribe(event, function (a, b) {
-        sub.dispose();
-        return callback(a, b);
-      });
-
-      return sub;
-    };
-
-    return EventAggregator;
-  }();
-
-  function includeEventsIn(obj) {
-    var ea = new EventAggregator();
-
-    obj.subscribeOnce = function (event, callback) {
-      return ea.subscribeOnce(event, callback);
-    };
-
-    obj.subscribe = function (event, callback) {
-      return ea.subscribe(event, callback);
-    };
-
-    obj.publish = function (event, data) {
-      ea.publish(event, data);
-    };
-
-    return ea;
-  }
-
-  function configure(config) {
-    config.instance(EventAggregator, includeEventsIn(config.aurelia));
   }
 });
 define('aurelia-framework',['exports', 'aurelia-dependency-injection', 'aurelia-binding', 'aurelia-metadata', 'aurelia-templating', 'aurelia-loader', 'aurelia-task-queue', 'aurelia-path', 'aurelia-pal', 'aurelia-logging'], function (exports, _aureliaDependencyInjection, _aureliaBinding, _aureliaMetadata, _aureliaTemplating, _aureliaLoader, _aureliaTaskQueue, _aureliaPath, _aureliaPal, _aureliaLogging) {
@@ -10988,264 +10988,6 @@ define('aurelia-history-browser',['exports', 'aurelia-pal', 'aurelia-history'], 
     return protocol + '//' + hostname + (port ? ':' + port : '');
   }
 });
-define('aurelia-loader-default',['exports', 'aurelia-loader', 'aurelia-pal', 'aurelia-metadata'], function (exports, _aureliaLoader, _aureliaPal, _aureliaMetadata) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.DefaultLoader = exports.TextTemplateLoader = undefined;
-
-  function _possibleConstructorReturn(self, call) {
-    if (!self) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-  }
-
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-      constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-  }
-
-  
-
-  var TextTemplateLoader = exports.TextTemplateLoader = function () {
-    function TextTemplateLoader() {
-      
-    }
-
-    TextTemplateLoader.prototype.loadTemplate = function loadTemplate(loader, entry) {
-      return loader.loadText(entry.address).then(function (text) {
-        entry.template = _aureliaPal.DOM.createTemplateFromMarkup(text);
-      });
-    };
-
-    return TextTemplateLoader;
-  }();
-
-  function ensureOriginOnExports(executed, name) {
-    var target = executed;
-    var key = void 0;
-    var exportedValue = void 0;
-
-    if (target.__useDefault) {
-      target = target['default'];
-    }
-
-    _aureliaMetadata.Origin.set(target, new _aureliaMetadata.Origin(name, 'default'));
-
-    for (key in target) {
-      exportedValue = target[key];
-
-      if (typeof exportedValue === 'function') {
-        _aureliaMetadata.Origin.set(exportedValue, new _aureliaMetadata.Origin(name, key));
-      }
-    }
-
-    return executed;
-  }
-
-  var DefaultLoader = exports.DefaultLoader = function (_Loader) {
-    _inherits(DefaultLoader, _Loader);
-
-    function DefaultLoader() {
-      
-
-      var _this = _possibleConstructorReturn(this, _Loader.call(this));
-
-      _this.textPluginName = 'text';
-
-
-      _this.moduleRegistry = Object.create(null);
-      _this.useTemplateLoader(new TextTemplateLoader());
-
-      var that = _this;
-
-      _this.addPlugin('template-registry-entry', {
-        'fetch': function fetch(address) {
-          var entry = that.getOrCreateTemplateRegistryEntry(address);
-          return entry.templateIsLoaded ? entry : that.templateLoader.loadTemplate(that, entry).then(function (x) {
-            return entry;
-          });
-        }
-      });
-      return _this;
-    }
-
-    DefaultLoader.prototype.useTemplateLoader = function useTemplateLoader(templateLoader) {
-      this.templateLoader = templateLoader;
-    };
-
-    DefaultLoader.prototype.loadAllModules = function loadAllModules(ids) {
-      var loads = [];
-
-      for (var i = 0, ii = ids.length; i < ii; ++i) {
-        loads.push(this.loadModule(ids[i]));
-      }
-
-      return Promise.all(loads);
-    };
-
-    DefaultLoader.prototype.loadTemplate = function loadTemplate(url) {
-      return this._import(this.applyPluginToUrl(url, 'template-registry-entry'));
-    };
-
-    DefaultLoader.prototype.loadText = function loadText(url) {
-      return this._import(this.applyPluginToUrl(url, this.textPluginName)).then(function (textOrModule) {
-        if (typeof textOrModule === 'string') {
-          return textOrModule;
-        }
-
-        return textOrModule['default'];
-      });
-    };
-
-    return DefaultLoader;
-  }(_aureliaLoader.Loader);
-
-  _aureliaPal.PLATFORM.Loader = DefaultLoader;
-
-  if (!_aureliaPal.PLATFORM.global.System || !_aureliaPal.PLATFORM.global.System.import) {
-    if (_aureliaPal.PLATFORM.global.requirejs && requirejs.s && requirejs.s.contexts && requirejs.s.contexts._ && requirejs.s.contexts._.defined) {
-      _aureliaPal.PLATFORM.eachModule = function (callback) {
-        var defined = requirejs.s.contexts._.defined;
-        for (var key in defined) {
-          try {
-            if (callback(key, defined[key])) return;
-          } catch (e) {}
-        }
-      };
-    } else {
-      _aureliaPal.PLATFORM.eachModule = function (callback) {};
-    }
-
-    DefaultLoader.prototype._import = function (moduleId) {
-      return new Promise(function (resolve, reject) {
-        require([moduleId], resolve, reject);
-      });
-    };
-
-    DefaultLoader.prototype.loadModule = function (id) {
-      var _this2 = this;
-
-      var existing = this.moduleRegistry[id];
-      if (existing !== undefined) {
-        return Promise.resolve(existing);
-      }
-
-      return new Promise(function (resolve, reject) {
-        require([id], function (m) {
-          _this2.moduleRegistry[id] = m;
-          resolve(ensureOriginOnExports(m, id));
-        }, reject);
-      });
-    };
-
-    DefaultLoader.prototype.map = function (id, source) {};
-
-    DefaultLoader.prototype.normalize = function (moduleId, relativeTo) {
-      return Promise.resolve(moduleId);
-    };
-
-    DefaultLoader.prototype.normalizeSync = function (moduleId, relativeTo) {
-      return moduleId;
-    };
-
-    DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
-      return pluginName + '!' + url;
-    };
-
-    DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
-      var nonAnonDefine = define;
-      nonAnonDefine(pluginName, [], {
-        'load': function load(name, req, onload) {
-          var result = implementation.fetch(name);
-          Promise.resolve(result).then(onload);
-        }
-      });
-    };
-  } else {
-    _aureliaPal.PLATFORM.eachModule = function (callback) {
-      var modules = System._loader.modules;
-
-      for (var key in modules) {
-        try {
-          if (callback(key, modules[key].module)) return;
-        } catch (e) {}
-      }
-    };
-
-    System.set('text', System.newModule({
-      'translate': function translate(load) {
-        return 'module.exports = "' + load.source.replace(/(["\\])/g, '\\$1').replace(/[\f]/g, '\\f').replace(/[\b]/g, '\\b').replace(/[\n]/g, '\\n').replace(/[\t]/g, '\\t').replace(/[\r]/g, '\\r').replace(/[\u2028]/g, '\\u2028').replace(/[\u2029]/g, '\\u2029') + '";';
-      }
-    }));
-
-    DefaultLoader.prototype._import = function (moduleId) {
-      return System.import(moduleId);
-    };
-
-    DefaultLoader.prototype.loadModule = function (id) {
-      var _this3 = this;
-
-      return System.normalize(id).then(function (newId) {
-        var existing = _this3.moduleRegistry[newId];
-        if (existing !== undefined) {
-          return Promise.resolve(existing);
-        }
-
-        return System.import(newId).then(function (m) {
-          _this3.moduleRegistry[newId] = m;
-          return ensureOriginOnExports(m, newId);
-        });
-      });
-    };
-
-    DefaultLoader.prototype.map = function (id, source) {
-      System.map[id] = source;
-    };
-
-    DefaultLoader.prototype.normalizeSync = function (moduleId, relativeTo) {
-      return System.normalizeSync(moduleId, relativeTo);
-    };
-
-    DefaultLoader.prototype.normalize = function (moduleId, relativeTo) {
-      return System.normalize(moduleId, relativeTo);
-    };
-
-    DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
-      return url + '!' + pluginName;
-    };
-
-    DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
-      System.set(pluginName, System.newModule({
-        'fetch': function fetch(load, _fetch) {
-          var result = implementation.fetch(load.address);
-          return Promise.resolve(result).then(function (x) {
-            load.metadata.result = x;
-            return '';
-          });
-        },
-        'instantiate': function instantiate(load) {
-          return load.metadata.result;
-        }
-      }));
-    };
-  }
-});
 define('aurelia-loader',['exports', 'aurelia-path', 'aurelia-metadata'], function (exports, _aureliaPath, _aureliaMetadata) {
   'use strict';
 
@@ -11526,6 +11268,264 @@ define('aurelia-logging',['exports'], function (exports) {
 
     return Logger;
   }();
+});
+define('aurelia-loader-default',['exports', 'aurelia-loader', 'aurelia-pal', 'aurelia-metadata'], function (exports, _aureliaLoader, _aureliaPal, _aureliaMetadata) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.DefaultLoader = exports.TextTemplateLoader = undefined;
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  
+
+  var TextTemplateLoader = exports.TextTemplateLoader = function () {
+    function TextTemplateLoader() {
+      
+    }
+
+    TextTemplateLoader.prototype.loadTemplate = function loadTemplate(loader, entry) {
+      return loader.loadText(entry.address).then(function (text) {
+        entry.template = _aureliaPal.DOM.createTemplateFromMarkup(text);
+      });
+    };
+
+    return TextTemplateLoader;
+  }();
+
+  function ensureOriginOnExports(executed, name) {
+    var target = executed;
+    var key = void 0;
+    var exportedValue = void 0;
+
+    if (target.__useDefault) {
+      target = target['default'];
+    }
+
+    _aureliaMetadata.Origin.set(target, new _aureliaMetadata.Origin(name, 'default'));
+
+    for (key in target) {
+      exportedValue = target[key];
+
+      if (typeof exportedValue === 'function') {
+        _aureliaMetadata.Origin.set(exportedValue, new _aureliaMetadata.Origin(name, key));
+      }
+    }
+
+    return executed;
+  }
+
+  var DefaultLoader = exports.DefaultLoader = function (_Loader) {
+    _inherits(DefaultLoader, _Loader);
+
+    function DefaultLoader() {
+      
+
+      var _this = _possibleConstructorReturn(this, _Loader.call(this));
+
+      _this.textPluginName = 'text';
+
+
+      _this.moduleRegistry = Object.create(null);
+      _this.useTemplateLoader(new TextTemplateLoader());
+
+      var that = _this;
+
+      _this.addPlugin('template-registry-entry', {
+        'fetch': function fetch(address) {
+          var entry = that.getOrCreateTemplateRegistryEntry(address);
+          return entry.templateIsLoaded ? entry : that.templateLoader.loadTemplate(that, entry).then(function (x) {
+            return entry;
+          });
+        }
+      });
+      return _this;
+    }
+
+    DefaultLoader.prototype.useTemplateLoader = function useTemplateLoader(templateLoader) {
+      this.templateLoader = templateLoader;
+    };
+
+    DefaultLoader.prototype.loadAllModules = function loadAllModules(ids) {
+      var loads = [];
+
+      for (var i = 0, ii = ids.length; i < ii; ++i) {
+        loads.push(this.loadModule(ids[i]));
+      }
+
+      return Promise.all(loads);
+    };
+
+    DefaultLoader.prototype.loadTemplate = function loadTemplate(url) {
+      return this._import(this.applyPluginToUrl(url, 'template-registry-entry'));
+    };
+
+    DefaultLoader.prototype.loadText = function loadText(url) {
+      return this._import(this.applyPluginToUrl(url, this.textPluginName)).then(function (textOrModule) {
+        if (typeof textOrModule === 'string') {
+          return textOrModule;
+        }
+
+        return textOrModule['default'];
+      });
+    };
+
+    return DefaultLoader;
+  }(_aureliaLoader.Loader);
+
+  _aureliaPal.PLATFORM.Loader = DefaultLoader;
+
+  if (!_aureliaPal.PLATFORM.global.System || !_aureliaPal.PLATFORM.global.System.import) {
+    if (_aureliaPal.PLATFORM.global.requirejs && requirejs.s && requirejs.s.contexts && requirejs.s.contexts._ && requirejs.s.contexts._.defined) {
+      _aureliaPal.PLATFORM.eachModule = function (callback) {
+        var defined = requirejs.s.contexts._.defined;
+        for (var key in defined) {
+          try {
+            if (callback(key, defined[key])) return;
+          } catch (e) {}
+        }
+      };
+    } else {
+      _aureliaPal.PLATFORM.eachModule = function (callback) {};
+    }
+
+    DefaultLoader.prototype._import = function (moduleId) {
+      return new Promise(function (resolve, reject) {
+        require([moduleId], resolve, reject);
+      });
+    };
+
+    DefaultLoader.prototype.loadModule = function (id) {
+      var _this2 = this;
+
+      var existing = this.moduleRegistry[id];
+      if (existing !== undefined) {
+        return Promise.resolve(existing);
+      }
+
+      return new Promise(function (resolve, reject) {
+        require([id], function (m) {
+          _this2.moduleRegistry[id] = m;
+          resolve(ensureOriginOnExports(m, id));
+        }, reject);
+      });
+    };
+
+    DefaultLoader.prototype.map = function (id, source) {};
+
+    DefaultLoader.prototype.normalize = function (moduleId, relativeTo) {
+      return Promise.resolve(moduleId);
+    };
+
+    DefaultLoader.prototype.normalizeSync = function (moduleId, relativeTo) {
+      return moduleId;
+    };
+
+    DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
+      return pluginName + '!' + url;
+    };
+
+    DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
+      var nonAnonDefine = define;
+      nonAnonDefine(pluginName, [], {
+        'load': function load(name, req, onload) {
+          var result = implementation.fetch(name);
+          Promise.resolve(result).then(onload);
+        }
+      });
+    };
+  } else {
+    _aureliaPal.PLATFORM.eachModule = function (callback) {
+      var modules = System._loader.modules;
+
+      for (var key in modules) {
+        try {
+          if (callback(key, modules[key].module)) return;
+        } catch (e) {}
+      }
+    };
+
+    System.set('text', System.newModule({
+      'translate': function translate(load) {
+        return 'module.exports = "' + load.source.replace(/(["\\])/g, '\\$1').replace(/[\f]/g, '\\f').replace(/[\b]/g, '\\b').replace(/[\n]/g, '\\n').replace(/[\t]/g, '\\t').replace(/[\r]/g, '\\r').replace(/[\u2028]/g, '\\u2028').replace(/[\u2029]/g, '\\u2029') + '";';
+      }
+    }));
+
+    DefaultLoader.prototype._import = function (moduleId) {
+      return System.import(moduleId);
+    };
+
+    DefaultLoader.prototype.loadModule = function (id) {
+      var _this3 = this;
+
+      return System.normalize(id).then(function (newId) {
+        var existing = _this3.moduleRegistry[newId];
+        if (existing !== undefined) {
+          return Promise.resolve(existing);
+        }
+
+        return System.import(newId).then(function (m) {
+          _this3.moduleRegistry[newId] = m;
+          return ensureOriginOnExports(m, newId);
+        });
+      });
+    };
+
+    DefaultLoader.prototype.map = function (id, source) {
+      System.map[id] = source;
+    };
+
+    DefaultLoader.prototype.normalizeSync = function (moduleId, relativeTo) {
+      return System.normalizeSync(moduleId, relativeTo);
+    };
+
+    DefaultLoader.prototype.normalize = function (moduleId, relativeTo) {
+      return System.normalize(moduleId, relativeTo);
+    };
+
+    DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
+      return url + '!' + pluginName;
+    };
+
+    DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
+      System.set(pluginName, System.newModule({
+        'fetch': function fetch(load, _fetch) {
+          var result = implementation.fetch(load.address);
+          return Promise.resolve(result).then(function (x) {
+            load.metadata.result = x;
+            return '';
+          });
+        },
+        'instantiate': function instantiate(load) {
+          return load.metadata.result;
+        }
+      }));
+    };
+  }
 });
 define('aurelia-logging-console',['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
   'use strict';
@@ -11856,87 +11856,6 @@ define('aurelia-metadata',['exports', 'aurelia-pal'], function (exports, _aureli
 
     return result;
   };
-});
-define('aurelia-pal',['exports'], function (exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.AggregateError = AggregateError;
-  exports.initializePAL = initializePAL;
-  function AggregateError(message, innerError, skipIfAlreadyAggregate) {
-    if (innerError) {
-      if (innerError.innerError && skipIfAlreadyAggregate) {
-        return innerError;
-      }
-
-      var separator = '\n------------------------------------------------\n';
-
-      message += separator + 'Inner Error:\n';
-
-      if (typeof innerError === 'string') {
-        message += 'Message: ' + innerError;
-      } else {
-        if (innerError.message) {
-          message += 'Message: ' + innerError.message;
-        } else {
-          message += 'Unknown Inner Error Type. Displaying Inner Error as JSON:\n ' + JSON.stringify(innerError, null, '  ');
-        }
-
-        if (innerError.stack) {
-          message += '\nInner Error Stack:\n' + innerError.stack;
-          message += '\nEnd Inner Error Stack';
-        }
-      }
-
-      message += separator;
-    }
-
-    var e = new Error(message);
-    if (innerError) {
-      e.innerError = innerError;
-    }
-
-    return e;
-  }
-
-  var FEATURE = exports.FEATURE = {};
-
-  var PLATFORM = exports.PLATFORM = {
-    noop: function noop() {},
-    eachModule: function eachModule() {}
-  };
-
-  PLATFORM.global = function () {
-    if (typeof self !== 'undefined') {
-      return self;
-    }
-
-    if (typeof global !== 'undefined') {
-      return global;
-    }
-
-    return new Function('return this')();
-  }();
-
-  var DOM = exports.DOM = {};
-
-  function initializePAL(callback) {
-    if (typeof Object.getPropertyDescriptor !== 'function') {
-      Object.getPropertyDescriptor = function (subject, name) {
-        var pd = Object.getOwnPropertyDescriptor(subject, name);
-        var proto = Object.getPrototypeOf(subject);
-        while (typeof pd === 'undefined' && proto !== null) {
-          pd = Object.getOwnPropertyDescriptor(proto, name);
-          proto = Object.getPrototypeOf(proto);
-        }
-        return pd;
-      };
-    }
-
-    callback(PLATFORM, FEATURE, DOM);
-  }
 });
 define('aurelia-pal-browser',['exports', 'aurelia-pal'], function (exports, _aureliaPal) {
   'use strict';
@@ -12453,6 +12372,299 @@ define('aurelia-pal-browser',['exports', 'aurelia-pal'], function (exports, _aur
         }
       });
     });
+  }
+});
+define('aurelia-pal',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.AggregateError = AggregateError;
+  exports.initializePAL = initializePAL;
+  function AggregateError(message, innerError, skipIfAlreadyAggregate) {
+    if (innerError) {
+      if (innerError.innerError && skipIfAlreadyAggregate) {
+        return innerError;
+      }
+
+      var separator = '\n------------------------------------------------\n';
+
+      message += separator + 'Inner Error:\n';
+
+      if (typeof innerError === 'string') {
+        message += 'Message: ' + innerError;
+      } else {
+        if (innerError.message) {
+          message += 'Message: ' + innerError.message;
+        } else {
+          message += 'Unknown Inner Error Type. Displaying Inner Error as JSON:\n ' + JSON.stringify(innerError, null, '  ');
+        }
+
+        if (innerError.stack) {
+          message += '\nInner Error Stack:\n' + innerError.stack;
+          message += '\nEnd Inner Error Stack';
+        }
+      }
+
+      message += separator;
+    }
+
+    var e = new Error(message);
+    if (innerError) {
+      e.innerError = innerError;
+    }
+
+    return e;
+  }
+
+  var FEATURE = exports.FEATURE = {};
+
+  var PLATFORM = exports.PLATFORM = {
+    noop: function noop() {},
+    eachModule: function eachModule() {}
+  };
+
+  PLATFORM.global = function () {
+    if (typeof self !== 'undefined') {
+      return self;
+    }
+
+    if (typeof global !== 'undefined') {
+      return global;
+    }
+
+    return new Function('return this')();
+  }();
+
+  var DOM = exports.DOM = {};
+
+  function initializePAL(callback) {
+    if (typeof Object.getPropertyDescriptor !== 'function') {
+      Object.getPropertyDescriptor = function (subject, name) {
+        var pd = Object.getOwnPropertyDescriptor(subject, name);
+        var proto = Object.getPrototypeOf(subject);
+        while (typeof pd === 'undefined' && proto !== null) {
+          pd = Object.getOwnPropertyDescriptor(proto, name);
+          proto = Object.getPrototypeOf(proto);
+        }
+        return pd;
+      };
+    }
+
+    callback(PLATFORM, FEATURE, DOM);
+  }
+});
+define('aurelia-path',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.relativeToFile = relativeToFile;
+  exports.join = join;
+  exports.buildQueryString = buildQueryString;
+  exports.parseQueryString = parseQueryString;
+
+  var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
+  };
+
+  function trimDots(ary) {
+    for (var i = 0; i < ary.length; ++i) {
+      var part = ary[i];
+      if (part === '.') {
+        ary.splice(i, 1);
+        i -= 1;
+      } else if (part === '..') {
+        if (i === 0 || i === 1 && ary[2] === '..' || ary[i - 1] === '..') {
+          continue;
+        } else if (i > 0) {
+          ary.splice(i - 1, 2);
+          i -= 2;
+        }
+      }
+    }
+  }
+
+  function relativeToFile(name, file) {
+    var fileParts = file && file.split('/');
+    var nameParts = name.trim().split('/');
+
+    if (nameParts[0].charAt(0) === '.' && fileParts) {
+      var normalizedBaseParts = fileParts.slice(0, fileParts.length - 1);
+      nameParts.unshift.apply(nameParts, normalizedBaseParts);
+    }
+
+    trimDots(nameParts);
+
+    return nameParts.join('/');
+  }
+
+  function join(path1, path2) {
+    if (!path1) {
+      return path2;
+    }
+
+    if (!path2) {
+      return path1;
+    }
+
+    var schemeMatch = path1.match(/^([^/]*?:)\//);
+    var scheme = schemeMatch && schemeMatch.length > 0 ? schemeMatch[1] : '';
+    path1 = path1.substr(scheme.length);
+
+    var urlPrefix = void 0;
+    if (path1.indexOf('///') === 0 && scheme === 'file:') {
+      urlPrefix = '///';
+    } else if (path1.indexOf('//') === 0) {
+      urlPrefix = '//';
+    } else if (path1.indexOf('/') === 0) {
+      urlPrefix = '/';
+    } else {
+      urlPrefix = '';
+    }
+
+    var trailingSlash = path2.slice(-1) === '/' ? '/' : '';
+
+    var url1 = path1.split('/');
+    var url2 = path2.split('/');
+    var url3 = [];
+
+    for (var i = 0, ii = url1.length; i < ii; ++i) {
+      if (url1[i] === '..') {
+        url3.pop();
+      } else if (url1[i] === '.' || url1[i] === '') {
+        continue;
+      } else {
+        url3.push(url1[i]);
+      }
+    }
+
+    for (var _i = 0, _ii = url2.length; _i < _ii; ++_i) {
+      if (url2[_i] === '..') {
+        url3.pop();
+      } else if (url2[_i] === '.' || url2[_i] === '') {
+        continue;
+      } else {
+        url3.push(url2[_i]);
+      }
+    }
+
+    return scheme + urlPrefix + url3.join('/') + trailingSlash;
+  }
+
+  var encode = encodeURIComponent;
+  var encodeKey = function encodeKey(k) {
+    return encode(k).replace('%24', '$');
+  };
+
+  function buildParam(key, value) {
+    var result = [];
+    if (value === null || value === undefined) {
+      return result;
+    }
+    if (Array.isArray(value)) {
+      for (var i = 0, l = value.length; i < l; i++) {
+        var arrayKey = key + '[' + (_typeof(value[i]) === 'object' && value[i] !== null ? i : '') + ']';
+        result = result.concat(buildParam(arrayKey, value[i]));
+      }
+    } else if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
+      for (var propertyName in value) {
+        result = result.concat(buildParam(key + '[' + propertyName + ']', value[propertyName]));
+      }
+    } else {
+      result.push(encodeKey(key) + '=' + encode(value));
+    }
+    return result;
+  }
+
+  function buildQueryString(params) {
+    var pairs = [];
+    var keys = Object.keys(params || {}).sort();
+    for (var i = 0, len = keys.length; i < len; i++) {
+      var key = keys[i];
+      pairs = pairs.concat(buildParam(key, params[key]));
+    }
+
+    if (pairs.length === 0) {
+      return '';
+    }
+
+    return pairs.join('&');
+  }
+
+  function processScalarParam(existedParam, value, isPrimitive) {
+    if (Array.isArray(existedParam)) {
+      existedParam.push(value);
+      return existedParam;
+    }
+    if (existedParam !== undefined) {
+      return isPrimitive ? value : [existedParam, value];
+    }
+
+    return value;
+  }
+
+  function parseComplexParam(queryParams, keys, value) {
+    var currentParams = queryParams;
+    var keysLastIndex = keys.length - 1;
+    for (var j = 0; j <= keysLastIndex; j++) {
+      var key = keys[j] === '' ? currentParams.length : keys[j];
+      if (j < keysLastIndex) {
+        currentParams = currentParams[key] = currentParams[key] || (isNaN(keys[j + 1]) ? {} : []);
+      } else {
+        currentParams = currentParams[key] = value;
+      }
+    }
+  }
+
+  function parseQueryString(queryString) {
+    var queryParams = {};
+    if (!queryString || typeof queryString !== 'string') {
+      return queryParams;
+    }
+
+    var query = queryString;
+    if (query.charAt(0) === '?') {
+      query = query.substr(1);
+    }
+
+    var pairs = query.replace(/\+/g, ' ').split('&');
+    for (var i = 0; i < pairs.length; i++) {
+      var pair = pairs[i].split('=');
+      var key = decodeURIComponent(pair[0]);
+      var isPrimitive = false;
+      if (!key) {
+        continue;
+      }
+
+      var keys = key.split('][');
+      var keysLastIndex = keys.length - 1;
+
+      if (/\[/.test(keys[0]) && /\]$/.test(keys[keysLastIndex])) {
+        keys[keysLastIndex] = keys[keysLastIndex].replace(/\]$/, '');
+        keys = keys.shift().split('[').concat(keys);
+        keysLastIndex = keys.length - 1;
+      } else {
+        isPrimitive = true;
+        keysLastIndex = 0;
+      }
+
+      if (pair.length >= 2) {
+        var value = pair[1] ? decodeURIComponent(pair[1]) : '';
+        if (keysLastIndex) {
+          parseComplexParam(queryParams, keys, value);
+        } else {
+          queryParams[key] = processScalarParam(queryParams[key], value, isPrimitive);
+        }
+      } else {
+        queryParams[key] = true;
+      }
+    }
+    return queryParams;
   }
 });
 define('aurelia-polyfills',['aurelia-pal'], function (_aureliaPal) {
@@ -13256,693 +13468,6 @@ define('aurelia-polyfills',['aurelia-pal'], function (_aureliaPal) {
       a.push.apply(a, args);
       return new (bind.apply(Target, a))();
     };
-  }
-});
-define('aurelia-path',['exports'], function (exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.relativeToFile = relativeToFile;
-  exports.join = join;
-  exports.buildQueryString = buildQueryString;
-  exports.parseQueryString = parseQueryString;
-
-  var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
-  };
-
-  function trimDots(ary) {
-    for (var i = 0; i < ary.length; ++i) {
-      var part = ary[i];
-      if (part === '.') {
-        ary.splice(i, 1);
-        i -= 1;
-      } else if (part === '..') {
-        if (i === 0 || i === 1 && ary[2] === '..' || ary[i - 1] === '..') {
-          continue;
-        } else if (i > 0) {
-          ary.splice(i - 1, 2);
-          i -= 2;
-        }
-      }
-    }
-  }
-
-  function relativeToFile(name, file) {
-    var fileParts = file && file.split('/');
-    var nameParts = name.trim().split('/');
-
-    if (nameParts[0].charAt(0) === '.' && fileParts) {
-      var normalizedBaseParts = fileParts.slice(0, fileParts.length - 1);
-      nameParts.unshift.apply(nameParts, normalizedBaseParts);
-    }
-
-    trimDots(nameParts);
-
-    return nameParts.join('/');
-  }
-
-  function join(path1, path2) {
-    if (!path1) {
-      return path2;
-    }
-
-    if (!path2) {
-      return path1;
-    }
-
-    var schemeMatch = path1.match(/^([^/]*?:)\//);
-    var scheme = schemeMatch && schemeMatch.length > 0 ? schemeMatch[1] : '';
-    path1 = path1.substr(scheme.length);
-
-    var urlPrefix = void 0;
-    if (path1.indexOf('///') === 0 && scheme === 'file:') {
-      urlPrefix = '///';
-    } else if (path1.indexOf('//') === 0) {
-      urlPrefix = '//';
-    } else if (path1.indexOf('/') === 0) {
-      urlPrefix = '/';
-    } else {
-      urlPrefix = '';
-    }
-
-    var trailingSlash = path2.slice(-1) === '/' ? '/' : '';
-
-    var url1 = path1.split('/');
-    var url2 = path2.split('/');
-    var url3 = [];
-
-    for (var i = 0, ii = url1.length; i < ii; ++i) {
-      if (url1[i] === '..') {
-        url3.pop();
-      } else if (url1[i] === '.' || url1[i] === '') {
-        continue;
-      } else {
-        url3.push(url1[i]);
-      }
-    }
-
-    for (var _i = 0, _ii = url2.length; _i < _ii; ++_i) {
-      if (url2[_i] === '..') {
-        url3.pop();
-      } else if (url2[_i] === '.' || url2[_i] === '') {
-        continue;
-      } else {
-        url3.push(url2[_i]);
-      }
-    }
-
-    return scheme + urlPrefix + url3.join('/') + trailingSlash;
-  }
-
-  var encode = encodeURIComponent;
-  var encodeKey = function encodeKey(k) {
-    return encode(k).replace('%24', '$');
-  };
-
-  function buildParam(key, value) {
-    var result = [];
-    if (value === null || value === undefined) {
-      return result;
-    }
-    if (Array.isArray(value)) {
-      for (var i = 0, l = value.length; i < l; i++) {
-        var arrayKey = key + '[' + (_typeof(value[i]) === 'object' && value[i] !== null ? i : '') + ']';
-        result = result.concat(buildParam(arrayKey, value[i]));
-      }
-    } else if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
-      for (var propertyName in value) {
-        result = result.concat(buildParam(key + '[' + propertyName + ']', value[propertyName]));
-      }
-    } else {
-      result.push(encodeKey(key) + '=' + encode(value));
-    }
-    return result;
-  }
-
-  function buildQueryString(params) {
-    var pairs = [];
-    var keys = Object.keys(params || {}).sort();
-    for (var i = 0, len = keys.length; i < len; i++) {
-      var key = keys[i];
-      pairs = pairs.concat(buildParam(key, params[key]));
-    }
-
-    if (pairs.length === 0) {
-      return '';
-    }
-
-    return pairs.join('&');
-  }
-
-  function processScalarParam(existedParam, value, isPrimitive) {
-    if (Array.isArray(existedParam)) {
-      existedParam.push(value);
-      return existedParam;
-    }
-    if (existedParam !== undefined) {
-      return isPrimitive ? value : [existedParam, value];
-    }
-
-    return value;
-  }
-
-  function parseComplexParam(queryParams, keys, value) {
-    var currentParams = queryParams;
-    var keysLastIndex = keys.length - 1;
-    for (var j = 0; j <= keysLastIndex; j++) {
-      var key = keys[j] === '' ? currentParams.length : keys[j];
-      if (j < keysLastIndex) {
-        currentParams = currentParams[key] = currentParams[key] || (isNaN(keys[j + 1]) ? {} : []);
-      } else {
-        currentParams = currentParams[key] = value;
-      }
-    }
-  }
-
-  function parseQueryString(queryString) {
-    var queryParams = {};
-    if (!queryString || typeof queryString !== 'string') {
-      return queryParams;
-    }
-
-    var query = queryString;
-    if (query.charAt(0) === '?') {
-      query = query.substr(1);
-    }
-
-    var pairs = query.replace(/\+/g, ' ').split('&');
-    for (var i = 0; i < pairs.length; i++) {
-      var pair = pairs[i].split('=');
-      var key = decodeURIComponent(pair[0]);
-      var isPrimitive = false;
-      if (!key) {
-        continue;
-      }
-
-      var keys = key.split('][');
-      var keysLastIndex = keys.length - 1;
-
-      if (/\[/.test(keys[0]) && /\]$/.test(keys[keysLastIndex])) {
-        keys[keysLastIndex] = keys[keysLastIndex].replace(/\]$/, '');
-        keys = keys.shift().split('[').concat(keys);
-        keysLastIndex = keys.length - 1;
-      } else {
-        isPrimitive = true;
-        keysLastIndex = 0;
-      }
-
-      if (pair.length >= 2) {
-        var value = pair[1] ? decodeURIComponent(pair[1]) : '';
-        if (keysLastIndex) {
-          parseComplexParam(queryParams, keys, value);
-        } else {
-          queryParams[key] = processScalarParam(queryParams[key], value, isPrimitive);
-        }
-      } else {
-        queryParams[key] = true;
-      }
-    }
-    return queryParams;
-  }
-});
-define('aurelia-route-recognizer',['exports', 'aurelia-path'], function (exports, _aureliaPath) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.RouteRecognizer = exports.EpsilonSegment = exports.StarSegment = exports.DynamicSegment = exports.StaticSegment = exports.State = undefined;
-
-  
-
-  var State = exports.State = function () {
-    function State(charSpec) {
-      
-
-      this.charSpec = charSpec;
-      this.nextStates = [];
-    }
-
-    State.prototype.get = function get(charSpec) {
-      for (var _iterator = this.nextStates, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-        var _ref;
-
-        if (_isArray) {
-          if (_i >= _iterator.length) break;
-          _ref = _iterator[_i++];
-        } else {
-          _i = _iterator.next();
-          if (_i.done) break;
-          _ref = _i.value;
-        }
-
-        var child = _ref;
-
-        var isEqual = child.charSpec.validChars === charSpec.validChars && child.charSpec.invalidChars === charSpec.invalidChars;
-
-        if (isEqual) {
-          return child;
-        }
-      }
-
-      return undefined;
-    };
-
-    State.prototype.put = function put(charSpec) {
-      var state = this.get(charSpec);
-
-      if (state) {
-        return state;
-      }
-
-      state = new State(charSpec);
-
-      this.nextStates.push(state);
-
-      if (charSpec.repeat) {
-        state.nextStates.push(state);
-      }
-
-      return state;
-    };
-
-    State.prototype.match = function match(ch) {
-      var nextStates = this.nextStates;
-      var results = [];
-
-      for (var i = 0, l = nextStates.length; i < l; i++) {
-        var child = nextStates[i];
-        var charSpec = child.charSpec;
-
-        if (charSpec.validChars !== undefined) {
-          if (charSpec.validChars.indexOf(ch) !== -1) {
-            results.push(child);
-          }
-        } else if (charSpec.invalidChars !== undefined) {
-          if (charSpec.invalidChars.indexOf(ch) === -1) {
-            results.push(child);
-          }
-        }
-      }
-
-      return results;
-    };
-
-    return State;
-  }();
-
-  var specials = ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'];
-
-  var escapeRegex = new RegExp('(\\' + specials.join('|\\') + ')', 'g');
-
-  var StaticSegment = exports.StaticSegment = function () {
-    function StaticSegment(string, caseSensitive) {
-      
-
-      this.string = string;
-      this.caseSensitive = caseSensitive;
-    }
-
-    StaticSegment.prototype.eachChar = function eachChar(callback) {
-      var s = this.string;
-      for (var i = 0, ii = s.length; i < ii; ++i) {
-        var ch = s[i];
-        callback({ validChars: this.caseSensitive ? ch : ch.toUpperCase() + ch.toLowerCase() });
-      }
-    };
-
-    StaticSegment.prototype.regex = function regex() {
-      return this.string.replace(escapeRegex, '\\$1');
-    };
-
-    StaticSegment.prototype.generate = function generate() {
-      return this.string;
-    };
-
-    return StaticSegment;
-  }();
-
-  var DynamicSegment = exports.DynamicSegment = function () {
-    function DynamicSegment(name) {
-      
-
-      this.name = name;
-    }
-
-    DynamicSegment.prototype.eachChar = function eachChar(callback) {
-      callback({ invalidChars: '/', repeat: true });
-    };
-
-    DynamicSegment.prototype.regex = function regex() {
-      return '([^/]+)';
-    };
-
-    DynamicSegment.prototype.generate = function generate(params, consumed) {
-      consumed[this.name] = true;
-      return params[this.name];
-    };
-
-    return DynamicSegment;
-  }();
-
-  var StarSegment = exports.StarSegment = function () {
-    function StarSegment(name) {
-      
-
-      this.name = name;
-    }
-
-    StarSegment.prototype.eachChar = function eachChar(callback) {
-      callback({ invalidChars: '', repeat: true });
-    };
-
-    StarSegment.prototype.regex = function regex() {
-      return '(.+)';
-    };
-
-    StarSegment.prototype.generate = function generate(params, consumed) {
-      consumed[this.name] = true;
-      return params[this.name];
-    };
-
-    return StarSegment;
-  }();
-
-  var EpsilonSegment = exports.EpsilonSegment = function () {
-    function EpsilonSegment() {
-      
-    }
-
-    EpsilonSegment.prototype.eachChar = function eachChar() {};
-
-    EpsilonSegment.prototype.regex = function regex() {
-      return '';
-    };
-
-    EpsilonSegment.prototype.generate = function generate() {
-      return '';
-    };
-
-    return EpsilonSegment;
-  }();
-
-  var RouteRecognizer = exports.RouteRecognizer = function () {
-    function RouteRecognizer() {
-      
-
-      this.rootState = new State();
-      this.names = {};
-    }
-
-    RouteRecognizer.prototype.add = function add(route) {
-      var _this = this;
-
-      if (Array.isArray(route)) {
-        route.forEach(function (r) {
-          return _this.add(r);
-        });
-        return undefined;
-      }
-
-      var currentState = this.rootState;
-      var regex = '^';
-      var types = { statics: 0, dynamics: 0, stars: 0 };
-      var names = [];
-      var routeName = route.handler.name;
-      var isEmpty = true;
-      var segments = parse(route.path, names, types, route.caseSensitive);
-
-      for (var i = 0, ii = segments.length; i < ii; i++) {
-        var segment = segments[i];
-        if (segment instanceof EpsilonSegment) {
-          continue;
-        }
-
-        isEmpty = false;
-
-        currentState = currentState.put({ validChars: '/' });
-        regex += '/';
-
-        currentState = addSegment(currentState, segment);
-        regex += segment.regex();
-      }
-
-      if (isEmpty) {
-        currentState = currentState.put({ validChars: '/' });
-        regex += '/';
-      }
-
-      var handlers = [{ handler: route.handler, names: names }];
-
-      if (routeName) {
-        var routeNames = Array.isArray(routeName) ? routeName : [routeName];
-        for (var _i2 = 0; _i2 < routeNames.length; _i2++) {
-          this.names[routeNames[_i2]] = {
-            segments: segments,
-            handlers: handlers
-          };
-        }
-      }
-
-      currentState.handlers = handlers;
-      currentState.regex = new RegExp(regex + '$', route.caseSensitive ? '' : 'i');
-      currentState.types = types;
-
-      return currentState;
-    };
-
-    RouteRecognizer.prototype.handlersFor = function handlersFor(name) {
-      var route = this.names[name];
-      if (!route) {
-        throw new Error('There is no route named ' + name);
-      }
-
-      return [].concat(route.handlers);
-    };
-
-    RouteRecognizer.prototype.hasRoute = function hasRoute(name) {
-      return !!this.names[name];
-    };
-
-    RouteRecognizer.prototype.generate = function generate(name, params) {
-      var route = this.names[name];
-      if (!route) {
-        throw new Error('There is no route named ' + name);
-      }
-
-      var handler = route.handlers[0].handler;
-      if (handler.generationUsesHref) {
-        return handler.href;
-      }
-
-      var routeParams = Object.assign({}, params);
-      var segments = route.segments;
-      var consumed = {};
-      var output = '';
-
-      for (var i = 0, l = segments.length; i < l; i++) {
-        var segment = segments[i];
-
-        if (segment instanceof EpsilonSegment) {
-          continue;
-        }
-
-        output += '/';
-        var segmentValue = segment.generate(routeParams, consumed);
-        if (segmentValue === null || segmentValue === undefined) {
-          throw new Error('A value is required for route parameter \'' + segment.name + '\' in route \'' + name + '\'.');
-        }
-
-        output += segmentValue;
-      }
-
-      if (output.charAt(0) !== '/') {
-        output = '/' + output;
-      }
-
-      for (var param in consumed) {
-        delete routeParams[param];
-      }
-
-      var queryString = (0, _aureliaPath.buildQueryString)(routeParams);
-      output += queryString ? '?' + queryString : '';
-
-      return output;
-    };
-
-    RouteRecognizer.prototype.recognize = function recognize(path) {
-      var states = [this.rootState];
-      var queryParams = {};
-      var isSlashDropped = false;
-      var normalizedPath = path;
-
-      var queryStart = normalizedPath.indexOf('?');
-      if (queryStart !== -1) {
-        var queryString = normalizedPath.substr(queryStart + 1, normalizedPath.length);
-        normalizedPath = normalizedPath.substr(0, queryStart);
-        queryParams = (0, _aureliaPath.parseQueryString)(queryString);
-      }
-
-      normalizedPath = decodeURI(normalizedPath);
-
-      if (normalizedPath.charAt(0) !== '/') {
-        normalizedPath = '/' + normalizedPath;
-      }
-
-      var pathLen = normalizedPath.length;
-      if (pathLen > 1 && normalizedPath.charAt(pathLen - 1) === '/') {
-        normalizedPath = normalizedPath.substr(0, pathLen - 1);
-        isSlashDropped = true;
-      }
-
-      for (var i = 0, l = normalizedPath.length; i < l; i++) {
-        states = recognizeChar(states, normalizedPath.charAt(i));
-        if (!states.length) {
-          break;
-        }
-      }
-
-      var solutions = [];
-      for (var _i3 = 0, _l = states.length; _i3 < _l; _i3++) {
-        if (states[_i3].handlers) {
-          solutions.push(states[_i3]);
-        }
-      }
-
-      states = sortSolutions(solutions);
-
-      var state = solutions[0];
-      if (state && state.handlers) {
-        if (isSlashDropped && state.regex.source.slice(-5) === '(.+)$') {
-          normalizedPath = normalizedPath + '/';
-        }
-
-        return findHandler(state, normalizedPath, queryParams);
-      }
-
-      return undefined;
-    };
-
-    return RouteRecognizer;
-  }();
-
-  var RecognizeResults = function RecognizeResults(queryParams) {
-    
-
-    this.splice = Array.prototype.splice;
-    this.slice = Array.prototype.slice;
-    this.push = Array.prototype.push;
-    this.length = 0;
-    this.queryParams = queryParams || {};
-  };
-
-  function parse(route, names, types, caseSensitive) {
-    var normalizedRoute = route;
-    if (route.charAt(0) === '/') {
-      normalizedRoute = route.substr(1);
-    }
-
-    var results = [];
-
-    var splitRoute = normalizedRoute.split('/');
-    for (var i = 0, ii = splitRoute.length; i < ii; ++i) {
-      var segment = splitRoute[i];
-      var match = segment.match(/^:([^\/]+)$/);
-      if (match) {
-        results.push(new DynamicSegment(match[1]));
-        names.push(match[1]);
-        types.dynamics++;
-        continue;
-      }
-
-      match = segment.match(/^\*([^\/]+)$/);
-      if (match) {
-        results.push(new StarSegment(match[1]));
-        names.push(match[1]);
-        types.stars++;
-      } else if (segment === '') {
-        results.push(new EpsilonSegment());
-      } else {
-        results.push(new StaticSegment(segment, caseSensitive));
-        types.statics++;
-      }
-    }
-
-    return results;
-  }
-
-  function sortSolutions(states) {
-    return states.sort(function (a, b) {
-      if (a.types.stars !== b.types.stars) {
-        return a.types.stars - b.types.stars;
-      }
-
-      if (a.types.stars) {
-        if (a.types.statics !== b.types.statics) {
-          return b.types.statics - a.types.statics;
-        }
-        if (a.types.dynamics !== b.types.dynamics) {
-          return b.types.dynamics - a.types.dynamics;
-        }
-      }
-
-      if (a.types.dynamics !== b.types.dynamics) {
-        return a.types.dynamics - b.types.dynamics;
-      }
-
-      if (a.types.statics !== b.types.statics) {
-        return b.types.statics - a.types.statics;
-      }
-
-      return 0;
-    });
-  }
-
-  function recognizeChar(states, ch) {
-    var nextStates = [];
-
-    for (var i = 0, l = states.length; i < l; i++) {
-      var state = states[i];
-      nextStates.push.apply(nextStates, state.match(ch));
-    }
-
-    return nextStates;
-  }
-
-  function findHandler(state, path, queryParams) {
-    var handlers = state.handlers;
-    var regex = state.regex;
-    var captures = path.match(regex);
-    var currentCapture = 1;
-    var result = new RecognizeResults(queryParams);
-
-    for (var i = 0, l = handlers.length; i < l; i++) {
-      var _handler = handlers[i];
-      var _names = _handler.names;
-      var _params = {};
-
-      for (var j = 0, m = _names.length; j < m; j++) {
-        _params[_names[j]] = captures[currentCapture++];
-      }
-
-      result.push({ handler: _handler.handler, params: _params, isDynamic: !!_names.length });
-    }
-
-    return result;
-  }
-
-  function addSegment(currentState, segment) {
-    var state = currentState;
-    segment.eachChar(function (ch) {
-      state = state.put(ch);
-    });
-
-    return state;
   }
 });
 define('aurelia-router',['exports', 'aurelia-logging', 'aurelia-route-recognizer', 'aurelia-dependency-injection', 'aurelia-history', 'aurelia-event-aggregator'], function (exports, _aureliaLogging, _aureliaRouteRecognizer, _aureliaDependencyInjection, _aureliaHistory, _aureliaEventAggregator) {
@@ -15776,6 +15301,621 @@ define('aurelia-router',['exports', 'aurelia-logging', 'aurelia-route-recognizer
       logger.error('Router navigation failed, and no previous location could be restored.');
     }
   }
+});
+define('aurelia-route-recognizer',['exports', 'aurelia-path'], function (exports, _aureliaPath) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.RouteRecognizer = exports.EpsilonSegment = exports.StarSegment = exports.DynamicSegment = exports.StaticSegment = exports.State = undefined;
+
+  
+
+  var State = exports.State = function () {
+    function State(charSpec) {
+      
+
+      this.charSpec = charSpec;
+      this.nextStates = [];
+    }
+
+    State.prototype.get = function get(charSpec) {
+      for (var _iterator = this.nextStates, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
+        var _ref;
+
+        if (_isArray) {
+          if (_i >= _iterator.length) break;
+          _ref = _iterator[_i++];
+        } else {
+          _i = _iterator.next();
+          if (_i.done) break;
+          _ref = _i.value;
+        }
+
+        var child = _ref;
+
+        var isEqual = child.charSpec.validChars === charSpec.validChars && child.charSpec.invalidChars === charSpec.invalidChars;
+
+        if (isEqual) {
+          return child;
+        }
+      }
+
+      return undefined;
+    };
+
+    State.prototype.put = function put(charSpec) {
+      var state = this.get(charSpec);
+
+      if (state) {
+        return state;
+      }
+
+      state = new State(charSpec);
+
+      this.nextStates.push(state);
+
+      if (charSpec.repeat) {
+        state.nextStates.push(state);
+      }
+
+      return state;
+    };
+
+    State.prototype.match = function match(ch) {
+      var nextStates = this.nextStates;
+      var results = [];
+
+      for (var i = 0, l = nextStates.length; i < l; i++) {
+        var child = nextStates[i];
+        var charSpec = child.charSpec;
+
+        if (charSpec.validChars !== undefined) {
+          if (charSpec.validChars.indexOf(ch) !== -1) {
+            results.push(child);
+          }
+        } else if (charSpec.invalidChars !== undefined) {
+          if (charSpec.invalidChars.indexOf(ch) === -1) {
+            results.push(child);
+          }
+        }
+      }
+
+      return results;
+    };
+
+    return State;
+  }();
+
+  var specials = ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\'];
+
+  var escapeRegex = new RegExp('(\\' + specials.join('|\\') + ')', 'g');
+
+  var StaticSegment = exports.StaticSegment = function () {
+    function StaticSegment(string, caseSensitive) {
+      
+
+      this.string = string;
+      this.caseSensitive = caseSensitive;
+    }
+
+    StaticSegment.prototype.eachChar = function eachChar(callback) {
+      var s = this.string;
+      for (var i = 0, ii = s.length; i < ii; ++i) {
+        var ch = s[i];
+        callback({ validChars: this.caseSensitive ? ch : ch.toUpperCase() + ch.toLowerCase() });
+      }
+    };
+
+    StaticSegment.prototype.regex = function regex() {
+      return this.string.replace(escapeRegex, '\\$1');
+    };
+
+    StaticSegment.prototype.generate = function generate() {
+      return this.string;
+    };
+
+    return StaticSegment;
+  }();
+
+  var DynamicSegment = exports.DynamicSegment = function () {
+    function DynamicSegment(name) {
+      
+
+      this.name = name;
+    }
+
+    DynamicSegment.prototype.eachChar = function eachChar(callback) {
+      callback({ invalidChars: '/', repeat: true });
+    };
+
+    DynamicSegment.prototype.regex = function regex() {
+      return '([^/]+)';
+    };
+
+    DynamicSegment.prototype.generate = function generate(params, consumed) {
+      consumed[this.name] = true;
+      return params[this.name];
+    };
+
+    return DynamicSegment;
+  }();
+
+  var StarSegment = exports.StarSegment = function () {
+    function StarSegment(name) {
+      
+
+      this.name = name;
+    }
+
+    StarSegment.prototype.eachChar = function eachChar(callback) {
+      callback({ invalidChars: '', repeat: true });
+    };
+
+    StarSegment.prototype.regex = function regex() {
+      return '(.+)';
+    };
+
+    StarSegment.prototype.generate = function generate(params, consumed) {
+      consumed[this.name] = true;
+      return params[this.name];
+    };
+
+    return StarSegment;
+  }();
+
+  var EpsilonSegment = exports.EpsilonSegment = function () {
+    function EpsilonSegment() {
+      
+    }
+
+    EpsilonSegment.prototype.eachChar = function eachChar() {};
+
+    EpsilonSegment.prototype.regex = function regex() {
+      return '';
+    };
+
+    EpsilonSegment.prototype.generate = function generate() {
+      return '';
+    };
+
+    return EpsilonSegment;
+  }();
+
+  var RouteRecognizer = exports.RouteRecognizer = function () {
+    function RouteRecognizer() {
+      
+
+      this.rootState = new State();
+      this.names = {};
+    }
+
+    RouteRecognizer.prototype.add = function add(route) {
+      var _this = this;
+
+      if (Array.isArray(route)) {
+        route.forEach(function (r) {
+          return _this.add(r);
+        });
+        return undefined;
+      }
+
+      var currentState = this.rootState;
+      var regex = '^';
+      var types = { statics: 0, dynamics: 0, stars: 0 };
+      var names = [];
+      var routeName = route.handler.name;
+      var isEmpty = true;
+      var segments = parse(route.path, names, types, route.caseSensitive);
+
+      for (var i = 0, ii = segments.length; i < ii; i++) {
+        var segment = segments[i];
+        if (segment instanceof EpsilonSegment) {
+          continue;
+        }
+
+        isEmpty = false;
+
+        currentState = currentState.put({ validChars: '/' });
+        regex += '/';
+
+        currentState = addSegment(currentState, segment);
+        regex += segment.regex();
+      }
+
+      if (isEmpty) {
+        currentState = currentState.put({ validChars: '/' });
+        regex += '/';
+      }
+
+      var handlers = [{ handler: route.handler, names: names }];
+
+      if (routeName) {
+        var routeNames = Array.isArray(routeName) ? routeName : [routeName];
+        for (var _i2 = 0; _i2 < routeNames.length; _i2++) {
+          this.names[routeNames[_i2]] = {
+            segments: segments,
+            handlers: handlers
+          };
+        }
+      }
+
+      currentState.handlers = handlers;
+      currentState.regex = new RegExp(regex + '$', route.caseSensitive ? '' : 'i');
+      currentState.types = types;
+
+      return currentState;
+    };
+
+    RouteRecognizer.prototype.handlersFor = function handlersFor(name) {
+      var route = this.names[name];
+      if (!route) {
+        throw new Error('There is no route named ' + name);
+      }
+
+      return [].concat(route.handlers);
+    };
+
+    RouteRecognizer.prototype.hasRoute = function hasRoute(name) {
+      return !!this.names[name];
+    };
+
+    RouteRecognizer.prototype.generate = function generate(name, params) {
+      var route = this.names[name];
+      if (!route) {
+        throw new Error('There is no route named ' + name);
+      }
+
+      var handler = route.handlers[0].handler;
+      if (handler.generationUsesHref) {
+        return handler.href;
+      }
+
+      var routeParams = Object.assign({}, params);
+      var segments = route.segments;
+      var consumed = {};
+      var output = '';
+
+      for (var i = 0, l = segments.length; i < l; i++) {
+        var segment = segments[i];
+
+        if (segment instanceof EpsilonSegment) {
+          continue;
+        }
+
+        output += '/';
+        var segmentValue = segment.generate(routeParams, consumed);
+        if (segmentValue === null || segmentValue === undefined) {
+          throw new Error('A value is required for route parameter \'' + segment.name + '\' in route \'' + name + '\'.');
+        }
+
+        output += segmentValue;
+      }
+
+      if (output.charAt(0) !== '/') {
+        output = '/' + output;
+      }
+
+      for (var param in consumed) {
+        delete routeParams[param];
+      }
+
+      var queryString = (0, _aureliaPath.buildQueryString)(routeParams);
+      output += queryString ? '?' + queryString : '';
+
+      return output;
+    };
+
+    RouteRecognizer.prototype.recognize = function recognize(path) {
+      var states = [this.rootState];
+      var queryParams = {};
+      var isSlashDropped = false;
+      var normalizedPath = path;
+
+      var queryStart = normalizedPath.indexOf('?');
+      if (queryStart !== -1) {
+        var queryString = normalizedPath.substr(queryStart + 1, normalizedPath.length);
+        normalizedPath = normalizedPath.substr(0, queryStart);
+        queryParams = (0, _aureliaPath.parseQueryString)(queryString);
+      }
+
+      normalizedPath = decodeURI(normalizedPath);
+
+      if (normalizedPath.charAt(0) !== '/') {
+        normalizedPath = '/' + normalizedPath;
+      }
+
+      var pathLen = normalizedPath.length;
+      if (pathLen > 1 && normalizedPath.charAt(pathLen - 1) === '/') {
+        normalizedPath = normalizedPath.substr(0, pathLen - 1);
+        isSlashDropped = true;
+      }
+
+      for (var i = 0, l = normalizedPath.length; i < l; i++) {
+        states = recognizeChar(states, normalizedPath.charAt(i));
+        if (!states.length) {
+          break;
+        }
+      }
+
+      var solutions = [];
+      for (var _i3 = 0, _l = states.length; _i3 < _l; _i3++) {
+        if (states[_i3].handlers) {
+          solutions.push(states[_i3]);
+        }
+      }
+
+      states = sortSolutions(solutions);
+
+      var state = solutions[0];
+      if (state && state.handlers) {
+        if (isSlashDropped && state.regex.source.slice(-5) === '(.+)$') {
+          normalizedPath = normalizedPath + '/';
+        }
+
+        return findHandler(state, normalizedPath, queryParams);
+      }
+
+      return undefined;
+    };
+
+    return RouteRecognizer;
+  }();
+
+  var RecognizeResults = function RecognizeResults(queryParams) {
+    
+
+    this.splice = Array.prototype.splice;
+    this.slice = Array.prototype.slice;
+    this.push = Array.prototype.push;
+    this.length = 0;
+    this.queryParams = queryParams || {};
+  };
+
+  function parse(route, names, types, caseSensitive) {
+    var normalizedRoute = route;
+    if (route.charAt(0) === '/') {
+      normalizedRoute = route.substr(1);
+    }
+
+    var results = [];
+
+    var splitRoute = normalizedRoute.split('/');
+    for (var i = 0, ii = splitRoute.length; i < ii; ++i) {
+      var segment = splitRoute[i];
+      var match = segment.match(/^:([^\/]+)$/);
+      if (match) {
+        results.push(new DynamicSegment(match[1]));
+        names.push(match[1]);
+        types.dynamics++;
+        continue;
+      }
+
+      match = segment.match(/^\*([^\/]+)$/);
+      if (match) {
+        results.push(new StarSegment(match[1]));
+        names.push(match[1]);
+        types.stars++;
+      } else if (segment === '') {
+        results.push(new EpsilonSegment());
+      } else {
+        results.push(new StaticSegment(segment, caseSensitive));
+        types.statics++;
+      }
+    }
+
+    return results;
+  }
+
+  function sortSolutions(states) {
+    return states.sort(function (a, b) {
+      if (a.types.stars !== b.types.stars) {
+        return a.types.stars - b.types.stars;
+      }
+
+      if (a.types.stars) {
+        if (a.types.statics !== b.types.statics) {
+          return b.types.statics - a.types.statics;
+        }
+        if (a.types.dynamics !== b.types.dynamics) {
+          return b.types.dynamics - a.types.dynamics;
+        }
+      }
+
+      if (a.types.dynamics !== b.types.dynamics) {
+        return a.types.dynamics - b.types.dynamics;
+      }
+
+      if (a.types.statics !== b.types.statics) {
+        return b.types.statics - a.types.statics;
+      }
+
+      return 0;
+    });
+  }
+
+  function recognizeChar(states, ch) {
+    var nextStates = [];
+
+    for (var i = 0, l = states.length; i < l; i++) {
+      var state = states[i];
+      nextStates.push.apply(nextStates, state.match(ch));
+    }
+
+    return nextStates;
+  }
+
+  function findHandler(state, path, queryParams) {
+    var handlers = state.handlers;
+    var regex = state.regex;
+    var captures = path.match(regex);
+    var currentCapture = 1;
+    var result = new RecognizeResults(queryParams);
+
+    for (var i = 0, l = handlers.length; i < l; i++) {
+      var _handler = handlers[i];
+      var _names = _handler.names;
+      var _params = {};
+
+      for (var j = 0, m = _names.length; j < m; j++) {
+        _params[_names[j]] = captures[currentCapture++];
+      }
+
+      result.push({ handler: _handler.handler, params: _params, isDynamic: !!_names.length });
+    }
+
+    return result;
+  }
+
+  function addSegment(currentState, segment) {
+    var state = currentState;
+    segment.eachChar(function (ch) {
+      state = state.put(ch);
+    });
+
+    return state;
+  }
+});
+define('aurelia-task-queue',['exports', 'aurelia-pal'], function (exports, _aureliaPal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.TaskQueue = undefined;
+
+  
+
+  var hasSetImmediate = typeof setImmediate === 'function';
+
+  function makeRequestFlushFromMutationObserver(flush) {
+    var toggle = 1;
+    var observer = _aureliaPal.DOM.createMutationObserver(flush);
+    var node = _aureliaPal.DOM.createTextNode('');
+    observer.observe(node, { characterData: true });
+    return function requestFlush() {
+      toggle = -toggle;
+      node.data = toggle;
+    };
+  }
+
+  function makeRequestFlushFromTimer(flush) {
+    return function requestFlush() {
+      var timeoutHandle = setTimeout(handleFlushTimer, 0);
+
+      var intervalHandle = setInterval(handleFlushTimer, 50);
+      function handleFlushTimer() {
+        clearTimeout(timeoutHandle);
+        clearInterval(intervalHandle);
+        flush();
+      }
+    };
+  }
+
+  function onError(error, task) {
+    if ('onError' in task) {
+      task.onError(error);
+    } else if (hasSetImmediate) {
+      setImmediate(function () {
+        throw error;
+      });
+    } else {
+      setTimeout(function () {
+        throw error;
+      }, 0);
+    }
+  }
+
+  var TaskQueue = exports.TaskQueue = function () {
+    function TaskQueue() {
+      var _this = this;
+
+      
+
+      this.microTaskQueue = [];
+      this.microTaskQueueCapacity = 1024;
+      this.taskQueue = [];
+
+      if (_aureliaPal.FEATURE.mutationObserver) {
+        this.requestFlushMicroTaskQueue = makeRequestFlushFromMutationObserver(function () {
+          return _this.flushMicroTaskQueue();
+        });
+      } else {
+        this.requestFlushMicroTaskQueue = makeRequestFlushFromTimer(function () {
+          return _this.flushMicroTaskQueue();
+        });
+      }
+
+      this.requestFlushTaskQueue = makeRequestFlushFromTimer(function () {
+        return _this.flushTaskQueue();
+      });
+    }
+
+    TaskQueue.prototype.queueMicroTask = function queueMicroTask(task) {
+      if (this.microTaskQueue.length < 1) {
+        this.requestFlushMicroTaskQueue();
+      }
+
+      this.microTaskQueue.push(task);
+    };
+
+    TaskQueue.prototype.queueTask = function queueTask(task) {
+      if (this.taskQueue.length < 1) {
+        this.requestFlushTaskQueue();
+      }
+
+      this.taskQueue.push(task);
+    };
+
+    TaskQueue.prototype.flushTaskQueue = function flushTaskQueue() {
+      var queue = this.taskQueue;
+      var index = 0;
+      var task = void 0;
+
+      this.taskQueue = [];
+
+      try {
+        while (index < queue.length) {
+          task = queue[index];
+          task.call();
+          index++;
+        }
+      } catch (error) {
+        onError(error, task);
+      }
+    };
+
+    TaskQueue.prototype.flushMicroTaskQueue = function flushMicroTaskQueue() {
+      var queue = this.microTaskQueue;
+      var capacity = this.microTaskQueueCapacity;
+      var index = 0;
+      var task = void 0;
+
+      try {
+        while (index < queue.length) {
+          task = queue[index];
+          task.call();
+          index++;
+
+          if (index > capacity) {
+            for (var scan = 0, newLength = queue.length - index; scan < newLength; scan++) {
+              queue[scan] = queue[scan + index];
+            }
+
+            queue.length -= index;
+            index = 0;
+          }
+        }
+      } catch (error) {
+        onError(error, task);
+      }
+
+      queue.length = 0;
+    };
+
+    return TaskQueue;
+  }();
 });
 define('aurelia-templating',['exports', 'aurelia-logging', 'aurelia-metadata', 'aurelia-pal', 'aurelia-path', 'aurelia-loader', 'aurelia-dependency-injection', 'aurelia-binding', 'aurelia-task-queue'], function (exports, _aureliaLogging, _aureliaMetadata, _aureliaPal, _aureliaPath, _aureliaLoader, _aureliaDependencyInjection, _aureliaBinding, _aureliaTaskQueue) {
   'use strict';
@@ -20565,146 +20705,6 @@ define('aurelia-templating',['exports', 'aurelia-logging', 'aurelia-metadata', '
 
     return TemplatingEngine;
   }()) || _class23);
-});
-define('aurelia-task-queue',['exports', 'aurelia-pal'], function (exports, _aureliaPal) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.TaskQueue = undefined;
-
-  
-
-  var hasSetImmediate = typeof setImmediate === 'function';
-
-  function makeRequestFlushFromMutationObserver(flush) {
-    var toggle = 1;
-    var observer = _aureliaPal.DOM.createMutationObserver(flush);
-    var node = _aureliaPal.DOM.createTextNode('');
-    observer.observe(node, { characterData: true });
-    return function requestFlush() {
-      toggle = -toggle;
-      node.data = toggle;
-    };
-  }
-
-  function makeRequestFlushFromTimer(flush) {
-    return function requestFlush() {
-      var timeoutHandle = setTimeout(handleFlushTimer, 0);
-
-      var intervalHandle = setInterval(handleFlushTimer, 50);
-      function handleFlushTimer() {
-        clearTimeout(timeoutHandle);
-        clearInterval(intervalHandle);
-        flush();
-      }
-    };
-  }
-
-  function onError(error, task) {
-    if ('onError' in task) {
-      task.onError(error);
-    } else if (hasSetImmediate) {
-      setImmediate(function () {
-        throw error;
-      });
-    } else {
-      setTimeout(function () {
-        throw error;
-      }, 0);
-    }
-  }
-
-  var TaskQueue = exports.TaskQueue = function () {
-    function TaskQueue() {
-      var _this = this;
-
-      
-
-      this.microTaskQueue = [];
-      this.microTaskQueueCapacity = 1024;
-      this.taskQueue = [];
-
-      if (_aureliaPal.FEATURE.mutationObserver) {
-        this.requestFlushMicroTaskQueue = makeRequestFlushFromMutationObserver(function () {
-          return _this.flushMicroTaskQueue();
-        });
-      } else {
-        this.requestFlushMicroTaskQueue = makeRequestFlushFromTimer(function () {
-          return _this.flushMicroTaskQueue();
-        });
-      }
-
-      this.requestFlushTaskQueue = makeRequestFlushFromTimer(function () {
-        return _this.flushTaskQueue();
-      });
-    }
-
-    TaskQueue.prototype.queueMicroTask = function queueMicroTask(task) {
-      if (this.microTaskQueue.length < 1) {
-        this.requestFlushMicroTaskQueue();
-      }
-
-      this.microTaskQueue.push(task);
-    };
-
-    TaskQueue.prototype.queueTask = function queueTask(task) {
-      if (this.taskQueue.length < 1) {
-        this.requestFlushTaskQueue();
-      }
-
-      this.taskQueue.push(task);
-    };
-
-    TaskQueue.prototype.flushTaskQueue = function flushTaskQueue() {
-      var queue = this.taskQueue;
-      var index = 0;
-      var task = void 0;
-
-      this.taskQueue = [];
-
-      try {
-        while (index < queue.length) {
-          task = queue[index];
-          task.call();
-          index++;
-        }
-      } catch (error) {
-        onError(error, task);
-      }
-    };
-
-    TaskQueue.prototype.flushMicroTaskQueue = function flushMicroTaskQueue() {
-      var queue = this.microTaskQueue;
-      var capacity = this.microTaskQueueCapacity;
-      var index = 0;
-      var task = void 0;
-
-      try {
-        while (index < queue.length) {
-          task = queue[index];
-          task.call();
-          index++;
-
-          if (index > capacity) {
-            for (var scan = 0, newLength = queue.length - index; scan < newLength; scan++) {
-              queue[scan] = queue[scan + index];
-            }
-
-            queue.length -= index;
-            index = 0;
-          }
-        }
-      } catch (error) {
-        onError(error, task);
-      }
-
-      queue.length = 0;
-    };
-
-    return TaskQueue;
-  }();
 });
 define('aurelia-templating-binding',['exports', 'aurelia-logging', 'aurelia-binding', 'aurelia-templating'], function (exports, _aureliaLogging, _aureliaBinding, _aureliaTemplating) {
   'use strict';
@@ -31187,6 +31187,563 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
+define('text!aurelia-materialize-bridge/click-counter.html', ['module'], function(module) { module.exports = "<template>\n  <h2>Click counter</h2>\n\n  <button md-waves class=\"btn\" click.delegate=\"increment()\">Button</button>\n\n  <h2>Button was clicked ${count} times</h2>\n</template>\n"; });
+define('text!aurelia-materialize-bridge/breadcrumbs/breadcrumbs.css', ['module'], function(module) { module.exports = "md-breadcrumbs a {\n  cursor: pointer;\n}\n"; });
+define('text!aurelia-materialize-bridge/breadcrumbs/breadcrumbs.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./breadcrumbs.css\"></require>\n  <require from=\"./instructionFilter\"></require>\n  <nav class=\"primary\">\n    <div class=\"nav-wrapper\">\n      <div class=\"col s12\">\n        <template repeat.for=\"instruction of router.currentInstruction.getAllInstructions() | instructionFilter\">\n          <a click.delegate=\"navigate(instruction)\" class=\"breadcrumb\">\n            ${instruction.config.title}\n          </a>\n        </template>\n      </div>\n    </div>\n  </nav>\n</template>\n"; });
+define('text!aurelia-materialize-bridge/card/card.css', ['module'], function(module) { module.exports = "md-card {\n  display: block;\n}\n"; });
+define('text!aurelia-materialize-bridge/card/card.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./card.css\"></require>\n  <div class=\"card ${ mdHorizontal ? 'horizontal' : '' } ${ mdSize || '' }\">\n    <div if.bind=\"mdImage !== null\" md-waves=\"color: light; block: true;\" class=\"card-image\">\n      <img class=\"${ mdReveal === true ? 'activator' : '' }\" src.bind=\"mdImage\" />\n      <span if.bind=\"mdReveal === false\" class=\"card-title\">${mdTitle}</span>\n    </div>\n\n    <!-- <div class=\"${ mdHorizontal ? 'card-stacked' : ''}\">\n\n    </div> -->\n    <div class=\"card-content\">\n      <span if.bind=\"mdReveal === true\" class=\"card-title activator\">\n        ${mdTitle}\n        <i class=\"material-icons right\">more_vert</i>\n      </span>\n      <span if.bind=\"mdImage === null\" class=\"card-title\">${mdTitle}</span>\n      <slot></slot>\n    </div>\n\n    <div show.bind=\"mdReveal\" class=\"${ mdReveal ? 'card-reveal' : '' }\">\n      <span class=\"card-title ${ mdReveal ? 'activator' : '' }\">\n        ${mdTitle}\n        <i class=\"material-icons right\">close</i>\n      </span>\n      <slot name=\"reveal-text\"></slot>\n    </div>\n  </div>\n</template>\n"; });
+define('text!aurelia-materialize-bridge/carousel/carousel.css', ['module'], function(module) { module.exports = "md-carousel {\r\n  display: block;\r\n}\r\n"; });
+define('text!aurelia-materialize-bridge/carousel/carousel-item.html', ['module'], function(module) { module.exports = "<template class=\"carousel-item\">\n  <a if.bind=\"mdHref\" href.bind=\"mdHref\">\n    <img if.bind=\"mdImage\" src.bind=\"mdImage\" />\n  </a>\n  <slot></slot>\n</template>\n"; });
+define('text!aurelia-materialize-bridge/carousel/carousel.html', ['module'], function(module) { module.exports = "<template class=\"carousel\">\n  <require from=\"./carousel.css\"></require>\n  <slot></slot>\n</template>\n"; });
+define('text!aurelia-materialize-bridge/checkbox/checkbox.html', ['module'], function(module) { module.exports = "<template>\n  <input type=\"checkbox\" id=\"${controlId}\" ref=\"checkbox\" />\n  <label for=\"${controlId}\">\n    <slot></slot>\n  </label>\n</template>\n"; });
+<template class="chip">
+  <slot></slot>
+  <i show.bind="mdClose" class="material-icons">close</i>
+</template>
+
+md-collection-header {
+  display: block;
+}
+
+define('aurelia-materialize-bridge/index',['exports', './toast/toastService', './common/attributeManager', './common/attributes', './common/events', './config-builder', './scrollfire/scrollfire-patch'], function (exports, _toastService, _attributeManager, _attributes, _events, _configBuilder, _scrollfirePatch) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.version = undefined;
+  exports.configure = configure;
+  Object.keys(_toastService).forEach(function (key) {
+    if (key === "default") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function () {
+        return _toastService[key];
+      }
+    });
+  });
+  Object.keys(_attributeManager).forEach(function (key) {
+    if (key === "default") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function () {
+        return _attributeManager[key];
+      }
+    });
+  });
+  Object.keys(_attributes).forEach(function (key) {
+    if (key === "default") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function () {
+        return _attributes[key];
+      }
+    });
+  });
+  Object.keys(_events).forEach(function (key) {
+    if (key === "default") return;
+    Object.defineProperty(exports, key, {
+      enumerable: true,
+      get: function () {
+        return _events[key];
+      }
+    });
+  });
+  function configure(aurelia, configCallback) {
+    var builder = new _configBuilder.ConfigBuilder();
+
+    if (configCallback !== undefined && typeof configCallback === 'function') {
+      configCallback(builder);
+    }
+
+    if (builder.useGlobalResources) {
+      aurelia.globalResources(builder.globalResources);
+    }
+    if (builder.useScrollfirePatch) {
+      new _scrollfirePatch.ScrollfirePatch().patch();
+    }
+  }
+
+  var version = exports.version = '0.5.1';
+});;define('aurelia-materialize-bridge', ['aurelia-materialize-bridge/index'], function (main) { return main; });
+
+define('aurelia-materialize-bridge/toast/toastService',["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var MdToastService = exports.MdToastService = function () {
+    function MdToastService() {
+      _classCallCheck(this, MdToastService);
+    }
+
+    MdToastService.prototype.show = function show(message, displayLength, className) {
+      return new Promise(function (resolve, reject) {
+        Materialize.toast(message, displayLength, className, function () {
+          resolve();
+        });
+      });
+    };
+
+    return MdToastService;
+  }();
+});
+define('aurelia-materialize-bridge/common/attributeManager',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var AttributeManager = exports.AttributeManager = function () {
+    function AttributeManager(element) {
+      _classCallCheck(this, AttributeManager);
+
+      this._colorClasses = ['accent', 'primary'];
+      this.addedClasses = [];
+      this.addedAttributes = {};
+
+      this.element = element;
+    }
+
+    AttributeManager.prototype.addAttributes = function addAttributes(attrs) {
+      var _this = this;
+
+      var keys = Object.keys(attrs);
+      keys.forEach(function (k) {
+        if (!_this.element.getAttribute(k)) {
+          _this.addedAttributes[k] = attrs[k];
+          _this.element.setAttribute(k, attrs[k]);
+        } else if (_this.element.getAttribute(k) !== attrs[k]) {
+          _this.element.setAttribute(k, attrs[k]);
+        }
+      });
+    };
+
+    AttributeManager.prototype.removeAttributes = function removeAttributes(attrs) {
+      var _this2 = this;
+
+      if (typeof attrs === 'string') {
+        attrs = [attrs];
+      }
+      attrs.forEach(function (a) {
+        if (_this2.element.getAttribute(a) && !!_this2.addedAttributes[a]) {
+          _this2.element.removeAttribute(a);
+          _this2.addedAttributes[a] = null;
+          delete _this2.addedAttributes[a];
+        }
+      });
+    };
+
+    AttributeManager.prototype.addClasses = function addClasses(classes) {
+      var _this3 = this;
+
+      if (typeof classes === 'string') {
+        classes = [classes];
+      }
+      classes.forEach(function (c) {
+        var classListHasColor = _this3._colorClasses.filter(function (cc) {
+          return _this3.element.classList.contains(cc);
+        }).length > 0;
+        if (_this3._colorClasses.indexOf(c) > -1 && classListHasColor) {} else {
+            if (!_this3.element.classList.contains(c)) {
+              _this3.addedClasses.push(c);
+              _this3.element.classList.add(c);
+            }
+          }
+      });
+    };
+
+    AttributeManager.prototype.removeClasses = function removeClasses(classes) {
+      var _this4 = this;
+
+      if (typeof classes === 'string') {
+        classes = [classes];
+      }
+      classes.forEach(function (c) {
+        if (_this4.element.classList.contains(c) && _this4.addedClasses.indexOf(c) > -1) {
+          _this4.element.classList.remove(c);
+          _this4.addedClasses.splice(_this4.addedClasses.indexOf(c), 1);
+        }
+      });
+    };
+
+    return AttributeManager;
+  }();
+});
+define('aurelia-materialize-bridge/common/attributes',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.getBooleanFromAttributeValue = getBooleanFromAttributeValue;
+  function getBooleanFromAttributeValue(value) {
+    return value === true || value === 'true';
+  }
+});
+define('aurelia-materialize-bridge/common/events',['exports', './constants'], function (exports, _constants) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.fireEvent = fireEvent;
+  exports.fireMaterializeEvent = fireMaterializeEvent;
+  function fireEvent(element, name) {
+    var data = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+
+    var event = new CustomEvent(name, {
+      detail: data,
+      bubbles: true
+    });
+    element.dispatchEvent(event);
+
+    return event;
+  }
+
+  function fireMaterializeEvent(element, name) {
+    var data = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
+
+    return fireEvent(element, '' + _constants.constants.eventPrefix + name, data);
+  }
+});
+define('aurelia-materialize-bridge/common/constants',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  var constants = exports.constants = {
+    eventPrefix: 'md-on-',
+    bindablePrefix: 'md-'
+  };
+});
+define('aurelia-materialize-bridge/config-builder',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var ConfigBuilder = exports.ConfigBuilder = function () {
+    function ConfigBuilder() {
+      _classCallCheck(this, ConfigBuilder);
+
+      this.useGlobalResources = true;
+      this.useScrollfirePatch = false;
+      this.globalResources = [];
+    }
+
+    ConfigBuilder.prototype.useAll = function useAll() {
+      return this.useAutoComplete().useBadge().useBox().useBreadcrumbs().useButton().useCard().useCarousel().useCharacterCounter().useCheckbox().useChip().useCollapsible().useCollection().useColors().useDatePicker().useDropdown().useFab().useFile().useFooter().useInput().useModal().useNavbar().usePagination().useParallax().useProgress().usePushpin().useRadio().useRange().useScrollfire().useSelect().useSidenav().useSlider().useSwitch().useTabs().useTooltip().useTransitions().useWaves().useWell();
+    };
+
+    ConfigBuilder.prototype.useAutoComplete = function useAutoComplete() {
+      this.globalResources.push('./autocomplete/autocomplete');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useBadge = function useBadge() {
+      this.globalResources.push('./badge/badge');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useBox = function useBox() {
+      this.globalResources.push('./box/box');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useBreadcrumbs = function useBreadcrumbs() {
+      this.globalResources.push('./breadcrumbs/breadcrumbs');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useButton = function useButton() {
+      this.globalResources.push('./button/button');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCarousel = function useCarousel() {
+      this.globalResources.push('./carousel/carousel');
+      this.globalResources.push('./carousel/carousel-item');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCharacterCounter = function useCharacterCounter() {
+      this.globalResources.push('./char-counter/char-counter');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCard = function useCard() {
+      this.globalResources.push('./card/card');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCheckbox = function useCheckbox() {
+      this.globalResources.push('./checkbox/checkbox');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useChip = function useChip() {
+      this.globalResources.push('./chip/chip');
+      this.globalResources.push('./chip/chips');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useClickCounter = function useClickCounter() {
+      this.globalResources.push('./click-counter');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCollapsible = function useCollapsible() {
+      this.globalResources.push('./collapsible/collapsible');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useCollection = function useCollection() {
+      this.globalResources.push('./collection/collection');
+      this.globalResources.push('./collection/collection-item');
+      this.globalResources.push('./collection/collection-header');
+      this.globalResources.push('./collection/md-collection-selector');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useColors = function useColors() {
+      this.globalResources.push('./colors/md-colors.html');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useDatePicker = function useDatePicker() {
+      this.globalResources.push('./datepicker/datepicker');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useDropdown = function useDropdown() {
+      this.globalResources.push('./dropdown/dropdown');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useFab = function useFab() {
+      this.globalResources.push('./fab/fab');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useFile = function useFile() {
+      this.globalResources.push('./file/file');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useFooter = function useFooter() {
+      this.globalResources.push('./footer/footer');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useInput = function useInput() {
+      this.globalResources.push('./input/input');
+      this.globalResources.push('./input/input-prefix');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useModal = function useModal() {
+      this.globalResources.push('./modal/modal-trigger');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useNavbar = function useNavbar() {
+      this.globalResources.push('./navbar/navbar');
+      return this;
+    };
+
+    ConfigBuilder.prototype.usePagination = function usePagination() {
+      this.globalResources.push('./pagination/pagination');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useParallax = function useParallax() {
+      this.globalResources.push('./parallax/parallax');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useProgress = function useProgress() {
+      this.globalResources.push('./progress/progress');
+      return this;
+    };
+
+    ConfigBuilder.prototype.usePushpin = function usePushpin() {
+      this.globalResources.push('./pushpin/pushpin');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useRadio = function useRadio() {
+      this.globalResources.push('./radio/radio');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useRange = function useRange() {
+      this.globalResources.push('./range/range');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useScrollfire = function useScrollfire() {
+      this.globalResources.push('./scrollfire/scrollfire');
+      this.globalResources.push('./scrollfire/scrollfire-target');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useScrollSpy = function useScrollSpy() {
+      this.globalResources.push('./scrollspy/scrollspy');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useSelect = function useSelect() {
+      this.globalResources.push('./select/select');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useSidenav = function useSidenav() {
+      this.globalResources.push('./sidenav/sidenav');
+      this.globalResources.push('./sidenav/sidenav-collapse');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useSlider = function useSlider() {
+      this.globalResources.push('./slider/slider');
+
+      return this;
+    };
+
+    ConfigBuilder.prototype.useSwitch = function useSwitch() {
+      this.globalResources.push('./switch/switch');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useTabs = function useTabs() {
+      this.globalResources.push('./tabs/tabs');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useTooltip = function useTooltip() {
+      this.globalResources.push('./tooltip/tooltip');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useTransitions = function useTransitions() {
+      this.globalResources.push('./transitions/fadein-image');
+      this.globalResources.push('./transitions/staggered-list');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useWaves = function useWaves() {
+      this.globalResources.push('./waves/waves');
+      return this;
+    };
+
+    ConfigBuilder.prototype.useWell = function useWell() {
+      this.globalResources.push('./well/md-well.html');
+      return this;
+    };
+
+    ConfigBuilder.prototype.withoutGlobalResources = function withoutGlobalResources() {
+      this.useGlobalResources = false;
+      return this;
+    };
+
+    ConfigBuilder.prototype.withScrollfirePatch = function withScrollfirePatch() {
+      this.useScrollfirePatch = true;
+      return this;
+    };
+
+    return ConfigBuilder;
+  }();
+});
+define('aurelia-materialize-bridge/scrollfire/scrollfire-patch',['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var _class, _temp;
+
+  var ScrollfirePatch = exports.ScrollfirePatch = (_temp = _class = function () {
+    function ScrollfirePatch() {
+      _classCallCheck(this, ScrollfirePatch);
+    }
+
+    ScrollfirePatch.prototype.patch = function patch() {
+      if (!ScrollfirePatch.patched) {
+        ScrollfirePatch.patched = true;
+
+        window.Materialize.scrollFire = function (options) {
+          var didScroll = false;
+          window.addEventListener('scroll', function () {
+            didScroll = true;
+          });
+
+          setInterval(function () {
+            if (didScroll) {
+              didScroll = false;
+
+              var windowScroll = window.pageYOffset + window.innerHeight;
+              for (var i = 0; i < options.length; i++) {
+                var value = options[i];
+                var selector = value.selector;
+                var offset = value.offset;
+                var callback = value.callback;
+
+                var currentElement = document.querySelector(selector);
+                if (currentElement !== null) {
+                  var elementOffset = currentElement.getBoundingClientRect().top + window.pageYOffset;
+
+                  if (windowScroll > elementOffset + offset) {
+                    if (value.done !== true) {
+                      if (typeof callback === 'string') {
+                        var callbackFunc = new Function(callback);
+                        callbackFunc();
+                      } else if (typeof callback === 'function') {
+                        callback();
+                      }
+                      value.done = true;
+                    }
+                  }
+                }
+              }
+            }
+          }, 100);
+        };
+      }
+    };
+
+    return ScrollfirePatch;
+  }(), _class.patched = false, _temp);
+});
 define('text!materialize-css/css/materialize.css', ['module'], function(module) { module.exports = "/*!\r\n * Materialize v0.97.7 (http://materializecss.com)\r\n * Copyright 2014-2015 Materialize\r\n * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)\r\n */\r\n.materialize-red {\r\n  background-color: #e51c23 !important;\r\n}\r\n\r\n.materialize-red-text {\r\n  color: #e51c23 !important;\r\n}\r\n\r\n.materialize-red.lighten-5 {\r\n  background-color: #fdeaeb !important;\r\n}\r\n\r\n.materialize-red-text.text-lighten-5 {\r\n  color: #fdeaeb !important;\r\n}\r\n\r\n.materialize-red.lighten-4 {\r\n  background-color: #f8c1c3 !important;\r\n}\r\n\r\n.materialize-red-text.text-lighten-4 {\r\n  color: #f8c1c3 !important;\r\n}\r\n\r\n.materialize-red.lighten-3 {\r\n  background-color: #f3989b !important;\r\n}\r\n\r\n.materialize-red-text.text-lighten-3 {\r\n  color: #f3989b !important;\r\n}\r\n\r\n.materialize-red.lighten-2 {\r\n  background-color: #ee6e73 !important;\r\n}\r\n\r\n.materialize-red-text.text-lighten-2 {\r\n  color: #ee6e73 !important;\r\n}\r\n\r\n.materialize-red.lighten-1 {\r\n  background-color: #ea454b !important;\r\n}\r\n\r\n.materialize-red-text.text-lighten-1 {\r\n  color: #ea454b !important;\r\n}\r\n\r\n.materialize-red.darken-1 {\r\n  background-color: #d0181e !important;\r\n}\r\n\r\n.materialize-red-text.text-darken-1 {\r\n  color: #d0181e !important;\r\n}\r\n\r\n.materialize-red.darken-2 {\r\n  background-color: #b9151b !important;\r\n}\r\n\r\n.materialize-red-text.text-darken-2 {\r\n  color: #b9151b !important;\r\n}\r\n\r\n.materialize-red.darken-3 {\r\n  background-color: #a21318 !important;\r\n}\r\n\r\n.materialize-red-text.text-darken-3 {\r\n  color: #a21318 !important;\r\n}\r\n\r\n.materialize-red.darken-4 {\r\n  background-color: #8b1014 !important;\r\n}\r\n\r\n.materialize-red-text.text-darken-4 {\r\n  color: #8b1014 !important;\r\n}\r\n\r\n.red {\r\n  background-color: #F44336 !important;\r\n}\r\n\r\n.red-text {\r\n  color: #F44336 !important;\r\n}\r\n\r\n.red.lighten-5 {\r\n  background-color: #FFEBEE !important;\r\n}\r\n\r\n.red-text.text-lighten-5 {\r\n  color: #FFEBEE !important;\r\n}\r\n\r\n.red.lighten-4 {\r\n  background-color: #FFCDD2 !important;\r\n}\r\n\r\n.red-text.text-lighten-4 {\r\n  color: #FFCDD2 !important;\r\n}\r\n\r\n.red.lighten-3 {\r\n  background-color: #EF9A9A !important;\r\n}\r\n\r\n.red-text.text-lighten-3 {\r\n  color: #EF9A9A !important;\r\n}\r\n\r\n.red.lighten-2 {\r\n  background-color: #E57373 !important;\r\n}\r\n\r\n.red-text.text-lighten-2 {\r\n  color: #E57373 !important;\r\n}\r\n\r\n.red.lighten-1 {\r\n  background-color: #EF5350 !important;\r\n}\r\n\r\n.red-text.text-lighten-1 {\r\n  color: #EF5350 !important;\r\n}\r\n\r\n.red.darken-1 {\r\n  background-color: #E53935 !important;\r\n}\r\n\r\n.red-text.text-darken-1 {\r\n  color: #E53935 !important;\r\n}\r\n\r\n.red.darken-2 {\r\n  background-color: #D32F2F !important;\r\n}\r\n\r\n.red-text.text-darken-2 {\r\n  color: #D32F2F !important;\r\n}\r\n\r\n.red.darken-3 {\r\n  background-color: #C62828 !important;\r\n}\r\n\r\n.red-text.text-darken-3 {\r\n  color: #C62828 !important;\r\n}\r\n\r\n.red.darken-4 {\r\n  background-color: #B71C1C !important;\r\n}\r\n\r\n.red-text.text-darken-4 {\r\n  color: #B71C1C !important;\r\n}\r\n\r\n.red.accent-1 {\r\n  background-color: #FF8A80 !important;\r\n}\r\n\r\n.red-text.text-accent-1 {\r\n  color: #FF8A80 !important;\r\n}\r\n\r\n.red.accent-2 {\r\n  background-color: #FF5252 !important;\r\n}\r\n\r\n.red-text.text-accent-2 {\r\n  color: #FF5252 !important;\r\n}\r\n\r\n.red.accent-3 {\r\n  background-color: #FF1744 !important;\r\n}\r\n\r\n.red-text.text-accent-3 {\r\n  color: #FF1744 !important;\r\n}\r\n\r\n.red.accent-4 {\r\n  background-color: #D50000 !important;\r\n}\r\n\r\n.red-text.text-accent-4 {\r\n  color: #D50000 !important;\r\n}\r\n\r\n.pink {\r\n  background-color: #e91e63 !important;\r\n}\r\n\r\n.pink-text {\r\n  color: #e91e63 !important;\r\n}\r\n\r\n.pink.lighten-5 {\r\n  background-color: #fce4ec !important;\r\n}\r\n\r\n.pink-text.text-lighten-5 {\r\n  color: #fce4ec !important;\r\n}\r\n\r\n.pink.lighten-4 {\r\n  background-color: #f8bbd0 !important;\r\n}\r\n\r\n.pink-text.text-lighten-4 {\r\n  color: #f8bbd0 !important;\r\n}\r\n\r\n.pink.lighten-3 {\r\n  background-color: #f48fb1 !important;\r\n}\r\n\r\n.pink-text.text-lighten-3 {\r\n  color: #f48fb1 !important;\r\n}\r\n\r\n.pink.lighten-2 {\r\n  background-color: #f06292 !important;\r\n}\r\n\r\n.pink-text.text-lighten-2 {\r\n  color: #f06292 !important;\r\n}\r\n\r\n.pink.lighten-1 {\r\n  background-color: #ec407a !important;\r\n}\r\n\r\n.pink-text.text-lighten-1 {\r\n  color: #ec407a !important;\r\n}\r\n\r\n.pink.darken-1 {\r\n  background-color: #d81b60 !important;\r\n}\r\n\r\n.pink-text.text-darken-1 {\r\n  color: #d81b60 !important;\r\n}\r\n\r\n.pink.darken-2 {\r\n  background-color: #c2185b !important;\r\n}\r\n\r\n.pink-text.text-darken-2 {\r\n  color: #c2185b !important;\r\n}\r\n\r\n.pink.darken-3 {\r\n  background-color: #ad1457 !important;\r\n}\r\n\r\n.pink-text.text-darken-3 {\r\n  color: #ad1457 !important;\r\n}\r\n\r\n.pink.darken-4 {\r\n  background-color: #880e4f !important;\r\n}\r\n\r\n.pink-text.text-darken-4 {\r\n  color: #880e4f !important;\r\n}\r\n\r\n.pink.accent-1 {\r\n  background-color: #ff80ab !important;\r\n}\r\n\r\n.pink-text.text-accent-1 {\r\n  color: #ff80ab !important;\r\n}\r\n\r\n.pink.accent-2 {\r\n  background-color: #ff4081 !important;\r\n}\r\n\r\n.pink-text.text-accent-2 {\r\n  color: #ff4081 !important;\r\n}\r\n\r\n.pink.accent-3 {\r\n  background-color: #f50057 !important;\r\n}\r\n\r\n.pink-text.text-accent-3 {\r\n  color: #f50057 !important;\r\n}\r\n\r\n.pink.accent-4 {\r\n  background-color: #c51162 !important;\r\n}\r\n\r\n.pink-text.text-accent-4 {\r\n  color: #c51162 !important;\r\n}\r\n\r\n.purple {\r\n  background-color: #9c27b0 !important;\r\n}\r\n\r\n.purple-text {\r\n  color: #9c27b0 !important;\r\n}\r\n\r\n.purple.lighten-5 {\r\n  background-color: #f3e5f5 !important;\r\n}\r\n\r\n.purple-text.text-lighten-5 {\r\n  color: #f3e5f5 !important;\r\n}\r\n\r\n.purple.lighten-4 {\r\n  background-color: #e1bee7 !important;\r\n}\r\n\r\n.purple-text.text-lighten-4 {\r\n  color: #e1bee7 !important;\r\n}\r\n\r\n.purple.lighten-3 {\r\n  background-color: #ce93d8 !important;\r\n}\r\n\r\n.purple-text.text-lighten-3 {\r\n  color: #ce93d8 !important;\r\n}\r\n\r\n.purple.lighten-2 {\r\n  background-color: #ba68c8 !important;\r\n}\r\n\r\n.purple-text.text-lighten-2 {\r\n  color: #ba68c8 !important;\r\n}\r\n\r\n.purple.lighten-1 {\r\n  background-color: #ab47bc !important;\r\n}\r\n\r\n.purple-text.text-lighten-1 {\r\n  color: #ab47bc !important;\r\n}\r\n\r\n.purple.darken-1 {\r\n  background-color: #8e24aa !important;\r\n}\r\n\r\n.purple-text.text-darken-1 {\r\n  color: #8e24aa !important;\r\n}\r\n\r\n.purple.darken-2 {\r\n  background-color: #7b1fa2 !important;\r\n}\r\n\r\n.purple-text.text-darken-2 {\r\n  color: #7b1fa2 !important;\r\n}\r\n\r\n.purple.darken-3 {\r\n  background-color: #6a1b9a !important;\r\n}\r\n\r\n.purple-text.text-darken-3 {\r\n  color: #6a1b9a !important;\r\n}\r\n\r\n.purple.darken-4 {\r\n  background-color: #4a148c !important;\r\n}\r\n\r\n.purple-text.text-darken-4 {\r\n  color: #4a148c !important;\r\n}\r\n\r\n.purple.accent-1 {\r\n  background-color: #ea80fc !important;\r\n}\r\n\r\n.purple-text.text-accent-1 {\r\n  color: #ea80fc !important;\r\n}\r\n\r\n.purple.accent-2 {\r\n  background-color: #e040fb !important;\r\n}\r\n\r\n.purple-text.text-accent-2 {\r\n  color: #e040fb !important;\r\n}\r\n\r\n.purple.accent-3 {\r\n  background-color: #d500f9 !important;\r\n}\r\n\r\n.purple-text.text-accent-3 {\r\n  color: #d500f9 !important;\r\n}\r\n\r\n.purple.accent-4 {\r\n  background-color: #aa00ff !important;\r\n}\r\n\r\n.purple-text.text-accent-4 {\r\n  color: #aa00ff !important;\r\n}\r\n\r\n.deep-purple {\r\n  background-color: #673ab7 !important;\r\n}\r\n\r\n.deep-purple-text {\r\n  color: #673ab7 !important;\r\n}\r\n\r\n.deep-purple.lighten-5 {\r\n  background-color: #ede7f6 !important;\r\n}\r\n\r\n.deep-purple-text.text-lighten-5 {\r\n  color: #ede7f6 !important;\r\n}\r\n\r\n.deep-purple.lighten-4 {\r\n  background-color: #d1c4e9 !important;\r\n}\r\n\r\n.deep-purple-text.text-lighten-4 {\r\n  color: #d1c4e9 !important;\r\n}\r\n\r\n.deep-purple.lighten-3 {\r\n  background-color: #b39ddb !important;\r\n}\r\n\r\n.deep-purple-text.text-lighten-3 {\r\n  color: #b39ddb !important;\r\n}\r\n\r\n.deep-purple.lighten-2 {\r\n  background-color: #9575cd !important;\r\n}\r\n\r\n.deep-purple-text.text-lighten-2 {\r\n  color: #9575cd !important;\r\n}\r\n\r\n.deep-purple.lighten-1 {\r\n  background-color: #7e57c2 !important;\r\n}\r\n\r\n.deep-purple-text.text-lighten-1 {\r\n  color: #7e57c2 !important;\r\n}\r\n\r\n.deep-purple.darken-1 {\r\n  background-color: #5e35b1 !important;\r\n}\r\n\r\n.deep-purple-text.text-darken-1 {\r\n  color: #5e35b1 !important;\r\n}\r\n\r\n.deep-purple.darken-2 {\r\n  background-color: #512da8 !important;\r\n}\r\n\r\n.deep-purple-text.text-darken-2 {\r\n  color: #512da8 !important;\r\n}\r\n\r\n.deep-purple.darken-3 {\r\n  background-color: #4527a0 !important;\r\n}\r\n\r\n.deep-purple-text.text-darken-3 {\r\n  color: #4527a0 !important;\r\n}\r\n\r\n.deep-purple.darken-4 {\r\n  background-color: #311b92 !important;\r\n}\r\n\r\n.deep-purple-text.text-darken-4 {\r\n  color: #311b92 !important;\r\n}\r\n\r\n.deep-purple.accent-1 {\r\n  background-color: #b388ff !important;\r\n}\r\n\r\n.deep-purple-text.text-accent-1 {\r\n  color: #b388ff !important;\r\n}\r\n\r\n.deep-purple.accent-2 {\r\n  background-color: #7c4dff !important;\r\n}\r\n\r\n.deep-purple-text.text-accent-2 {\r\n  color: #7c4dff !important;\r\n}\r\n\r\n.deep-purple.accent-3 {\r\n  background-color: #651fff !important;\r\n}\r\n\r\n.deep-purple-text.text-accent-3 {\r\n  color: #651fff !important;\r\n}\r\n\r\n.deep-purple.accent-4 {\r\n  background-color: #6200ea !important;\r\n}\r\n\r\n.deep-purple-text.text-accent-4 {\r\n  color: #6200ea !important;\r\n}\r\n\r\n.indigo {\r\n  background-color: #3f51b5 !important;\r\n}\r\n\r\n.indigo-text {\r\n  color: #3f51b5 !important;\r\n}\r\n\r\n.indigo.lighten-5 {\r\n  background-color: #e8eaf6 !important;\r\n}\r\n\r\n.indigo-text.text-lighten-5 {\r\n  color: #e8eaf6 !important;\r\n}\r\n\r\n.indigo.lighten-4 {\r\n  background-color: #c5cae9 !important;\r\n}\r\n\r\n.indigo-text.text-lighten-4 {\r\n  color: #c5cae9 !important;\r\n}\r\n\r\n.indigo.lighten-3 {\r\n  background-color: #9fa8da !important;\r\n}\r\n\r\n.indigo-text.text-lighten-3 {\r\n  color: #9fa8da !important;\r\n}\r\n\r\n.indigo.lighten-2 {\r\n  background-color: #7986cb !important;\r\n}\r\n\r\n.indigo-text.text-lighten-2 {\r\n  color: #7986cb !important;\r\n}\r\n\r\n.indigo.lighten-1 {\r\n  background-color: #5c6bc0 !important;\r\n}\r\n\r\n.indigo-text.text-lighten-1 {\r\n  color: #5c6bc0 !important;\r\n}\r\n\r\n.indigo.darken-1 {\r\n  background-color: #3949ab !important;\r\n}\r\n\r\n.indigo-text.text-darken-1 {\r\n  color: #3949ab !important;\r\n}\r\n\r\n.indigo.darken-2 {\r\n  background-color: #303f9f !important;\r\n}\r\n\r\n.indigo-text.text-darken-2 {\r\n  color: #303f9f !important;\r\n}\r\n\r\n.indigo.darken-3 {\r\n  background-color: #283593 !important;\r\n}\r\n\r\n.indigo-text.text-darken-3 {\r\n  color: #283593 !important;\r\n}\r\n\r\n.indigo.darken-4 {\r\n  background-color: #1a237e !important;\r\n}\r\n\r\n.indigo-text.text-darken-4 {\r\n  color: #1a237e !important;\r\n}\r\n\r\n.indigo.accent-1 {\r\n  background-color: #8c9eff !important;\r\n}\r\n\r\n.indigo-text.text-accent-1 {\r\n  color: #8c9eff !important;\r\n}\r\n\r\n.indigo.accent-2 {\r\n  background-color: #536dfe !important;\r\n}\r\n\r\n.indigo-text.text-accent-2 {\r\n  color: #536dfe !important;\r\n}\r\n\r\n.indigo.accent-3 {\r\n  background-color: #3d5afe !important;\r\n}\r\n\r\n.indigo-text.text-accent-3 {\r\n  color: #3d5afe !important;\r\n}\r\n\r\n.indigo.accent-4 {\r\n  background-color: #304ffe !important;\r\n}\r\n\r\n.indigo-text.text-accent-4 {\r\n  color: #304ffe !important;\r\n}\r\n\r\n.blue {\r\n  background-color: #2196F3 !important;\r\n}\r\n\r\n.blue-text {\r\n  color: #2196F3 !important;\r\n}\r\n\r\n.blue.lighten-5 {\r\n  background-color: #E3F2FD !important;\r\n}\r\n\r\n.blue-text.text-lighten-5 {\r\n  color: #E3F2FD !important;\r\n}\r\n\r\n.blue.lighten-4 {\r\n  background-color: #BBDEFB !important;\r\n}\r\n\r\n.blue-text.text-lighten-4 {\r\n  color: #BBDEFB !important;\r\n}\r\n\r\n.blue.lighten-3 {\r\n  background-color: #90CAF9 !important;\r\n}\r\n\r\n.blue-text.text-lighten-3 {\r\n  color: #90CAF9 !important;\r\n}\r\n\r\n.blue.lighten-2 {\r\n  background-color: #64B5F6 !important;\r\n}\r\n\r\n.blue-text.text-lighten-2 {\r\n  color: #64B5F6 !important;\r\n}\r\n\r\n.blue.lighten-1 {\r\n  background-color: #42A5F5 !important;\r\n}\r\n\r\n.blue-text.text-lighten-1 {\r\n  color: #42A5F5 !important;\r\n}\r\n\r\n.blue.darken-1 {\r\n  background-color: #1E88E5 !important;\r\n}\r\n\r\n.blue-text.text-darken-1 {\r\n  color: #1E88E5 !important;\r\n}\r\n\r\n.blue.darken-2 {\r\n  background-color: #1976D2 !important;\r\n}\r\n\r\n.blue-text.text-darken-2 {\r\n  color: #1976D2 !important;\r\n}\r\n\r\n.blue.darken-3 {\r\n  background-color: #1565C0 !important;\r\n}\r\n\r\n.blue-text.text-darken-3 {\r\n  color: #1565C0 !important;\r\n}\r\n\r\n.blue.darken-4 {\r\n  background-color: #0D47A1 !important;\r\n}\r\n\r\n.blue-text.text-darken-4 {\r\n  color: #0D47A1 !important;\r\n}\r\n\r\n.blue.accent-1 {\r\n  background-color: #82B1FF !important;\r\n}\r\n\r\n.blue-text.text-accent-1 {\r\n  color: #82B1FF !important;\r\n}\r\n\r\n.blue.accent-2 {\r\n  background-color: #448AFF !important;\r\n}\r\n\r\n.blue-text.text-accent-2 {\r\n  color: #448AFF !important;\r\n}\r\n\r\n.blue.accent-3 {\r\n  background-color: #2979FF !important;\r\n}\r\n\r\n.blue-text.text-accent-3 {\r\n  color: #2979FF !important;\r\n}\r\n\r\n.blue.accent-4 {\r\n  background-color: #2962FF !important;\r\n}\r\n\r\n.blue-text.text-accent-4 {\r\n  color: #2962FF !important;\r\n}\r\n\r\n.light-blue {\r\n  background-color: #03a9f4 !important;\r\n}\r\n\r\n.light-blue-text {\r\n  color: #03a9f4 !important;\r\n}\r\n\r\n.light-blue.lighten-5 {\r\n  background-color: #e1f5fe !important;\r\n}\r\n\r\n.light-blue-text.text-lighten-5 {\r\n  color: #e1f5fe !important;\r\n}\r\n\r\n.light-blue.lighten-4 {\r\n  background-color: #b3e5fc !important;\r\n}\r\n\r\n.light-blue-text.text-lighten-4 {\r\n  color: #b3e5fc !important;\r\n}\r\n\r\n.light-blue.lighten-3 {\r\n  background-color: #81d4fa !important;\r\n}\r\n\r\n.light-blue-text.text-lighten-3 {\r\n  color: #81d4fa !important;\r\n}\r\n\r\n.light-blue.lighten-2 {\r\n  background-color: #4fc3f7 !important;\r\n}\r\n\r\n.light-blue-text.text-lighten-2 {\r\n  color: #4fc3f7 !important;\r\n}\r\n\r\n.light-blue.lighten-1 {\r\n  background-color: #29b6f6 !important;\r\n}\r\n\r\n.light-blue-text.text-lighten-1 {\r\n  color: #29b6f6 !important;\r\n}\r\n\r\n.light-blue.darken-1 {\r\n  background-color: #039be5 !important;\r\n}\r\n\r\n.light-blue-text.text-darken-1 {\r\n  color: #039be5 !important;\r\n}\r\n\r\n.light-blue.darken-2 {\r\n  background-color: #0288d1 !important;\r\n}\r\n\r\n.light-blue-text.text-darken-2 {\r\n  color: #0288d1 !important;\r\n}\r\n\r\n.light-blue.darken-3 {\r\n  background-color: #0277bd !important;\r\n}\r\n\r\n.light-blue-text.text-darken-3 {\r\n  color: #0277bd !important;\r\n}\r\n\r\n.light-blue.darken-4 {\r\n  background-color: #01579b !important;\r\n}\r\n\r\n.light-blue-text.text-darken-4 {\r\n  color: #01579b !important;\r\n}\r\n\r\n.light-blue.accent-1 {\r\n  background-color: #80d8ff !important;\r\n}\r\n\r\n.light-blue-text.text-accent-1 {\r\n  color: #80d8ff !important;\r\n}\r\n\r\n.light-blue.accent-2 {\r\n  background-color: #40c4ff !important;\r\n}\r\n\r\n.light-blue-text.text-accent-2 {\r\n  color: #40c4ff !important;\r\n}\r\n\r\n.light-blue.accent-3 {\r\n  background-color: #00b0ff !important;\r\n}\r\n\r\n.light-blue-text.text-accent-3 {\r\n  color: #00b0ff !important;\r\n}\r\n\r\n.light-blue.accent-4 {\r\n  background-color: #0091ea !important;\r\n}\r\n\r\n.light-blue-text.text-accent-4 {\r\n  color: #0091ea !important;\r\n}\r\n\r\n.cyan {\r\n  background-color: #00bcd4 !important;\r\n}\r\n\r\n.cyan-text {\r\n  color: #00bcd4 !important;\r\n}\r\n\r\n.cyan.lighten-5 {\r\n  background-color: #e0f7fa !important;\r\n}\r\n\r\n.cyan-text.text-lighten-5 {\r\n  color: #e0f7fa !important;\r\n}\r\n\r\n.cyan.lighten-4 {\r\n  background-color: #b2ebf2 !important;\r\n}\r\n\r\n.cyan-text.text-lighten-4 {\r\n  color: #b2ebf2 !important;\r\n}\r\n\r\n.cyan.lighten-3 {\r\n  background-color: #80deea !important;\r\n}\r\n\r\n.cyan-text.text-lighten-3 {\r\n  color: #80deea !important;\r\n}\r\n\r\n.cyan.lighten-2 {\r\n  background-color: #4dd0e1 !important;\r\n}\r\n\r\n.cyan-text.text-lighten-2 {\r\n  color: #4dd0e1 !important;\r\n}\r\n\r\n.cyan.lighten-1 {\r\n  background-color: #26c6da !important;\r\n}\r\n\r\n.cyan-text.text-lighten-1 {\r\n  color: #26c6da !important;\r\n}\r\n\r\n.cyan.darken-1 {\r\n  background-color: #00acc1 !important;\r\n}\r\n\r\n.cyan-text.text-darken-1 {\r\n  color: #00acc1 !important;\r\n}\r\n\r\n.cyan.darken-2 {\r\n  background-color: #0097a7 !important;\r\n}\r\n\r\n.cyan-text.text-darken-2 {\r\n  color: #0097a7 !important;\r\n}\r\n\r\n.cyan.darken-3 {\r\n  background-color: #00838f !important;\r\n}\r\n\r\n.cyan-text.text-darken-3 {\r\n  color: #00838f !important;\r\n}\r\n\r\n.cyan.darken-4 {\r\n  background-color: #006064 !important;\r\n}\r\n\r\n.cyan-text.text-darken-4 {\r\n  color: #006064 !important;\r\n}\r\n\r\n.cyan.accent-1 {\r\n  background-color: #84ffff !important;\r\n}\r\n\r\n.cyan-text.text-accent-1 {\r\n  color: #84ffff !important;\r\n}\r\n\r\n.cyan.accent-2 {\r\n  background-color: #18ffff !important;\r\n}\r\n\r\n.cyan-text.text-accent-2 {\r\n  color: #18ffff !important;\r\n}\r\n\r\n.cyan.accent-3 {\r\n  background-color: #00e5ff !important;\r\n}\r\n\r\n.cyan-text.text-accent-3 {\r\n  color: #00e5ff !important;\r\n}\r\n\r\n.cyan.accent-4 {\r\n  background-color: #00b8d4 !important;\r\n}\r\n\r\n.cyan-text.text-accent-4 {\r\n  color: #00b8d4 !important;\r\n}\r\n\r\n.teal {\r\n  background-color: #009688 !important;\r\n}\r\n\r\n.teal-text {\r\n  color: #009688 !important;\r\n}\r\n\r\n.teal.lighten-5 {\r\n  background-color: #e0f2f1 !important;\r\n}\r\n\r\n.teal-text.text-lighten-5 {\r\n  color: #e0f2f1 !important;\r\n}\r\n\r\n.teal.lighten-4 {\r\n  background-color: #b2dfdb !important;\r\n}\r\n\r\n.teal-text.text-lighten-4 {\r\n  color: #b2dfdb !important;\r\n}\r\n\r\n.teal.lighten-3 {\r\n  background-color: #80cbc4 !important;\r\n}\r\n\r\n.teal-text.text-lighten-3 {\r\n  color: #80cbc4 !important;\r\n}\r\n\r\n.teal.lighten-2 {\r\n  background-color: #4db6ac !important;\r\n}\r\n\r\n.teal-text.text-lighten-2 {\r\n  color: #4db6ac !important;\r\n}\r\n\r\n.teal.lighten-1 {\r\n  background-color: #26a69a !important;\r\n}\r\n\r\n.teal-text.text-lighten-1 {\r\n  color: #26a69a !important;\r\n}\r\n\r\n.teal.darken-1 {\r\n  background-color: #00897b !important;\r\n}\r\n\r\n.teal-text.text-darken-1 {\r\n  color: #00897b !important;\r\n}\r\n\r\n.teal.darken-2 {\r\n  background-color: #00796b !important;\r\n}\r\n\r\n.teal-text.text-darken-2 {\r\n  color: #00796b !important;\r\n}\r\n\r\n.teal.darken-3 {\r\n  background-color: #00695c !important;\r\n}\r\n\r\n.teal-text.text-darken-3 {\r\n  color: #00695c !important;\r\n}\r\n\r\n.teal.darken-4 {\r\n  background-color: #004d40 !important;\r\n}\r\n\r\n.teal-text.text-darken-4 {\r\n  color: #004d40 !important;\r\n}\r\n\r\n.teal.accent-1 {\r\n  background-color: #a7ffeb !important;\r\n}\r\n\r\n.teal-text.text-accent-1 {\r\n  color: #a7ffeb !important;\r\n}\r\n\r\n.teal.accent-2 {\r\n  background-color: #64ffda !important;\r\n}\r\n\r\n.teal-text.text-accent-2 {\r\n  color: #64ffda !important;\r\n}\r\n\r\n.teal.accent-3 {\r\n  background-color: #1de9b6 !important;\r\n}\r\n\r\n.teal-text.text-accent-3 {\r\n  color: #1de9b6 !important;\r\n}\r\n\r\n.teal.accent-4 {\r\n  background-color: #00bfa5 !important;\r\n}\r\n\r\n.teal-text.text-accent-4 {\r\n  color: #00bfa5 !important;\r\n}\r\n\r\n.green {\r\n  background-color: #4CAF50 !important;\r\n}\r\n\r\n.green-text {\r\n  color: #4CAF50 !important;\r\n}\r\n\r\n.green.lighten-5 {\r\n  background-color: #E8F5E9 !important;\r\n}\r\n\r\n.green-text.text-lighten-5 {\r\n  color: #E8F5E9 !important;\r\n}\r\n\r\n.green.lighten-4 {\r\n  background-color: #C8E6C9 !important;\r\n}\r\n\r\n.green-text.text-lighten-4 {\r\n  color: #C8E6C9 !important;\r\n}\r\n\r\n.green.lighten-3 {\r\n  background-color: #A5D6A7 !important;\r\n}\r\n\r\n.green-text.text-lighten-3 {\r\n  color: #A5D6A7 !important;\r\n}\r\n\r\n.green.lighten-2 {\r\n  background-color: #81C784 !important;\r\n}\r\n\r\n.green-text.text-lighten-2 {\r\n  color: #81C784 !important;\r\n}\r\n\r\n.green.lighten-1 {\r\n  background-color: #66BB6A !important;\r\n}\r\n\r\n.green-text.text-lighten-1 {\r\n  color: #66BB6A !important;\r\n}\r\n\r\n.green.darken-1 {\r\n  background-color: #43A047 !important;\r\n}\r\n\r\n.green-text.text-darken-1 {\r\n  color: #43A047 !important;\r\n}\r\n\r\n.green.darken-2 {\r\n  background-color: #388E3C !important;\r\n}\r\n\r\n.green-text.text-darken-2 {\r\n  color: #388E3C !important;\r\n}\r\n\r\n.green.darken-3 {\r\n  background-color: #2E7D32 !important;\r\n}\r\n\r\n.green-text.text-darken-3 {\r\n  color: #2E7D32 !important;\r\n}\r\n\r\n.green.darken-4 {\r\n  background-color: #1B5E20 !important;\r\n}\r\n\r\n.green-text.text-darken-4 {\r\n  color: #1B5E20 !important;\r\n}\r\n\r\n.green.accent-1 {\r\n  background-color: #B9F6CA !important;\r\n}\r\n\r\n.green-text.text-accent-1 {\r\n  color: #B9F6CA !important;\r\n}\r\n\r\n.green.accent-2 {\r\n  background-color: #69F0AE !important;\r\n}\r\n\r\n.green-text.text-accent-2 {\r\n  color: #69F0AE !important;\r\n}\r\n\r\n.green.accent-3 {\r\n  background-color: #00E676 !important;\r\n}\r\n\r\n.green-text.text-accent-3 {\r\n  color: #00E676 !important;\r\n}\r\n\r\n.green.accent-4 {\r\n  background-color: #00C853 !important;\r\n}\r\n\r\n.green-text.text-accent-4 {\r\n  color: #00C853 !important;\r\n}\r\n\r\n.light-green {\r\n  background-color: #8bc34a !important;\r\n}\r\n\r\n.light-green-text {\r\n  color: #8bc34a !important;\r\n}\r\n\r\n.light-green.lighten-5 {\r\n  background-color: #f1f8e9 !important;\r\n}\r\n\r\n.light-green-text.text-lighten-5 {\r\n  color: #f1f8e9 !important;\r\n}\r\n\r\n.light-green.lighten-4 {\r\n  background-color: #dcedc8 !important;\r\n}\r\n\r\n.light-green-text.text-lighten-4 {\r\n  color: #dcedc8 !important;\r\n}\r\n\r\n.light-green.lighten-3 {\r\n  background-color: #c5e1a5 !important;\r\n}\r\n\r\n.light-green-text.text-lighten-3 {\r\n  color: #c5e1a5 !important;\r\n}\r\n\r\n.light-green.lighten-2 {\r\n  background-color: #aed581 !important;\r\n}\r\n\r\n.light-green-text.text-lighten-2 {\r\n  color: #aed581 !important;\r\n}\r\n\r\n.light-green.lighten-1 {\r\n  background-color: #9ccc65 !important;\r\n}\r\n\r\n.light-green-text.text-lighten-1 {\r\n  color: #9ccc65 !important;\r\n}\r\n\r\n.light-green.darken-1 {\r\n  background-color: #7cb342 !important;\r\n}\r\n\r\n.light-green-text.text-darken-1 {\r\n  color: #7cb342 !important;\r\n}\r\n\r\n.light-green.darken-2 {\r\n  background-color: #689f38 !important;\r\n}\r\n\r\n.light-green-text.text-darken-2 {\r\n  color: #689f38 !important;\r\n}\r\n\r\n.light-green.darken-3 {\r\n  background-color: #558b2f !important;\r\n}\r\n\r\n.light-green-text.text-darken-3 {\r\n  color: #558b2f !important;\r\n}\r\n\r\n.light-green.darken-4 {\r\n  background-color: #33691e !important;\r\n}\r\n\r\n.light-green-text.text-darken-4 {\r\n  color: #33691e !important;\r\n}\r\n\r\n.light-green.accent-1 {\r\n  background-color: #ccff90 !important;\r\n}\r\n\r\n.light-green-text.text-accent-1 {\r\n  color: #ccff90 !important;\r\n}\r\n\r\n.light-green.accent-2 {\r\n  background-color: #b2ff59 !important;\r\n}\r\n\r\n.light-green-text.text-accent-2 {\r\n  color: #b2ff59 !important;\r\n}\r\n\r\n.light-green.accent-3 {\r\n  background-color: #76ff03 !important;\r\n}\r\n\r\n.light-green-text.text-accent-3 {\r\n  color: #76ff03 !important;\r\n}\r\n\r\n.light-green.accent-4 {\r\n  background-color: #64dd17 !important;\r\n}\r\n\r\n.light-green-text.text-accent-4 {\r\n  color: #64dd17 !important;\r\n}\r\n\r\n.lime {\r\n  background-color: #cddc39 !important;\r\n}\r\n\r\n.lime-text {\r\n  color: #cddc39 !important;\r\n}\r\n\r\n.lime.lighten-5 {\r\n  background-color: #f9fbe7 !important;\r\n}\r\n\r\n.lime-text.text-lighten-5 {\r\n  color: #f9fbe7 !important;\r\n}\r\n\r\n.lime.lighten-4 {\r\n  background-color: #f0f4c3 !important;\r\n}\r\n\r\n.lime-text.text-lighten-4 {\r\n  color: #f0f4c3 !important;\r\n}\r\n\r\n.lime.lighten-3 {\r\n  background-color: #e6ee9c !important;\r\n}\r\n\r\n.lime-text.text-lighten-3 {\r\n  color: #e6ee9c !important;\r\n}\r\n\r\n.lime.lighten-2 {\r\n  background-color: #dce775 !important;\r\n}\r\n\r\n.lime-text.text-lighten-2 {\r\n  color: #dce775 !important;\r\n}\r\n\r\n.lime.lighten-1 {\r\n  background-color: #d4e157 !important;\r\n}\r\n\r\n.lime-text.text-lighten-1 {\r\n  color: #d4e157 !important;\r\n}\r\n\r\n.lime.darken-1 {\r\n  background-color: #c0ca33 !important;\r\n}\r\n\r\n.lime-text.text-darken-1 {\r\n  color: #c0ca33 !important;\r\n}\r\n\r\n.lime.darken-2 {\r\n  background-color: #afb42b !important;\r\n}\r\n\r\n.lime-text.text-darken-2 {\r\n  color: #afb42b !important;\r\n}\r\n\r\n.lime.darken-3 {\r\n  background-color: #9e9d24 !important;\r\n}\r\n\r\n.lime-text.text-darken-3 {\r\n  color: #9e9d24 !important;\r\n}\r\n\r\n.lime.darken-4 {\r\n  background-color: #827717 !important;\r\n}\r\n\r\n.lime-text.text-darken-4 {\r\n  color: #827717 !important;\r\n}\r\n\r\n.lime.accent-1 {\r\n  background-color: #f4ff81 !important;\r\n}\r\n\r\n.lime-text.text-accent-1 {\r\n  color: #f4ff81 !important;\r\n}\r\n\r\n.lime.accent-2 {\r\n  background-color: #eeff41 !important;\r\n}\r\n\r\n.lime-text.text-accent-2 {\r\n  color: #eeff41 !important;\r\n}\r\n\r\n.lime.accent-3 {\r\n  background-color: #c6ff00 !important;\r\n}\r\n\r\n.lime-text.text-accent-3 {\r\n  color: #c6ff00 !important;\r\n}\r\n\r\n.lime.accent-4 {\r\n  background-color: #aeea00 !important;\r\n}\r\n\r\n.lime-text.text-accent-4 {\r\n  color: #aeea00 !important;\r\n}\r\n\r\n.yellow {\r\n  background-color: #ffeb3b !important;\r\n}\r\n\r\n.yellow-text {\r\n  color: #ffeb3b !important;\r\n}\r\n\r\n.yellow.lighten-5 {\r\n  background-color: #fffde7 !important;\r\n}\r\n\r\n.yellow-text.text-lighten-5 {\r\n  color: #fffde7 !important;\r\n}\r\n\r\n.yellow.lighten-4 {\r\n  background-color: #fff9c4 !important;\r\n}\r\n\r\n.yellow-text.text-lighten-4 {\r\n  color: #fff9c4 !important;\r\n}\r\n\r\n.yellow.lighten-3 {\r\n  background-color: #fff59d !important;\r\n}\r\n\r\n.yellow-text.text-lighten-3 {\r\n  color: #fff59d !important;\r\n}\r\n\r\n.yellow.lighten-2 {\r\n  background-color: #fff176 !important;\r\n}\r\n\r\n.yellow-text.text-lighten-2 {\r\n  color: #fff176 !important;\r\n}\r\n\r\n.yellow.lighten-1 {\r\n  background-color: #ffee58 !important;\r\n}\r\n\r\n.yellow-text.text-lighten-1 {\r\n  color: #ffee58 !important;\r\n}\r\n\r\n.yellow.darken-1 {\r\n  background-color: #fdd835 !important;\r\n}\r\n\r\n.yellow-text.text-darken-1 {\r\n  color: #fdd835 !important;\r\n}\r\n\r\n.yellow.darken-2 {\r\n  background-color: #fbc02d !important;\r\n}\r\n\r\n.yellow-text.text-darken-2 {\r\n  color: #fbc02d !important;\r\n}\r\n\r\n.yellow.darken-3 {\r\n  background-color: #f9a825 !important;\r\n}\r\n\r\n.yellow-text.text-darken-3 {\r\n  color: #f9a825 !important;\r\n}\r\n\r\n.yellow.darken-4 {\r\n  background-color: #f57f17 !important;\r\n}\r\n\r\n.yellow-text.text-darken-4 {\r\n  color: #f57f17 !important;\r\n}\r\n\r\n.yellow.accent-1 {\r\n  background-color: #ffff8d !important;\r\n}\r\n\r\n.yellow-text.text-accent-1 {\r\n  color: #ffff8d !important;\r\n}\r\n\r\n.yellow.accent-2 {\r\n  background-color: #ffff00 !important;\r\n}\r\n\r\n.yellow-text.text-accent-2 {\r\n  color: #ffff00 !important;\r\n}\r\n\r\n.yellow.accent-3 {\r\n  background-color: #ffea00 !important;\r\n}\r\n\r\n.yellow-text.text-accent-3 {\r\n  color: #ffea00 !important;\r\n}\r\n\r\n.yellow.accent-4 {\r\n  background-color: #ffd600 !important;\r\n}\r\n\r\n.yellow-text.text-accent-4 {\r\n  color: #ffd600 !important;\r\n}\r\n\r\n.amber {\r\n  background-color: #ffc107 !important;\r\n}\r\n\r\n.amber-text {\r\n  color: #ffc107 !important;\r\n}\r\n\r\n.amber.lighten-5 {\r\n  background-color: #fff8e1 !important;\r\n}\r\n\r\n.amber-text.text-lighten-5 {\r\n  color: #fff8e1 !important;\r\n}\r\n\r\n.amber.lighten-4 {\r\n  background-color: #ffecb3 !important;\r\n}\r\n\r\n.amber-text.text-lighten-4 {\r\n  color: #ffecb3 !important;\r\n}\r\n\r\n.amber.lighten-3 {\r\n  background-color: #ffe082 !important;\r\n}\r\n\r\n.amber-text.text-lighten-3 {\r\n  color: #ffe082 !important;\r\n}\r\n\r\n.amber.lighten-2 {\r\n  background-color: #ffd54f !important;\r\n}\r\n\r\n.amber-text.text-lighten-2 {\r\n  color: #ffd54f !important;\r\n}\r\n\r\n.amber.lighten-1 {\r\n  background-color: #ffca28 !important;\r\n}\r\n\r\n.amber-text.text-lighten-1 {\r\n  color: #ffca28 !important;\r\n}\r\n\r\n.amber.darken-1 {\r\n  background-color: #ffb300 !important;\r\n}\r\n\r\n.amber-text.text-darken-1 {\r\n  color: #ffb300 !important;\r\n}\r\n\r\n.amber.darken-2 {\r\n  background-color: #ffa000 !important;\r\n}\r\n\r\n.amber-text.text-darken-2 {\r\n  color: #ffa000 !important;\r\n}\r\n\r\n.amber.darken-3 {\r\n  background-color: #ff8f00 !important;\r\n}\r\n\r\n.amber-text.text-darken-3 {\r\n  color: #ff8f00 !important;\r\n}\r\n\r\n.amber.darken-4 {\r\n  background-color: #ff6f00 !important;\r\n}\r\n\r\n.amber-text.text-darken-4 {\r\n  color: #ff6f00 !important;\r\n}\r\n\r\n.amber.accent-1 {\r\n  background-color: #ffe57f !important;\r\n}\r\n\r\n.amber-text.text-accent-1 {\r\n  color: #ffe57f !important;\r\n}\r\n\r\n.amber.accent-2 {\r\n  background-color: #ffd740 !important;\r\n}\r\n\r\n.amber-text.text-accent-2 {\r\n  color: #ffd740 !important;\r\n}\r\n\r\n.amber.accent-3 {\r\n  background-color: #ffc400 !important;\r\n}\r\n\r\n.amber-text.text-accent-3 {\r\n  color: #ffc400 !important;\r\n}\r\n\r\n.amber.accent-4 {\r\n  background-color: #ffab00 !important;\r\n}\r\n\r\n.amber-text.text-accent-4 {\r\n  color: #ffab00 !important;\r\n}\r\n\r\n.orange {\r\n  background-color: #ff9800 !important;\r\n}\r\n\r\n.orange-text {\r\n  color: #ff9800 !important;\r\n}\r\n\r\n.orange.lighten-5 {\r\n  background-color: #fff3e0 !important;\r\n}\r\n\r\n.orange-text.text-lighten-5 {\r\n  color: #fff3e0 !important;\r\n}\r\n\r\n.orange.lighten-4 {\r\n  background-color: #ffe0b2 !important;\r\n}\r\n\r\n.orange-text.text-lighten-4 {\r\n  color: #ffe0b2 !important;\r\n}\r\n\r\n.orange.lighten-3 {\r\n  background-color: #ffcc80 !important;\r\n}\r\n\r\n.orange-text.text-lighten-3 {\r\n  color: #ffcc80 !important;\r\n}\r\n\r\n.orange.lighten-2 {\r\n  background-color: #ffb74d !important;\r\n}\r\n\r\n.orange-text.text-lighten-2 {\r\n  color: #ffb74d !important;\r\n}\r\n\r\n.orange.lighten-1 {\r\n  background-color: #ffa726 !important;\r\n}\r\n\r\n.orange-text.text-lighten-1 {\r\n  color: #ffa726 !important;\r\n}\r\n\r\n.orange.darken-1 {\r\n  background-color: #fb8c00 !important;\r\n}\r\n\r\n.orange-text.text-darken-1 {\r\n  color: #fb8c00 !important;\r\n}\r\n\r\n.orange.darken-2 {\r\n  background-color: #f57c00 !important;\r\n}\r\n\r\n.orange-text.text-darken-2 {\r\n  color: #f57c00 !important;\r\n}\r\n\r\n.orange.darken-3 {\r\n  background-color: #ef6c00 !important;\r\n}\r\n\r\n.orange-text.text-darken-3 {\r\n  color: #ef6c00 !important;\r\n}\r\n\r\n.orange.darken-4 {\r\n  background-color: #e65100 !important;\r\n}\r\n\r\n.orange-text.text-darken-4 {\r\n  color: #e65100 !important;\r\n}\r\n\r\n.orange.accent-1 {\r\n  background-color: #ffd180 !important;\r\n}\r\n\r\n.orange-text.text-accent-1 {\r\n  color: #ffd180 !important;\r\n}\r\n\r\n.orange.accent-2 {\r\n  background-color: #ffab40 !important;\r\n}\r\n\r\n.orange-text.text-accent-2 {\r\n  color: #ffab40 !important;\r\n}\r\n\r\n.orange.accent-3 {\r\n  background-color: #ff9100 !important;\r\n}\r\n\r\n.orange-text.text-accent-3 {\r\n  color: #ff9100 !important;\r\n}\r\n\r\n.orange.accent-4 {\r\n  background-color: #ff6d00 !important;\r\n}\r\n\r\n.orange-text.text-accent-4 {\r\n  color: #ff6d00 !important;\r\n}\r\n\r\n.deep-orange {\r\n  background-color: #ff5722 !important;\r\n}\r\n\r\n.deep-orange-text {\r\n  color: #ff5722 !important;\r\n}\r\n\r\n.deep-orange.lighten-5 {\r\n  background-color: #fbe9e7 !important;\r\n}\r\n\r\n.deep-orange-text.text-lighten-5 {\r\n  color: #fbe9e7 !important;\r\n}\r\n\r\n.deep-orange.lighten-4 {\r\n  background-color: #ffccbc !important;\r\n}\r\n\r\n.deep-orange-text.text-lighten-4 {\r\n  color: #ffccbc !important;\r\n}\r\n\r\n.deep-orange.lighten-3 {\r\n  background-color: #ffab91 !important;\r\n}\r\n\r\n.deep-orange-text.text-lighten-3 {\r\n  color: #ffab91 !important;\r\n}\r\n\r\n.deep-orange.lighten-2 {\r\n  background-color: #ff8a65 !important;\r\n}\r\n\r\n.deep-orange-text.text-lighten-2 {\r\n  color: #ff8a65 !important;\r\n}\r\n\r\n.deep-orange.lighten-1 {\r\n  background-color: #ff7043 !important;\r\n}\r\n\r\n.deep-orange-text.text-lighten-1 {\r\n  color: #ff7043 !important;\r\n}\r\n\r\n.deep-orange.darken-1 {\r\n  background-color: #f4511e !important;\r\n}\r\n\r\n.deep-orange-text.text-darken-1 {\r\n  color: #f4511e !important;\r\n}\r\n\r\n.deep-orange.darken-2 {\r\n  background-color: #e64a19 !important;\r\n}\r\n\r\n.deep-orange-text.text-darken-2 {\r\n  color: #e64a19 !important;\r\n}\r\n\r\n.deep-orange.darken-3 {\r\n  background-color: #d84315 !important;\r\n}\r\n\r\n.deep-orange-text.text-darken-3 {\r\n  color: #d84315 !important;\r\n}\r\n\r\n.deep-orange.darken-4 {\r\n  background-color: #bf360c !important;\r\n}\r\n\r\n.deep-orange-text.text-darken-4 {\r\n  color: #bf360c !important;\r\n}\r\n\r\n.deep-orange.accent-1 {\r\n  background-color: #ff9e80 !important;\r\n}\r\n\r\n.deep-orange-text.text-accent-1 {\r\n  color: #ff9e80 !important;\r\n}\r\n\r\n.deep-orange.accent-2 {\r\n  background-color: #ff6e40 !important;\r\n}\r\n\r\n.deep-orange-text.text-accent-2 {\r\n  color: #ff6e40 !important;\r\n}\r\n\r\n.deep-orange.accent-3 {\r\n  background-color: #ff3d00 !important;\r\n}\r\n\r\n.deep-orange-text.text-accent-3 {\r\n  color: #ff3d00 !important;\r\n}\r\n\r\n.deep-orange.accent-4 {\r\n  background-color: #dd2c00 !important;\r\n}\r\n\r\n.deep-orange-text.text-accent-4 {\r\n  color: #dd2c00 !important;\r\n}\r\n\r\n.brown {\r\n  background-color: #795548 !important;\r\n}\r\n\r\n.brown-text {\r\n  color: #795548 !important;\r\n}\r\n\r\n.brown.lighten-5 {\r\n  background-color: #efebe9 !important;\r\n}\r\n\r\n.brown-text.text-lighten-5 {\r\n  color: #efebe9 !important;\r\n}\r\n\r\n.brown.lighten-4 {\r\n  background-color: #d7ccc8 !important;\r\n}\r\n\r\n.brown-text.text-lighten-4 {\r\n  color: #d7ccc8 !important;\r\n}\r\n\r\n.brown.lighten-3 {\r\n  background-color: #bcaaa4 !important;\r\n}\r\n\r\n.brown-text.text-lighten-3 {\r\n  color: #bcaaa4 !important;\r\n}\r\n\r\n.brown.lighten-2 {\r\n  background-color: #a1887f !important;\r\n}\r\n\r\n.brown-text.text-lighten-2 {\r\n  color: #a1887f !important;\r\n}\r\n\r\n.brown.lighten-1 {\r\n  background-color: #8d6e63 !important;\r\n}\r\n\r\n.brown-text.text-lighten-1 {\r\n  color: #8d6e63 !important;\r\n}\r\n\r\n.brown.darken-1 {\r\n  background-color: #6d4c41 !important;\r\n}\r\n\r\n.brown-text.text-darken-1 {\r\n  color: #6d4c41 !important;\r\n}\r\n\r\n.brown.darken-2 {\r\n  background-color: #5d4037 !important;\r\n}\r\n\r\n.brown-text.text-darken-2 {\r\n  color: #5d4037 !important;\r\n}\r\n\r\n.brown.darken-3 {\r\n  background-color: #4e342e !important;\r\n}\r\n\r\n.brown-text.text-darken-3 {\r\n  color: #4e342e !important;\r\n}\r\n\r\n.brown.darken-4 {\r\n  background-color: #3e2723 !important;\r\n}\r\n\r\n.brown-text.text-darken-4 {\r\n  color: #3e2723 !important;\r\n}\r\n\r\n.blue-grey {\r\n  background-color: #607d8b !important;\r\n}\r\n\r\n.blue-grey-text {\r\n  color: #607d8b !important;\r\n}\r\n\r\n.blue-grey.lighten-5 {\r\n  background-color: #eceff1 !important;\r\n}\r\n\r\n.blue-grey-text.text-lighten-5 {\r\n  color: #eceff1 !important;\r\n}\r\n\r\n.blue-grey.lighten-4 {\r\n  background-color: #cfd8dc !important;\r\n}\r\n\r\n.blue-grey-text.text-lighten-4 {\r\n  color: #cfd8dc !important;\r\n}\r\n\r\n.blue-grey.lighten-3 {\r\n  background-color: #b0bec5 !important;\r\n}\r\n\r\n.blue-grey-text.text-lighten-3 {\r\n  color: #b0bec5 !important;\r\n}\r\n\r\n.blue-grey.lighten-2 {\r\n  background-color: #90a4ae !important;\r\n}\r\n\r\n.blue-grey-text.text-lighten-2 {\r\n  color: #90a4ae !important;\r\n}\r\n\r\n.blue-grey.lighten-1 {\r\n  background-color: #78909c !important;\r\n}\r\n\r\n.blue-grey-text.text-lighten-1 {\r\n  color: #78909c !important;\r\n}\r\n\r\n.blue-grey.darken-1 {\r\n  background-color: #546e7a !important;\r\n}\r\n\r\n.blue-grey-text.text-darken-1 {\r\n  color: #546e7a !important;\r\n}\r\n\r\n.blue-grey.darken-2 {\r\n  background-color: #455a64 !important;\r\n}\r\n\r\n.blue-grey-text.text-darken-2 {\r\n  color: #455a64 !important;\r\n}\r\n\r\n.blue-grey.darken-3 {\r\n  background-color: #37474f !important;\r\n}\r\n\r\n.blue-grey-text.text-darken-3 {\r\n  color: #37474f !important;\r\n}\r\n\r\n.blue-grey.darken-4 {\r\n  background-color: #263238 !important;\r\n}\r\n\r\n.blue-grey-text.text-darken-4 {\r\n  color: #263238 !important;\r\n}\r\n\r\n.grey {\r\n  background-color: #9e9e9e !important;\r\n}\r\n\r\n.grey-text {\r\n  color: #9e9e9e !important;\r\n}\r\n\r\n.grey.lighten-5 {\r\n  background-color: #fafafa !important;\r\n}\r\n\r\n.grey-text.text-lighten-5 {\r\n  color: #fafafa !important;\r\n}\r\n\r\n.grey.lighten-4 {\r\n  background-color: #f5f5f5 !important;\r\n}\r\n\r\n.grey-text.text-lighten-4 {\r\n  color: #f5f5f5 !important;\r\n}\r\n\r\n.grey.lighten-3 {\r\n  background-color: #eeeeee !important;\r\n}\r\n\r\n.grey-text.text-lighten-3 {\r\n  color: #eeeeee !important;\r\n}\r\n\r\n.grey.lighten-2 {\r\n  background-color: #e0e0e0 !important;\r\n}\r\n\r\n.grey-text.text-lighten-2 {\r\n  color: #e0e0e0 !important;\r\n}\r\n\r\n.grey.lighten-1 {\r\n  background-color: #bdbdbd !important;\r\n}\r\n\r\n.grey-text.text-lighten-1 {\r\n  color: #bdbdbd !important;\r\n}\r\n\r\n.grey.darken-1 {\r\n  background-color: #757575 !important;\r\n}\r\n\r\n.grey-text.text-darken-1 {\r\n  color: #757575 !important;\r\n}\r\n\r\n.grey.darken-2 {\r\n  background-color: #616161 !important;\r\n}\r\n\r\n.grey-text.text-darken-2 {\r\n  color: #616161 !important;\r\n}\r\n\r\n.grey.darken-3 {\r\n  background-color: #424242 !important;\r\n}\r\n\r\n.grey-text.text-darken-3 {\r\n  color: #424242 !important;\r\n}\r\n\r\n.grey.darken-4 {\r\n  background-color: #212121 !important;\r\n}\r\n\r\n.grey-text.text-darken-4 {\r\n  color: #212121 !important;\r\n}\r\n\r\n.black {\r\n  background-color: #000000 !important;\r\n}\r\n\r\n.black-text {\r\n  color: #000000 !important;\r\n}\r\n\r\n.white {\r\n  background-color: #FFFFFF !important;\r\n}\r\n\r\n.white-text {\r\n  color: #FFFFFF !important;\r\n}\r\n\r\n.transparent {\r\n  background-color: transparent !important;\r\n}\r\n\r\n.transparent-text {\r\n  color: transparent !important;\r\n}\r\n\r\n/* ==========================================================================\r\n   Materialize variables\r\n   ========================================================================== */\r\n/**\r\n * Table of Contents:\r\n *\r\n *  1. Colors\r\n *  2. Badges\r\n *  3. Buttons\r\n *  4. Cards\r\n *  5. Collapsible\r\n *  6. Chips\r\n *  7. Date Picker\r\n *  8. Dropdown\r\n *  10. Forms\r\n *  11. Global\r\n *  12. Grid\r\n *  13. Navigation Bar\r\n *  14. Side Navigation\r\n *  15. Photo Slider\r\n *  16. Spinners | Loaders\r\n *  17. Tabs\r\n *  18. Tables\r\n *  19. Toasts\r\n *  20. Typography\r\n *  21. Footer\r\n *  22. Flow Text\r\n *  23. Collections\r\n *  24. Progress Bar\r\n */\r\n/* 1. Colors\r\n   ========================================================================== */\r\n/* 2. Badges\r\n   ========================================================================== */\r\n/* 3. Buttons\r\n   ========================================================================== */\r\n/* 4. Cards\r\n   ========================================================================== */\r\n/* 5. Collapsible\r\n   ========================================================================== */\r\n/* 6. Chips\r\n   ========================================================================== */\r\n/* 7. Date Picker\r\n   ========================================================================== */\r\n/* 8. Dropdown\r\n   ========================================================================== */\r\n/* 9. Fonts\r\n   ========================================================================== */\r\n/* 10. Forms\r\n   ========================================================================== */\r\n/* 11. Global\r\n   ========================================================================== */\r\n/* 12. Grid\r\n   ========================================================================== */\r\n/* 13. Navigation Bar\r\n   ========================================================================== */\r\n/* 14. Side Navigation\r\n   ========================================================================== */\r\n/* 15. Photo Slider\r\n   ========================================================================== */\r\n/* 16. Spinners | Loaders\r\n   ========================================================================== */\r\n/* 17. Tabs\r\n   ========================================================================== */\r\n/* 18. Tables\r\n   ========================================================================== */\r\n/* 19. Toasts\r\n   ========================================================================== */\r\n/* 20. Typography\r\n   ========================================================================== */\r\n/* 21. Footer\r\n   ========================================================================== */\r\n/* 22. Flow Text\r\n   ========================================================================== */\r\n/* 23. Collections\r\n   ========================================================================== */\r\n/* 24. Progress Bar\r\n   ========================================================================== */\r\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\r\n/**\r\n * 1. Set default font family to sans-serif.\r\n * 2. Prevent iOS and IE text size adjust after device orientation change,\r\n *    without disabling user zoom.\r\n */\r\nhtml {\r\n  font-family: sans-serif;\r\n  /* 1 */\r\n  -ms-text-size-adjust: 100%;\r\n  /* 2 */\r\n  -webkit-text-size-adjust: 100%;\r\n  /* 2 */\r\n}\r\n\r\n/**\r\n * Remove default margin.\r\n */\r\nbody {\r\n  margin: 0;\r\n}\r\n\r\n/* HTML5 display definitions\r\n   ========================================================================== */\r\n/**\r\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\r\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\r\n * and Firefox.\r\n * Correct `block` display not defined for `main` in IE 11.\r\n */\r\narticle,\r\naside,\r\ndetails,\r\nfigcaption,\r\nfigure,\r\nfooter,\r\nheader,\r\nhgroup,\r\nmain,\r\nmenu,\r\nnav,\r\nsection,\r\nsummary {\r\n  display: block;\r\n}\r\n\r\n/**\r\n * 1. Correct `inline-block` display not defined in IE 8/9.\r\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\r\n */\r\naudio,\r\ncanvas,\r\nprogress,\r\nvideo {\r\n  display: inline-block;\r\n  /* 1 */\r\n  vertical-align: baseline;\r\n  /* 2 */\r\n}\r\n\r\n/**\r\n * Prevent modern browsers from displaying `audio` without controls.\r\n * Remove excess height in iOS 5 devices.\r\n */\r\naudio:not([controls]) {\r\n  display: none;\r\n  height: 0;\r\n}\r\n\r\n/**\r\n * Address `[hidden]` styling not present in IE 8/9/10.\r\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\r\n */\r\n[hidden],\r\ntemplate {\r\n  display: none;\r\n}\r\n\r\n/* Links\r\n   ========================================================================== */\r\n/**\r\n * Remove the gray background color from active links in IE 10.\r\n */\r\na {\r\n  background-color: transparent;\r\n}\r\n\r\n/**\r\n * Improve readability of focused elements when they are also in an\r\n * active/hover state.\r\n */\r\na:active,\r\na:hover {\r\n  outline: 0;\r\n}\r\n\r\n/* Text-level semantics\r\n   ========================================================================== */\r\n/**\r\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\r\n */\r\nabbr[title] {\r\n  border-bottom: 1px dotted;\r\n}\r\n\r\n/**\r\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\r\n */\r\nb,\r\nstrong {\r\n  font-weight: bold;\r\n}\r\n\r\n/**\r\n * Address styling not present in Safari and Chrome.\r\n */\r\ndfn {\r\n  font-style: italic;\r\n}\r\n\r\n/**\r\n * Address variable `h1` font-size and margin within `section` and `article`\r\n * contexts in Firefox 4+, Safari, and Chrome.\r\n */\r\nh1 {\r\n  font-size: 2em;\r\n  margin: 0.67em 0;\r\n}\r\n\r\n/**\r\n * Address styling not present in IE 8/9.\r\n */\r\nmark {\r\n  background: #ff0;\r\n  color: #000;\r\n}\r\n\r\n/**\r\n * Address inconsistent and variable font size in all browsers.\r\n */\r\nsmall {\r\n  font-size: 80%;\r\n}\r\n\r\n/**\r\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\r\n */\r\nsub,\r\nsup {\r\n  font-size: 75%;\r\n  line-height: 0;\r\n  position: relative;\r\n  vertical-align: baseline;\r\n}\r\n\r\nsup {\r\n  top: -0.5em;\r\n}\r\n\r\nsub {\r\n  bottom: -0.25em;\r\n}\r\n\r\n/* Embedded content\r\n   ========================================================================== */\r\n/**\r\n * Remove border when inside `a` element in IE 8/9/10.\r\n */\r\nimg {\r\n  border: 0;\r\n}\r\n\r\n/**\r\n * Correct overflow not hidden in IE 9/10/11.\r\n */\r\nsvg:not(:root) {\r\n  overflow: hidden;\r\n}\r\n\r\n/* Grouping content\r\n   ========================================================================== */\r\n/**\r\n * Address margin not present in IE 8/9 and Safari.\r\n */\r\nfigure {\r\n  margin: 1em 40px;\r\n}\r\n\r\n/**\r\n * Address differences between Firefox and other browsers.\r\n */\r\nhr {\r\n  box-sizing: content-box;\r\n  height: 0;\r\n}\r\n\r\n/**\r\n * Contain overflow in all browsers.\r\n */\r\npre {\r\n  overflow: auto;\r\n}\r\n\r\n/**\r\n * Address odd `em`-unit font size rendering in all browsers.\r\n */\r\ncode,\r\nkbd,\r\npre,\r\nsamp {\r\n  font-family: monospace, monospace;\r\n  font-size: 1em;\r\n}\r\n\r\n/* Forms\r\n   ========================================================================== */\r\n/**\r\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\r\n * styling of `select`, unless a `border` property is set.\r\n */\r\n/**\r\n * 1. Correct color not being inherited.\r\n *    Known issue: affects color of disabled elements.\r\n * 2. Correct font properties not being inherited.\r\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\r\n */\r\nbutton,\r\ninput,\r\noptgroup,\r\nselect,\r\ntextarea {\r\n  color: inherit;\r\n  /* 1 */\r\n  font: inherit;\r\n  /* 2 */\r\n  margin: 0;\r\n  /* 3 */\r\n}\r\n\r\n/**\r\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\r\n */\r\nbutton {\r\n  overflow: visible;\r\n}\r\n\r\n/**\r\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\r\n * All other form control elements do not inherit `text-transform` values.\r\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\r\n * Correct `select` style inheritance in Firefox.\r\n */\r\nbutton,\r\nselect {\r\n  text-transform: none;\r\n}\r\n\r\n/**\r\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\r\n *    and `video` controls.\r\n * 2. Correct inability to style clickable `input` types in iOS.\r\n * 3. Improve usability and consistency of cursor style between image-type\r\n *    `input` and others.\r\n */\r\nbutton,\r\nhtml input[type=\"button\"],\r\ninput[type=\"reset\"],\r\ninput[type=\"submit\"] {\r\n  -webkit-appearance: button;\r\n  /* 2 */\r\n  cursor: pointer;\r\n  /* 3 */\r\n}\r\n\r\n/**\r\n * Re-set default cursor for disabled elements.\r\n */\r\nbutton[disabled],\r\nhtml input[disabled] {\r\n  cursor: default;\r\n}\r\n\r\n/**\r\n * Remove inner padding and border in Firefox 4+.\r\n */\r\nbutton::-moz-focus-inner,\r\ninput::-moz-focus-inner {\r\n  border: 0;\r\n  padding: 0;\r\n}\r\n\r\n/**\r\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\r\n * the UA stylesheet.\r\n */\r\ninput {\r\n  line-height: normal;\r\n}\r\n\r\n/**\r\n * It's recommended that you don't attempt to style these elements.\r\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\r\n *\r\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\r\n * 2. Remove excess padding in IE 8/9/10.\r\n */\r\ninput[type=\"checkbox\"],\r\ninput[type=\"radio\"] {\r\n  box-sizing: border-box;\r\n  /* 1 */\r\n  padding: 0;\r\n  /* 2 */\r\n}\r\n\r\n/**\r\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\r\n * `font-size` values of the `input`, it causes the cursor style of the\r\n * decrement button to change from `default` to `text`.\r\n */\r\ninput[type=\"number\"]::-webkit-inner-spin-button,\r\ninput[type=\"number\"]::-webkit-outer-spin-button {\r\n  height: auto;\r\n}\r\n\r\n/**\r\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\r\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\r\n */\r\ninput[type=\"search\"] {\r\n  -webkit-appearance: textfield;\r\n  /* 1 */\r\n  box-sizing: content-box;\r\n  /* 2 */\r\n}\r\n\r\n/**\r\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\r\n * Safari (but not Chrome) clips the cancel button when the search input has\r\n * padding (and `textfield` appearance).\r\n */\r\ninput[type=\"search\"]::-webkit-search-cancel-button,\r\ninput[type=\"search\"]::-webkit-search-decoration {\r\n  -webkit-appearance: none;\r\n}\r\n\r\n/**\r\n * Define consistent border, margin, and padding.\r\n */\r\nfieldset {\r\n  border: 1px solid #c0c0c0;\r\n  margin: 0 2px;\r\n  padding: 0.35em 0.625em 0.75em;\r\n}\r\n\r\n/**\r\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\r\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\r\n */\r\nlegend {\r\n  border: 0;\r\n  /* 1 */\r\n  padding: 0;\r\n  /* 2 */\r\n}\r\n\r\n/**\r\n * Remove default vertical scrollbar in IE 8/9/10/11.\r\n */\r\ntextarea {\r\n  overflow: auto;\r\n}\r\n\r\n/**\r\n * Don't inherit the `font-weight` (applied by a rule above).\r\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\r\n */\r\noptgroup {\r\n  font-weight: bold;\r\n}\r\n\r\n/* Tables\r\n   ========================================================================== */\r\n/**\r\n * Remove most spacing between table cells.\r\n */\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0;\r\n}\r\n\r\ntd,\r\nth {\r\n  padding: 0;\r\n}\r\n\r\nhtml {\r\n  box-sizing: border-box;\r\n}\r\n\r\n*, *:before, *:after {\r\n  box-sizing: inherit;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  list-style-type: none;\r\n}\r\n\r\nul.browser-default,\r\nul.browser-default li {\r\n  list-style-type: initial;\r\n}\r\n\r\nul li {\r\n  list-style-type: none;\r\n}\r\n\r\na {\r\n  color: #039be5;\r\n  text-decoration: none;\r\n  -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.valign-wrapper {\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-align-items: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.valign-wrapper .valign {\r\n  display: block;\r\n}\r\n\r\n.clearfix {\r\n  clear: both;\r\n}\r\n\r\n.z-depth-0 {\r\n  box-shadow: none !important;\r\n}\r\n\r\n.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {\r\n  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {\r\n  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.z-depth-2 {\r\n  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\n.z-depth-3 {\r\n  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\n.z-depth-4, .modal {\r\n  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);\r\n}\r\n\r\n.z-depth-5 {\r\n  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);\r\n}\r\n\r\n.hoverable {\r\n  transition: box-shadow .25s;\r\n  box-shadow: 0;\r\n}\r\n\r\n.hoverable:hover {\r\n  transition: box-shadow .25s;\r\n  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n}\r\n\r\n.divider {\r\n  height: 1px;\r\n  overflow: hidden;\r\n  background-color: #e0e0e0;\r\n}\r\n\r\nblockquote {\r\n  margin: 20px 0;\r\n  padding-left: 1.5rem;\r\n  border-left: 5px solid #ee6e73;\r\n}\r\n\r\ni {\r\n  line-height: inherit;\r\n}\r\n\r\ni.left {\r\n  float: left;\r\n  margin-right: 15px;\r\n}\r\n\r\ni.right {\r\n  float: right;\r\n  margin-left: 15px;\r\n}\r\n\r\ni.tiny {\r\n  font-size: 1rem;\r\n}\r\n\r\ni.small {\r\n  font-size: 2rem;\r\n}\r\n\r\ni.medium {\r\n  font-size: 4rem;\r\n}\r\n\r\ni.large {\r\n  font-size: 6rem;\r\n}\r\n\r\nimg.responsive-img,\r\nvideo.responsive-video {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.pagination li {\r\n  display: inline-block;\r\n  border-radius: 2px;\r\n  text-align: center;\r\n  vertical-align: top;\r\n  height: 30px;\r\n}\r\n\r\n.pagination li a {\r\n  color: #444;\r\n  display: inline-block;\r\n  font-size: 1.2rem;\r\n  padding: 0 10px;\r\n  line-height: 30px;\r\n}\r\n\r\n.pagination li.active a {\r\n  color: #fff;\r\n}\r\n\r\n.pagination li.active {\r\n  background-color: #ee6e73;\r\n}\r\n\r\n.pagination li.disabled a {\r\n  cursor: default;\r\n  color: #999;\r\n}\r\n\r\n.pagination li i {\r\n  font-size: 2rem;\r\n}\r\n\r\n.pagination li.pages ul li {\r\n  display: inline-block;\r\n  float: none;\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .pagination {\r\n    width: 100%;\r\n  }\r\n  .pagination li.prev,\r\n  .pagination li.next {\r\n    width: 10%;\r\n  }\r\n  .pagination li.pages {\r\n    width: 80%;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n  }\r\n}\r\n\r\n.breadcrumb {\r\n  font-size: 18px;\r\n  color: rgba(255, 255, 255, 0.7);\r\n}\r\n\r\n.breadcrumb i,\r\n.breadcrumb [class^=\"mdi-\"], .breadcrumb [class*=\"mdi-\"],\r\n.breadcrumb i.material-icons {\r\n  display: inline-block;\r\n  float: left;\r\n  font-size: 24px;\r\n}\r\n\r\n.breadcrumb:before {\r\n  content: '\\E5CC';\r\n  color: rgba(255, 255, 255, 0.7);\r\n  vertical-align: top;\r\n  display: inline-block;\r\n  font-family: 'Material Icons';\r\n  font-weight: normal;\r\n  font-style: normal;\r\n  font-size: 25px;\r\n  margin: 0 10px 0 8px;\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\n.breadcrumb:first-child:before {\r\n  display: none;\r\n}\r\n\r\n.breadcrumb:last-child {\r\n  color: #fff;\r\n}\r\n\r\n.parallax-container {\r\n  position: relative;\r\n  overflow: hidden;\r\n  height: 500px;\r\n}\r\n\r\n.parallax {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  z-index: -1;\r\n}\r\n\r\n.parallax img {\r\n  display: none;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 0;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  -webkit-transform: translate3d(0, 0, 0);\r\n  transform: translate3d(0, 0, 0);\r\n  -webkit-transform: translateX(-50%);\r\n          transform: translateX(-50%);\r\n}\r\n\r\n.pin-top, .pin-bottom {\r\n  position: relative;\r\n}\r\n\r\n.pinned {\r\n  position: fixed !important;\r\n}\r\n\r\n/*********************\r\n  Transition Classes\r\n**********************/\r\nul.staggered-list li {\r\n  opacity: 0;\r\n}\r\n\r\n.fade-in {\r\n  opacity: 0;\r\n  -webkit-transform-origin: 0 50%;\r\n          transform-origin: 0 50%;\r\n}\r\n\r\n/*********************\r\n  Media Query Classes\r\n**********************/\r\n@media only screen and (max-width: 600px) {\r\n  .hide-on-small-only, .hide-on-small-and-down {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .hide-on-med-and-down {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 601px) {\r\n  .hide-on-med-and-up {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 600px) and (max-width: 992px) {\r\n  .hide-on-med-only {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  .hide-on-large-only {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  .show-on-large {\r\n    display: block !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 600px) and (max-width: 992px) {\r\n  .show-on-medium {\r\n    display: block !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .show-on-small {\r\n    display: block !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 601px) {\r\n  .show-on-medium-and-up {\r\n    display: block !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .show-on-medium-and-down {\r\n    display: block !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .center-on-small-only {\r\n    text-align: center;\r\n  }\r\n}\r\n\r\nfooter.page-footer {\r\n  margin-top: 20px;\r\n  padding-top: 20px;\r\n  background-color: #ee6e73;\r\n}\r\n\r\nfooter.page-footer .footer-copyright {\r\n  overflow: hidden;\r\n  height: 50px;\r\n  line-height: 50px;\r\n  color: rgba(255, 255, 255, 0.8);\r\n  background-color: rgba(51, 51, 51, 0.08);\r\n}\r\n\r\ntable, th, td {\r\n  border: none;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n  display: table;\r\n}\r\n\r\ntable.bordered > thead > tr,\r\ntable.bordered > tbody > tr {\r\n  border-bottom: 1px solid #d0d0d0;\r\n}\r\n\r\ntable.striped > tbody > tr:nth-child(odd) {\r\n  background-color: #f2f2f2;\r\n}\r\n\r\ntable.striped > tbody > tr > td {\r\n  border-radius: 0;\r\n}\r\n\r\ntable.highlight > tbody > tr {\r\n  transition: background-color .25s ease;\r\n}\r\n\r\ntable.highlight > tbody > tr:hover {\r\n  background-color: #f2f2f2;\r\n}\r\n\r\ntable.centered thead tr th, table.centered tbody tr td {\r\n  text-align: center;\r\n}\r\n\r\nthead {\r\n  border-bottom: 1px solid #d0d0d0;\r\n}\r\n\r\ntd, th {\r\n  padding: 15px 5px;\r\n  display: table-cell;\r\n  text-align: left;\r\n  vertical-align: middle;\r\n  border-radius: 2px;\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  table.responsive-table {\r\n    width: 100%;\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n    display: block;\r\n    position: relative;\r\n    /* sort out borders */\r\n  }\r\n  table.responsive-table td:empty:before {\r\n    content: '\\00a0';\r\n  }\r\n  table.responsive-table th,\r\n  table.responsive-table td {\r\n    margin: 0;\r\n    vertical-align: top;\r\n  }\r\n  table.responsive-table th {\r\n    text-align: left;\r\n  }\r\n  table.responsive-table thead {\r\n    display: block;\r\n    float: left;\r\n  }\r\n  table.responsive-table thead tr {\r\n    display: block;\r\n    padding: 0 10px 0 0;\r\n  }\r\n  table.responsive-table thead tr th::before {\r\n    content: \"\\00a0\";\r\n  }\r\n  table.responsive-table tbody {\r\n    display: block;\r\n    width: auto;\r\n    position: relative;\r\n    overflow-x: auto;\r\n    white-space: nowrap;\r\n  }\r\n  table.responsive-table tbody tr {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n  }\r\n  table.responsive-table th {\r\n    display: block;\r\n    text-align: right;\r\n  }\r\n  table.responsive-table td {\r\n    display: block;\r\n    min-height: 1.25em;\r\n    text-align: left;\r\n  }\r\n  table.responsive-table tr {\r\n    padding: 0 10px;\r\n  }\r\n  table.responsive-table thead {\r\n    border: 0;\r\n    border-right: 1px solid #d0d0d0;\r\n  }\r\n  table.responsive-table.bordered th {\r\n    border-bottom: 0;\r\n    border-left: 0;\r\n  }\r\n  table.responsive-table.bordered td {\r\n    border-left: 0;\r\n    border-right: 0;\r\n    border-bottom: 0;\r\n  }\r\n  table.responsive-table.bordered tr {\r\n    border: 0;\r\n  }\r\n  table.responsive-table.bordered tbody tr {\r\n    border-right: 1px solid #d0d0d0;\r\n  }\r\n}\r\n\r\n.collection {\r\n  margin: 0.5rem 0 1rem 0;\r\n  border: 1px solid #e0e0e0;\r\n  border-radius: 2px;\r\n  overflow: hidden;\r\n  position: relative;\r\n}\r\n\r\n.collection .collection-item {\r\n  background-color: #fff;\r\n  line-height: 1.5rem;\r\n  padding: 10px 20px;\r\n  margin: 0;\r\n  border-bottom: 1px solid #e0e0e0;\r\n}\r\n\r\n.collection .collection-item.avatar {\r\n  min-height: 84px;\r\n  padding-left: 72px;\r\n  position: relative;\r\n}\r\n\r\n.collection .collection-item.avatar .circle {\r\n  position: absolute;\r\n  width: 42px;\r\n  height: 42px;\r\n  overflow: hidden;\r\n  left: 15px;\r\n  display: inline-block;\r\n  vertical-align: middle;\r\n}\r\n\r\n.collection .collection-item.avatar i.circle {\r\n  font-size: 18px;\r\n  line-height: 42px;\r\n  color: #fff;\r\n  background-color: #999;\r\n  text-align: center;\r\n}\r\n\r\n.collection .collection-item.avatar .title {\r\n  font-size: 16px;\r\n}\r\n\r\n.collection .collection-item.avatar p {\r\n  margin: 0;\r\n}\r\n\r\n.collection .collection-item.avatar .secondary-content {\r\n  position: absolute;\r\n  top: 16px;\r\n  right: 16px;\r\n}\r\n\r\n.collection .collection-item:last-child {\r\n  border-bottom: none;\r\n}\r\n\r\n.collection .collection-item.active {\r\n  background-color: #26a69a;\r\n  color: #eafaf9;\r\n}\r\n\r\n.collection .collection-item.active .secondary-content {\r\n  color: #fff;\r\n}\r\n\r\n.collection a.collection-item {\r\n  display: block;\r\n  transition: .25s;\r\n  color: #26a69a;\r\n}\r\n\r\n.collection a.collection-item:not(.active):hover {\r\n  background-color: #ddd;\r\n}\r\n\r\n.collection.with-header .collection-header {\r\n  background-color: #fff;\r\n  border-bottom: 1px solid #e0e0e0;\r\n  padding: 10px 20px;\r\n}\r\n\r\n.collection.with-header .collection-item {\r\n  padding-left: 30px;\r\n}\r\n\r\n.collection.with-header .collection-item.avatar {\r\n  padding-left: 72px;\r\n}\r\n\r\n.secondary-content {\r\n  float: right;\r\n  color: #26a69a;\r\n}\r\n\r\n.collapsible .collection {\r\n  margin: 0;\r\n  border: none;\r\n}\r\n\r\nspan.badge {\r\n  min-width: 3rem;\r\n  padding: 0 6px;\r\n  text-align: center;\r\n  font-size: 1rem;\r\n  line-height: inherit;\r\n  color: #757575;\r\n  position: absolute;\r\n  right: 15px;\r\n  box-sizing: border-box;\r\n}\r\n\r\nspan.badge.new {\r\n  font-weight: 300;\r\n  font-size: 0.8rem;\r\n  color: #fff;\r\n  background-color: #26a69a;\r\n  border-radius: 2px;\r\n}\r\n\r\nspan.badge.new:after {\r\n  content: \" new\";\r\n}\r\n\r\nspan.badge[data-badge-caption]::after {\r\n  content: \" \" attr(data-badge-caption);\r\n}\r\n\r\nnav ul a span.badge {\r\n  position: static;\r\n  margin-left: 4px;\r\n  line-height: 0;\r\n}\r\n\r\n.video-container {\r\n  position: relative;\r\n  padding-bottom: 56.25%;\r\n  height: 0;\r\n  overflow: hidden;\r\n}\r\n\r\n.video-container iframe, .video-container object, .video-container embed {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.progress {\r\n  position: relative;\r\n  height: 4px;\r\n  display: block;\r\n  width: 100%;\r\n  background-color: #acece6;\r\n  border-radius: 2px;\r\n  margin: 0.5rem 0 1rem 0;\r\n  overflow: hidden;\r\n}\r\n\r\n.progress .determinate {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  background-color: #26a69a;\r\n  transition: width .3s linear;\r\n}\r\n\r\n.progress .indeterminate {\r\n  background-color: #26a69a;\r\n}\r\n\r\n.progress .indeterminate:before {\r\n  content: '';\r\n  position: absolute;\r\n  background-color: inherit;\r\n  top: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  will-change: left, right;\r\n  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;\r\n          animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;\r\n}\r\n\r\n.progress .indeterminate:after {\r\n  content: '';\r\n  position: absolute;\r\n  background-color: inherit;\r\n  top: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  will-change: left, right;\r\n  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;\r\n          animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;\r\n  -webkit-animation-delay: 1.15s;\r\n          animation-delay: 1.15s;\r\n}\r\n\r\n@-webkit-keyframes indeterminate {\r\n  0% {\r\n    left: -35%;\r\n    right: 100%;\r\n  }\r\n  60% {\r\n    left: 100%;\r\n    right: -90%;\r\n  }\r\n  100% {\r\n    left: 100%;\r\n    right: -90%;\r\n  }\r\n}\r\n\r\n@keyframes indeterminate {\r\n  0% {\r\n    left: -35%;\r\n    right: 100%;\r\n  }\r\n  60% {\r\n    left: 100%;\r\n    right: -90%;\r\n  }\r\n  100% {\r\n    left: 100%;\r\n    right: -90%;\r\n  }\r\n}\r\n\r\n@-webkit-keyframes indeterminate-short {\r\n  0% {\r\n    left: -200%;\r\n    right: 100%;\r\n  }\r\n  60% {\r\n    left: 107%;\r\n    right: -8%;\r\n  }\r\n  100% {\r\n    left: 107%;\r\n    right: -8%;\r\n  }\r\n}\r\n\r\n@keyframes indeterminate-short {\r\n  0% {\r\n    left: -200%;\r\n    right: 100%;\r\n  }\r\n  60% {\r\n    left: 107%;\r\n    right: -8%;\r\n  }\r\n  100% {\r\n    left: 107%;\r\n    right: -8%;\r\n  }\r\n}\r\n\r\n/*******************\r\n  Utility Classes\r\n*******************/\r\n.hide {\r\n  display: none !important;\r\n}\r\n\r\n.left-align {\r\n  text-align: left;\r\n}\r\n\r\n.right-align {\r\n  text-align: right;\r\n}\r\n\r\n.center, .center-align {\r\n  text-align: center;\r\n}\r\n\r\n.left {\r\n  float: left !important;\r\n}\r\n\r\n.right {\r\n  float: right !important;\r\n}\r\n\r\n.no-select, input[type=range],\r\ninput[type=range] + .thumb {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n.circle {\r\n  border-radius: 50%;\r\n}\r\n\r\n.center-block {\r\n  display: block;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.truncate {\r\n  display: block;\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n}\r\n\r\n.no-padding {\r\n  padding: 0 !important;\r\n}\r\n\r\n/* This is needed for some mobile phones to display the Google Icon font properly */\r\n.material-icons {\r\n  text-rendering: optimizeLegibility;\r\n  -webkit-font-feature-settings: 'liga';\r\n     -moz-font-feature-settings: 'liga';\r\n          font-feature-settings: 'liga';\r\n}\r\n\r\n.container {\r\n  margin: 0 auto;\r\n  max-width: 1280px;\r\n  width: 90%;\r\n}\r\n\r\n@media only screen and (min-width: 601px) {\r\n  .container {\r\n    width: 85%;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  .container {\r\n    width: 70%;\r\n  }\r\n}\r\n\r\n.container .row {\r\n  margin-left: -0.75rem;\r\n  margin-right: -0.75rem;\r\n}\r\n\r\n.section {\r\n  padding-top: 1rem;\r\n  padding-bottom: 1rem;\r\n}\r\n\r\n.section.no-pad {\r\n  padding: 0;\r\n}\r\n\r\n.section.no-pad-bot {\r\n  padding-bottom: 0;\r\n}\r\n\r\n.section.no-pad-top {\r\n  padding-top: 0;\r\n}\r\n\r\n.row {\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.row:after {\r\n  content: \"\";\r\n  display: table;\r\n  clear: both;\r\n}\r\n\r\n.row .col {\r\n  float: left;\r\n  box-sizing: border-box;\r\n  padding: 0 0.75rem;\r\n  min-height: 1px;\r\n}\r\n\r\n.row .col[class*=\"push-\"], .row .col[class*=\"pull-\"] {\r\n  position: relative;\r\n}\r\n\r\n.row .col.s1 {\r\n  width: 8.3333333333%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s2 {\r\n  width: 16.6666666667%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s3 {\r\n  width: 25%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s4 {\r\n  width: 33.3333333333%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s5 {\r\n  width: 41.6666666667%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s6 {\r\n  width: 50%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s7 {\r\n  width: 58.3333333333%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s8 {\r\n  width: 66.6666666667%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s9 {\r\n  width: 75%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s10 {\r\n  width: 83.3333333333%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s11 {\r\n  width: 91.6666666667%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.s12 {\r\n  width: 100%;\r\n  margin-left: auto;\r\n  left: auto;\r\n  right: auto;\r\n}\r\n\r\n.row .col.offset-s1 {\r\n  margin-left: 8.3333333333%;\r\n}\r\n\r\n.row .col.pull-s1 {\r\n  right: 8.3333333333%;\r\n}\r\n\r\n.row .col.push-s1 {\r\n  left: 8.3333333333%;\r\n}\r\n\r\n.row .col.offset-s2 {\r\n  margin-left: 16.6666666667%;\r\n}\r\n\r\n.row .col.pull-s2 {\r\n  right: 16.6666666667%;\r\n}\r\n\r\n.row .col.push-s2 {\r\n  left: 16.6666666667%;\r\n}\r\n\r\n.row .col.offset-s3 {\r\n  margin-left: 25%;\r\n}\r\n\r\n.row .col.pull-s3 {\r\n  right: 25%;\r\n}\r\n\r\n.row .col.push-s3 {\r\n  left: 25%;\r\n}\r\n\r\n.row .col.offset-s4 {\r\n  margin-left: 33.3333333333%;\r\n}\r\n\r\n.row .col.pull-s4 {\r\n  right: 33.3333333333%;\r\n}\r\n\r\n.row .col.push-s4 {\r\n  left: 33.3333333333%;\r\n}\r\n\r\n.row .col.offset-s5 {\r\n  margin-left: 41.6666666667%;\r\n}\r\n\r\n.row .col.pull-s5 {\r\n  right: 41.6666666667%;\r\n}\r\n\r\n.row .col.push-s5 {\r\n  left: 41.6666666667%;\r\n}\r\n\r\n.row .col.offset-s6 {\r\n  margin-left: 50%;\r\n}\r\n\r\n.row .col.pull-s6 {\r\n  right: 50%;\r\n}\r\n\r\n.row .col.push-s6 {\r\n  left: 50%;\r\n}\r\n\r\n.row .col.offset-s7 {\r\n  margin-left: 58.3333333333%;\r\n}\r\n\r\n.row .col.pull-s7 {\r\n  right: 58.3333333333%;\r\n}\r\n\r\n.row .col.push-s7 {\r\n  left: 58.3333333333%;\r\n}\r\n\r\n.row .col.offset-s8 {\r\n  margin-left: 66.6666666667%;\r\n}\r\n\r\n.row .col.pull-s8 {\r\n  right: 66.6666666667%;\r\n}\r\n\r\n.row .col.push-s8 {\r\n  left: 66.6666666667%;\r\n}\r\n\r\n.row .col.offset-s9 {\r\n  margin-left: 75%;\r\n}\r\n\r\n.row .col.pull-s9 {\r\n  right: 75%;\r\n}\r\n\r\n.row .col.push-s9 {\r\n  left: 75%;\r\n}\r\n\r\n.row .col.offset-s10 {\r\n  margin-left: 83.3333333333%;\r\n}\r\n\r\n.row .col.pull-s10 {\r\n  right: 83.3333333333%;\r\n}\r\n\r\n.row .col.push-s10 {\r\n  left: 83.3333333333%;\r\n}\r\n\r\n.row .col.offset-s11 {\r\n  margin-left: 91.6666666667%;\r\n}\r\n\r\n.row .col.pull-s11 {\r\n  right: 91.6666666667%;\r\n}\r\n\r\n.row .col.push-s11 {\r\n  left: 91.6666666667%;\r\n}\r\n\r\n.row .col.offset-s12 {\r\n  margin-left: 100%;\r\n}\r\n\r\n.row .col.pull-s12 {\r\n  right: 100%;\r\n}\r\n\r\n.row .col.push-s12 {\r\n  left: 100%;\r\n}\r\n\r\n@media only screen and (min-width: 601px) {\r\n  .row .col.m1 {\r\n    width: 8.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m2 {\r\n    width: 16.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m3 {\r\n    width: 25%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m4 {\r\n    width: 33.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m5 {\r\n    width: 41.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m6 {\r\n    width: 50%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m7 {\r\n    width: 58.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m8 {\r\n    width: 66.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m9 {\r\n    width: 75%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m10 {\r\n    width: 83.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m11 {\r\n    width: 91.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.m12 {\r\n    width: 100%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.offset-m1 {\r\n    margin-left: 8.3333333333%;\r\n  }\r\n  .row .col.pull-m1 {\r\n    right: 8.3333333333%;\r\n  }\r\n  .row .col.push-m1 {\r\n    left: 8.3333333333%;\r\n  }\r\n  .row .col.offset-m2 {\r\n    margin-left: 16.6666666667%;\r\n  }\r\n  .row .col.pull-m2 {\r\n    right: 16.6666666667%;\r\n  }\r\n  .row .col.push-m2 {\r\n    left: 16.6666666667%;\r\n  }\r\n  .row .col.offset-m3 {\r\n    margin-left: 25%;\r\n  }\r\n  .row .col.pull-m3 {\r\n    right: 25%;\r\n  }\r\n  .row .col.push-m3 {\r\n    left: 25%;\r\n  }\r\n  .row .col.offset-m4 {\r\n    margin-left: 33.3333333333%;\r\n  }\r\n  .row .col.pull-m4 {\r\n    right: 33.3333333333%;\r\n  }\r\n  .row .col.push-m4 {\r\n    left: 33.3333333333%;\r\n  }\r\n  .row .col.offset-m5 {\r\n    margin-left: 41.6666666667%;\r\n  }\r\n  .row .col.pull-m5 {\r\n    right: 41.6666666667%;\r\n  }\r\n  .row .col.push-m5 {\r\n    left: 41.6666666667%;\r\n  }\r\n  .row .col.offset-m6 {\r\n    margin-left: 50%;\r\n  }\r\n  .row .col.pull-m6 {\r\n    right: 50%;\r\n  }\r\n  .row .col.push-m6 {\r\n    left: 50%;\r\n  }\r\n  .row .col.offset-m7 {\r\n    margin-left: 58.3333333333%;\r\n  }\r\n  .row .col.pull-m7 {\r\n    right: 58.3333333333%;\r\n  }\r\n  .row .col.push-m7 {\r\n    left: 58.3333333333%;\r\n  }\r\n  .row .col.offset-m8 {\r\n    margin-left: 66.6666666667%;\r\n  }\r\n  .row .col.pull-m8 {\r\n    right: 66.6666666667%;\r\n  }\r\n  .row .col.push-m8 {\r\n    left: 66.6666666667%;\r\n  }\r\n  .row .col.offset-m9 {\r\n    margin-left: 75%;\r\n  }\r\n  .row .col.pull-m9 {\r\n    right: 75%;\r\n  }\r\n  .row .col.push-m9 {\r\n    left: 75%;\r\n  }\r\n  .row .col.offset-m10 {\r\n    margin-left: 83.3333333333%;\r\n  }\r\n  .row .col.pull-m10 {\r\n    right: 83.3333333333%;\r\n  }\r\n  .row .col.push-m10 {\r\n    left: 83.3333333333%;\r\n  }\r\n  .row .col.offset-m11 {\r\n    margin-left: 91.6666666667%;\r\n  }\r\n  .row .col.pull-m11 {\r\n    right: 91.6666666667%;\r\n  }\r\n  .row .col.push-m11 {\r\n    left: 91.6666666667%;\r\n  }\r\n  .row .col.offset-m12 {\r\n    margin-left: 100%;\r\n  }\r\n  .row .col.pull-m12 {\r\n    right: 100%;\r\n  }\r\n  .row .col.push-m12 {\r\n    left: 100%;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  .row .col.l1 {\r\n    width: 8.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l2 {\r\n    width: 16.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l3 {\r\n    width: 25%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l4 {\r\n    width: 33.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l5 {\r\n    width: 41.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l6 {\r\n    width: 50%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l7 {\r\n    width: 58.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l8 {\r\n    width: 66.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l9 {\r\n    width: 75%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l10 {\r\n    width: 83.3333333333%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l11 {\r\n    width: 91.6666666667%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.l12 {\r\n    width: 100%;\r\n    margin-left: auto;\r\n    left: auto;\r\n    right: auto;\r\n  }\r\n  .row .col.offset-l1 {\r\n    margin-left: 8.3333333333%;\r\n  }\r\n  .row .col.pull-l1 {\r\n    right: 8.3333333333%;\r\n  }\r\n  .row .col.push-l1 {\r\n    left: 8.3333333333%;\r\n  }\r\n  .row .col.offset-l2 {\r\n    margin-left: 16.6666666667%;\r\n  }\r\n  .row .col.pull-l2 {\r\n    right: 16.6666666667%;\r\n  }\r\n  .row .col.push-l2 {\r\n    left: 16.6666666667%;\r\n  }\r\n  .row .col.offset-l3 {\r\n    margin-left: 25%;\r\n  }\r\n  .row .col.pull-l3 {\r\n    right: 25%;\r\n  }\r\n  .row .col.push-l3 {\r\n    left: 25%;\r\n  }\r\n  .row .col.offset-l4 {\r\n    margin-left: 33.3333333333%;\r\n  }\r\n  .row .col.pull-l4 {\r\n    right: 33.3333333333%;\r\n  }\r\n  .row .col.push-l4 {\r\n    left: 33.3333333333%;\r\n  }\r\n  .row .col.offset-l5 {\r\n    margin-left: 41.6666666667%;\r\n  }\r\n  .row .col.pull-l5 {\r\n    right: 41.6666666667%;\r\n  }\r\n  .row .col.push-l5 {\r\n    left: 41.6666666667%;\r\n  }\r\n  .row .col.offset-l6 {\r\n    margin-left: 50%;\r\n  }\r\n  .row .col.pull-l6 {\r\n    right: 50%;\r\n  }\r\n  .row .col.push-l6 {\r\n    left: 50%;\r\n  }\r\n  .row .col.offset-l7 {\r\n    margin-left: 58.3333333333%;\r\n  }\r\n  .row .col.pull-l7 {\r\n    right: 58.3333333333%;\r\n  }\r\n  .row .col.push-l7 {\r\n    left: 58.3333333333%;\r\n  }\r\n  .row .col.offset-l8 {\r\n    margin-left: 66.6666666667%;\r\n  }\r\n  .row .col.pull-l8 {\r\n    right: 66.6666666667%;\r\n  }\r\n  .row .col.push-l8 {\r\n    left: 66.6666666667%;\r\n  }\r\n  .row .col.offset-l9 {\r\n    margin-left: 75%;\r\n  }\r\n  .row .col.pull-l9 {\r\n    right: 75%;\r\n  }\r\n  .row .col.push-l9 {\r\n    left: 75%;\r\n  }\r\n  .row .col.offset-l10 {\r\n    margin-left: 83.3333333333%;\r\n  }\r\n  .row .col.pull-l10 {\r\n    right: 83.3333333333%;\r\n  }\r\n  .row .col.push-l10 {\r\n    left: 83.3333333333%;\r\n  }\r\n  .row .col.offset-l11 {\r\n    margin-left: 91.6666666667%;\r\n  }\r\n  .row .col.pull-l11 {\r\n    right: 91.6666666667%;\r\n  }\r\n  .row .col.push-l11 {\r\n    left: 91.6666666667%;\r\n  }\r\n  .row .col.offset-l12 {\r\n    margin-left: 100%;\r\n  }\r\n  .row .col.pull-l12 {\r\n    right: 100%;\r\n  }\r\n  .row .col.push-l12 {\r\n    left: 100%;\r\n  }\r\n}\r\n\r\nnav {\r\n  color: #fff;\r\n  background-color: #ee6e73;\r\n  width: 100%;\r\n  height: 56px;\r\n  line-height: 56px;\r\n}\r\n\r\nnav a {\r\n  color: #fff;\r\n}\r\n\r\nnav i,\r\nnav [class^=\"mdi-\"], nav [class*=\"mdi-\"],\r\nnav i.material-icons {\r\n  display: block;\r\n  font-size: 2rem;\r\n  height: 56px;\r\n  line-height: 56px;\r\n}\r\n\r\nnav .nav-wrapper {\r\n  position: relative;\r\n  height: 100%;\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  nav a.button-collapse {\r\n    display: none;\r\n  }\r\n}\r\n\r\nnav .button-collapse {\r\n  float: left;\r\n  position: relative;\r\n  z-index: 1;\r\n  height: 56px;\r\n}\r\n\r\nnav .button-collapse i {\r\n  font-size: 2.7rem;\r\n  height: 56px;\r\n  line-height: 56px;\r\n}\r\n\r\nnav .brand-logo {\r\n  position: absolute;\r\n  color: #fff;\r\n  display: inline-block;\r\n  font-size: 2.1rem;\r\n  padding: 0;\r\n  white-space: nowrap;\r\n}\r\n\r\nnav .brand-logo.center {\r\n  left: 50%;\r\n  -webkit-transform: translateX(-50%);\r\n          transform: translateX(-50%);\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  nav .brand-logo {\r\n    left: 50%;\r\n    -webkit-transform: translateX(-50%);\r\n            transform: translateX(-50%);\r\n  }\r\n  nav .brand-logo.left, nav .brand-logo.right {\r\n    padding: 0;\r\n    -webkit-transform: none;\r\n            transform: none;\r\n  }\r\n  nav .brand-logo.left {\r\n    left: 0.5rem;\r\n  }\r\n  nav .brand-logo.right {\r\n    right: 0.5rem;\r\n    left: auto;\r\n  }\r\n}\r\n\r\nnav .brand-logo.right {\r\n  right: 0.5rem;\r\n  padding: 0;\r\n}\r\n\r\nnav .brand-logo i,\r\nnav .brand-logo [class^=\"mdi-\"], nav .brand-logo [class*=\"mdi-\"],\r\nnav .brand-logo i.material-icons {\r\n  float: left;\r\n  margin-right: 15px;\r\n}\r\n\r\nnav ul {\r\n  margin: 0;\r\n}\r\n\r\nnav ul li {\r\n  transition: background-color .3s;\r\n  float: left;\r\n  padding: 0;\r\n}\r\n\r\nnav ul li.active {\r\n  background-color: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nnav ul a {\r\n  transition: background-color .3s;\r\n  font-size: 1rem;\r\n  color: #fff;\r\n  display: block;\r\n  padding: 0 15px;\r\n  cursor: pointer;\r\n}\r\n\r\nnav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {\r\n  margin-top: -2px;\r\n  margin-left: 15px;\r\n  margin-right: 15px;\r\n}\r\n\r\nnav ul a:hover {\r\n  background-color: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\nnav ul.left {\r\n  float: left;\r\n}\r\n\r\nnav form {\r\n  height: 100%;\r\n}\r\n\r\nnav .input-field {\r\n  margin: 0;\r\n  height: 100%;\r\n}\r\n\r\nnav .input-field input {\r\n  height: 100%;\r\n  font-size: 1.2rem;\r\n  border: none;\r\n  padding-left: 2rem;\r\n}\r\n\r\nnav .input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {\r\n  border: none;\r\n  box-shadow: none;\r\n}\r\n\r\nnav .input-field label {\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\nnav .input-field label i {\r\n  color: rgba(255, 255, 255, 0.7);\r\n  transition: color .3s;\r\n}\r\n\r\nnav .input-field label.active i {\r\n  color: #fff;\r\n}\r\n\r\nnav .input-field label.active {\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n}\r\n\r\n.navbar-fixed {\r\n  position: relative;\r\n  height: 56px;\r\n  z-index: 998;\r\n}\r\n\r\n.navbar-fixed nav {\r\n  position: fixed;\r\n}\r\n\r\n@media only screen and (min-width: 601px) {\r\n  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {\r\n    height: 64px;\r\n    line-height: 64px;\r\n  }\r\n  .navbar-fixed {\r\n    height: 64px;\r\n  }\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Roboto\";\r\n  src: local(Roboto Thin), url(\"../fonts/roboto/Roboto-Thin.eot\");\r\n  src: url(\"../fonts/roboto/Roboto-Thin.eot?#iefix\") format(\"embedded-opentype\"), url(\"../fonts/roboto/Roboto-Thin.woff2\") format(\"woff2\"), url(\"../fonts/roboto/Roboto-Thin.woff\") format(\"woff\"), url(\"../fonts/roboto/Roboto-Thin.ttf\") format(\"truetype\");\r\n  font-weight: 200;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Roboto\";\r\n  src: local(Roboto Light), url(\"../fonts/roboto/Roboto-Light.eot\");\r\n  src: url(\"../fonts/roboto/Roboto-Light.eot?#iefix\") format(\"embedded-opentype\"), url(\"../fonts/roboto/Roboto-Light.woff2\") format(\"woff2\"), url(\"../fonts/roboto/Roboto-Light.woff\") format(\"woff\"), url(\"../fonts/roboto/Roboto-Light.ttf\") format(\"truetype\");\r\n  font-weight: 300;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Roboto\";\r\n  src: local(Roboto Regular), url(\"../fonts/roboto/Roboto-Regular.eot\");\r\n  src: url(\"../fonts/roboto/Roboto-Regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"../fonts/roboto/Roboto-Regular.woff2\") format(\"woff2\"), url(\"../fonts/roboto/Roboto-Regular.woff\") format(\"woff\"), url(\"../fonts/roboto/Roboto-Regular.ttf\") format(\"truetype\");\r\n  font-weight: 400;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Roboto\";\r\n  src: url(\"../fonts/roboto/Roboto-Medium.eot\");\r\n  src: url(\"../fonts/roboto/Roboto-Medium.eot?#iefix\") format(\"embedded-opentype\"), url(\"../fonts/roboto/Roboto-Medium.woff2\") format(\"woff2\"), url(\"../fonts/roboto/Roboto-Medium.woff\") format(\"woff\"), url(\"../fonts/roboto/Roboto-Medium.ttf\") format(\"truetype\");\r\n  font-weight: 500;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Roboto\";\r\n  src: url(\"../fonts/roboto/Roboto-Bold.eot\");\r\n  src: url(\"../fonts/roboto/Roboto-Bold.eot?#iefix\") format(\"embedded-opentype\"), url(\"../fonts/roboto/Roboto-Bold.woff2\") format(\"woff2\"), url(\"../fonts/roboto/Roboto-Bold.woff\") format(\"woff\"), url(\"../fonts/roboto/Roboto-Bold.ttf\") format(\"truetype\");\r\n  font-weight: 700;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\n\r\nhtml {\r\n  line-height: 1.5;\r\n  font-family: \"Roboto\", sans-serif;\r\n  font-weight: normal;\r\n  color: rgba(0, 0, 0, 0.87);\r\n}\r\n\r\n@media only screen and (min-width: 0) {\r\n  html {\r\n    font-size: 14px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 992px) {\r\n  html {\r\n    font-size: 14.5px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1200px) {\r\n  html {\r\n    font-size: 15px;\r\n  }\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n  font-weight: 400;\r\n  line-height: 1.1;\r\n}\r\n\r\nh1 a, h2 a, h3 a, h4 a, h5 a, h6 a {\r\n  font-weight: inherit;\r\n}\r\n\r\nh1 {\r\n  font-size: 4.2rem;\r\n  line-height: 110%;\r\n  margin: 2.1rem 0 1.68rem 0;\r\n}\r\n\r\nh2 {\r\n  font-size: 3.56rem;\r\n  line-height: 110%;\r\n  margin: 1.78rem 0 1.424rem 0;\r\n}\r\n\r\nh3 {\r\n  font-size: 2.92rem;\r\n  line-height: 110%;\r\n  margin: 1.46rem 0 1.168rem 0;\r\n}\r\n\r\nh4 {\r\n  font-size: 2.28rem;\r\n  line-height: 110%;\r\n  margin: 1.14rem 0 0.912rem 0;\r\n}\r\n\r\nh5 {\r\n  font-size: 1.64rem;\r\n  line-height: 110%;\r\n  margin: 0.82rem 0 0.656rem 0;\r\n}\r\n\r\nh6 {\r\n  font-size: 1rem;\r\n  line-height: 110%;\r\n  margin: 0.5rem 0 0.4rem 0;\r\n}\r\n\r\nem {\r\n  font-style: italic;\r\n}\r\n\r\nstrong {\r\n  font-weight: 500;\r\n}\r\n\r\nsmall {\r\n  font-size: 75%;\r\n}\r\n\r\n.light, footer.page-footer .footer-copyright {\r\n  font-weight: 300;\r\n}\r\n\r\n.thin {\r\n  font-weight: 200;\r\n}\r\n\r\n.flow-text {\r\n  font-weight: 300;\r\n}\r\n\r\n@media only screen and (min-width: 360px) {\r\n  .flow-text {\r\n    font-size: 1.2rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 390px) {\r\n  .flow-text {\r\n    font-size: 1.224rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 420px) {\r\n  .flow-text {\r\n    font-size: 1.248rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 450px) {\r\n  .flow-text {\r\n    font-size: 1.272rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 480px) {\r\n  .flow-text {\r\n    font-size: 1.296rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 510px) {\r\n  .flow-text {\r\n    font-size: 1.32rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 540px) {\r\n  .flow-text {\r\n    font-size: 1.344rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 570px) {\r\n  .flow-text {\r\n    font-size: 1.368rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 600px) {\r\n  .flow-text {\r\n    font-size: 1.392rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 630px) {\r\n  .flow-text {\r\n    font-size: 1.416rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 660px) {\r\n  .flow-text {\r\n    font-size: 1.44rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 690px) {\r\n  .flow-text {\r\n    font-size: 1.464rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 720px) {\r\n  .flow-text {\r\n    font-size: 1.488rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 750px) {\r\n  .flow-text {\r\n    font-size: 1.512rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 780px) {\r\n  .flow-text {\r\n    font-size: 1.536rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 810px) {\r\n  .flow-text {\r\n    font-size: 1.56rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 840px) {\r\n  .flow-text {\r\n    font-size: 1.584rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 870px) {\r\n  .flow-text {\r\n    font-size: 1.608rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 900px) {\r\n  .flow-text {\r\n    font-size: 1.632rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 930px) {\r\n  .flow-text {\r\n    font-size: 1.656rem;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 960px) {\r\n  .flow-text {\r\n    font-size: 1.68rem;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 360px) {\r\n  .flow-text {\r\n    font-size: 1.2rem;\r\n  }\r\n}\r\n\r\n.card-panel {\r\n  transition: box-shadow .25s;\r\n  padding: 20px;\r\n  margin: 0.5rem 0 1rem 0;\r\n  border-radius: 2px;\r\n  background-color: #fff;\r\n}\r\n\r\n.card {\r\n  position: relative;\r\n  margin: 0.5rem 0 1rem 0;\r\n  background-color: #fff;\r\n  transition: box-shadow .25s;\r\n  border-radius: 2px;\r\n}\r\n\r\n.card .card-title {\r\n  font-size: 24px;\r\n  font-weight: 300;\r\n}\r\n\r\n.card .card-title.activator {\r\n  cursor: pointer;\r\n}\r\n\r\n.card.small, .card.medium, .card.large {\r\n  position: relative;\r\n}\r\n\r\n.card.small .card-image, .card.medium .card-image, .card.large .card-image {\r\n  max-height: 60%;\r\n  overflow: hidden;\r\n}\r\n\r\n.card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {\r\n  max-height: 40%;\r\n}\r\n\r\n.card.small .card-content, .card.medium .card-content, .card.large .card-content {\r\n  max-height: 100%;\r\n  overflow: hidden;\r\n}\r\n\r\n.card.small .card-action, .card.medium .card-action, .card.large .card-action {\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n.card.small {\r\n  height: 300px;\r\n}\r\n\r\n.card.medium {\r\n  height: 400px;\r\n}\r\n\r\n.card.large {\r\n  height: 500px;\r\n}\r\n\r\n.card.horizontal {\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n}\r\n\r\n.card.horizontal.small .card-image, .card.horizontal.medium .card-image, .card.horizontal.large .card-image {\r\n  height: 100%;\r\n  max-height: none;\r\n  overflow: visible;\r\n}\r\n\r\n.card.horizontal.small .card-image img, .card.horizontal.medium .card-image img, .card.horizontal.large .card-image img {\r\n  height: 100%;\r\n}\r\n\r\n.card.horizontal .card-image {\r\n  max-width: 50%;\r\n}\r\n\r\n.card.horizontal .card-image img {\r\n  max-width: 100%;\r\n  width: auto;\r\n}\r\n\r\n.card.horizontal .card-stacked {\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-flex-direction: column;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  -webkit-flex: 1;\r\n      -ms-flex: 1;\r\n          flex: 1;\r\n  position: relative;\r\n}\r\n\r\n.card.horizontal .card-stacked .card-content {\r\n  -webkit-flex-grow: 1;\r\n      -ms-flex-positive: 1;\r\n          flex-grow: 1;\r\n}\r\n\r\n.card.sticky-action .card-action {\r\n  z-index: 2;\r\n}\r\n\r\n.card.sticky-action .card-reveal {\r\n  z-index: 1;\r\n  padding-bottom: 64px;\r\n}\r\n\r\n.card .card-image {\r\n  position: relative;\r\n}\r\n\r\n.card .card-image img {\r\n  display: block;\r\n  border-radius: 2px 2px 0 0;\r\n  position: relative;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  width: 100%;\r\n}\r\n\r\n.card .card-image .card-title {\r\n  color: #fff;\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  padding: 20px;\r\n}\r\n\r\n.card .card-content {\r\n  padding: 20px;\r\n  border-radius: 0 0 2px 2px;\r\n}\r\n\r\n.card .card-content p {\r\n  margin: 0;\r\n  color: inherit;\r\n}\r\n\r\n.card .card-content .card-title {\r\n  line-height: 48px;\r\n}\r\n\r\n.card .card-action {\r\n  position: relative;\r\n  background-color: inherit;\r\n  border-top: 1px solid rgba(160, 160, 160, 0.2);\r\n  padding: 20px;\r\n}\r\n\r\n.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {\r\n  color: #ffab40;\r\n  margin-right: 20px;\r\n  transition: color .3s ease;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {\r\n  color: #ffd8a6;\r\n}\r\n\r\n.card .card-reveal {\r\n  padding: 20px;\r\n  position: absolute;\r\n  background-color: #fff;\r\n  width: 100%;\r\n  overflow-y: auto;\r\n  top: 100%;\r\n  height: 100%;\r\n  z-index: 3;\r\n  display: none;\r\n}\r\n\r\n.card .card-reveal .card-title {\r\n  cursor: pointer;\r\n  display: block;\r\n}\r\n\r\n#toast-container {\r\n  display: block;\r\n  position: fixed;\r\n  z-index: 10000;\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  #toast-container {\r\n    min-width: 100%;\r\n    bottom: 0%;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 601px) and (max-width: 992px) {\r\n  #toast-container {\r\n    left: 5%;\r\n    bottom: 7%;\r\n    max-width: 90%;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  #toast-container {\r\n    top: 10%;\r\n    right: 7%;\r\n    max-width: 86%;\r\n  }\r\n}\r\n\r\n.toast {\r\n  border-radius: 2px;\r\n  top: 0;\r\n  width: auto;\r\n  clear: both;\r\n  margin-top: 10px;\r\n  position: relative;\r\n  max-width: 100%;\r\n  height: auto;\r\n  min-height: 48px;\r\n  line-height: 1.5em;\r\n  word-break: break-all;\r\n  background-color: #323232;\r\n  padding: 10px 25px;\r\n  font-size: 1.1rem;\r\n  font-weight: 300;\r\n  color: #fff;\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-align-items: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  -webkit-justify-content: space-between;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n}\r\n\r\n.toast .btn, .toast .btn-large, .toast .btn-flat {\r\n  margin: 0;\r\n  margin-left: 3rem;\r\n}\r\n\r\n.toast.rounded {\r\n  border-radius: 24px;\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .toast {\r\n    width: 100%;\r\n    border-radius: 0;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 601px) and (max-width: 992px) {\r\n  .toast {\r\n    float: left;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 993px) {\r\n  .toast {\r\n    float: right;\r\n  }\r\n}\r\n\r\n.tabs {\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  position: relative;\r\n  overflow-x: auto;\r\n  overflow-y: hidden;\r\n  height: 48px;\r\n  background-color: #fff;\r\n  margin: 0 auto;\r\n  width: 100%;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tabs .tab {\r\n  -webkit-box-flex: 1;\r\n  -webkit-flex-grow: 1;\r\n  -ms-flex-positive: 1;\r\n  flex-grow: 1;\r\n  display: block;\r\n  float: left;\r\n  text-align: center;\r\n  line-height: 48px;\r\n  height: 48px;\r\n  padding: 0;\r\n  margin: 0;\r\n  text-transform: uppercase;\r\n  text-overflow: ellipsis;\r\n  overflow: hidden;\r\n  letter-spacing: .8px;\r\n  width: 15%;\r\n  min-width: 80px;\r\n}\r\n\r\n.tabs .tab a {\r\n  color: #ee6e73;\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  text-overflow: ellipsis;\r\n  overflow: hidden;\r\n  transition: color .28s ease;\r\n}\r\n\r\n.tabs .tab a:hover {\r\n  color: #f9c9cb;\r\n}\r\n\r\n.tabs .tab.disabled a {\r\n  color: #f9c9cb;\r\n  cursor: default;\r\n}\r\n\r\n.tabs .indicator {\r\n  position: absolute;\r\n  bottom: 0;\r\n  height: 2px;\r\n  background-color: #f6b2b5;\r\n  will-change: left, right;\r\n}\r\n\r\n.material-tooltip {\r\n  padding: 10px 8px;\r\n  font-size: 1rem;\r\n  z-index: 2000;\r\n  background-color: transparent;\r\n  border-radius: 2px;\r\n  color: #fff;\r\n  min-height: 36px;\r\n  line-height: 120%;\r\n  opacity: 0;\r\n  display: none;\r\n  position: absolute;\r\n  text-align: center;\r\n  max-width: calc(100% - 4px);\r\n  overflow: hidden;\r\n  left: 0;\r\n  top: 0;\r\n  pointer-events: none;\r\n}\r\n\r\n.backdrop {\r\n  position: absolute;\r\n  opacity: 0;\r\n  display: none;\r\n  height: 7px;\r\n  width: 14px;\r\n  border-radius: 0 0 50% 50%;\r\n  background-color: #323232;\r\n  z-index: -1;\r\n  -webkit-transform-origin: 50% 0%;\r\n          transform-origin: 50% 0%;\r\n  -webkit-transform: translate3d(0, 0, 0);\r\n          transform: translate3d(0, 0, 0);\r\n}\r\n\r\n.btn, .btn-large,\r\n.btn-flat {\r\n  border: none;\r\n  border-radius: 2px;\r\n  display: inline-block;\r\n  height: 36px;\r\n  line-height: 36px;\r\n  outline: 0;\r\n  padding: 0 2rem;\r\n  text-transform: uppercase;\r\n  vertical-align: middle;\r\n  -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.btn.disabled, .disabled.btn-large,\r\n.btn-floating.disabled,\r\n.btn-large.disabled,\r\n.btn:disabled,\r\n.btn-large:disabled,\r\n.btn-large:disabled,\r\n.btn-floating:disabled,\r\n.btn[disabled],\r\n[disabled].btn-large,\r\n.btn-large[disabled],\r\n.btn-floating[disabled] {\r\n  background-color: #DFDFDF !important;\r\n  box-shadow: none;\r\n  color: #9F9F9F !important;\r\n  cursor: default;\r\n}\r\n\r\n.btn.disabled *, .disabled.btn-large *,\r\n.btn-floating.disabled *,\r\n.btn-large.disabled *,\r\n.btn:disabled *, .btn-large:disabled *,\r\n.btn-large:disabled *,\r\n.btn-floating:disabled *,\r\n.btn[disabled] *, [disabled].btn-large *,\r\n.btn-large[disabled] *,\r\n.btn-floating[disabled] * {\r\n  pointer-events: none;\r\n}\r\n\r\n.btn.disabled:hover, .disabled.btn-large:hover,\r\n.btn-floating.disabled:hover,\r\n.btn-large.disabled:hover,\r\n.btn:disabled:hover,\r\n.btn-large:disabled:hover,\r\n.btn-large:disabled:hover,\r\n.btn-floating:disabled:hover,\r\n.btn[disabled]:hover,\r\n[disabled].btn-large:hover,\r\n.btn-large[disabled]:hover,\r\n.btn-floating[disabled]:hover {\r\n  background-color: #DFDFDF !important;\r\n  color: #9F9F9F !important;\r\n}\r\n\r\n.btn i, .btn-large i,\r\n.btn-floating i,\r\n.btn-large i,\r\n.btn-flat i {\r\n  font-size: 1.3rem;\r\n  line-height: inherit;\r\n}\r\n\r\n.btn, .btn-large {\r\n  text-decoration: none;\r\n  color: #fff;\r\n  background-color: #26a69a;\r\n  text-align: center;\r\n  letter-spacing: .5px;\r\n  transition: .2s ease-out;\r\n  cursor: pointer;\r\n}\r\n\r\n.btn:hover, .btn-large:hover {\r\n  background-color: #2bbbad;\r\n}\r\n\r\n.btn-floating {\r\n  display: inline-block;\r\n  color: #fff;\r\n  position: relative;\r\n  overflow: hidden;\r\n  z-index: 1;\r\n  width: 37px;\r\n  height: 37px;\r\n  line-height: 37px;\r\n  padding: 0;\r\n  background-color: #26a69a;\r\n  border-radius: 50%;\r\n  transition: .3s;\r\n  cursor: pointer;\r\n  vertical-align: middle;\r\n}\r\n\r\n.btn-floating i {\r\n  width: inherit;\r\n  display: inline-block;\r\n  text-align: center;\r\n  color: #fff;\r\n  font-size: 1.6rem;\r\n  line-height: 37px;\r\n}\r\n\r\n.btn-floating:hover {\r\n  background-color: #26a69a;\r\n}\r\n\r\n.btn-floating:before {\r\n  border-radius: 0;\r\n}\r\n\r\n.btn-floating.btn-large {\r\n  width: 55.5px;\r\n  height: 55.5px;\r\n}\r\n\r\n.btn-floating.btn-large i {\r\n  line-height: 55.5px;\r\n}\r\n\r\nbutton.btn-floating {\r\n  border: none;\r\n}\r\n\r\n.fixed-action-btn {\r\n  position: fixed;\r\n  right: 23px;\r\n  bottom: 23px;\r\n  padding-top: 15px;\r\n  margin-bottom: 0;\r\n  z-index: 998;\r\n}\r\n\r\n.fixed-action-btn.active ul {\r\n  visibility: visible;\r\n}\r\n\r\n.fixed-action-btn.horizontal {\r\n  padding: 0 0 0 15px;\r\n}\r\n\r\n.fixed-action-btn.horizontal ul {\r\n  text-align: right;\r\n  right: 64px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  height: 100%;\r\n  left: auto;\r\n  width: 500px;\r\n  /*width 100% only goes to width of button container */\r\n}\r\n\r\n.fixed-action-btn.horizontal ul li {\r\n  display: inline-block;\r\n  margin: 15px 15px 0 0;\r\n}\r\n\r\n.fixed-action-btn ul {\r\n  left: 0;\r\n  right: 0;\r\n  text-align: center;\r\n  position: absolute;\r\n  bottom: 64px;\r\n  margin: 0;\r\n  visibility: hidden;\r\n}\r\n\r\n.fixed-action-btn ul li {\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.fixed-action-btn ul a.btn-floating {\r\n  opacity: 0;\r\n}\r\n\r\n.btn-flat {\r\n  box-shadow: none;\r\n  background-color: transparent;\r\n  color: #343434;\r\n  cursor: pointer;\r\n  transition: background-color .2s;\r\n}\r\n\r\n.btn-flat:focus, .btn-flat:active {\r\n  background-color: transparent;\r\n}\r\n\r\n.btn-flat:hover {\r\n  background-color: rgba(0, 0, 0, 0.1);\r\n  box-shadow: none;\r\n}\r\n\r\n.btn-flat.disabled {\r\n  color: #b3b3b3;\r\n  cursor: default;\r\n}\r\n\r\n.btn-large {\r\n  height: 54px;\r\n  line-height: 54px;\r\n}\r\n\r\n.btn-large i {\r\n  font-size: 1.6rem;\r\n}\r\n\r\n.btn-block {\r\n  display: block;\r\n}\r\n\r\n.dropdown-content {\r\n  background-color: #fff;\r\n  margin: 0;\r\n  display: none;\r\n  min-width: 100px;\r\n  max-height: 650px;\r\n  overflow-y: auto;\r\n  opacity: 0;\r\n  position: absolute;\r\n  z-index: 999;\r\n  will-change: width, height;\r\n}\r\n\r\n.dropdown-content li {\r\n  clear: both;\r\n  color: rgba(0, 0, 0, 0.87);\r\n  cursor: pointer;\r\n  min-height: 50px;\r\n  line-height: 1.5rem;\r\n  width: 100%;\r\n  text-align: left;\r\n  text-transform: none;\r\n}\r\n\r\n.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {\r\n  background-color: #eee;\r\n}\r\n\r\n.dropdown-content li.active.selected {\r\n  background-color: #e1e1e1;\r\n}\r\n\r\n.dropdown-content li.divider {\r\n  min-height: 0;\r\n  height: 1px;\r\n}\r\n\r\n.dropdown-content li > a, .dropdown-content li > span {\r\n  font-size: 16px;\r\n  color: #26a69a;\r\n  display: block;\r\n  line-height: 22px;\r\n  padding: 14px 16px;\r\n}\r\n\r\n.dropdown-content li > span > label {\r\n  top: 1px;\r\n  left: 3px;\r\n  height: 18px;\r\n}\r\n\r\n.dropdown-content li > a > i {\r\n  height: inherit;\r\n  line-height: inherit;\r\n}\r\n\r\n/*!\r\n * Waves v0.6.0\r\n * http://fian.my.id/Waves\r\n *\r\n * Copyright 2014 Alfiana E. Sibuea and other contributors\r\n * Released under the MIT license\r\n * https://github.com/fians/Waves/blob/master/LICENSE\r\n */\r\n.waves-effect {\r\n  position: relative;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n  -webkit-tap-highlight-color: transparent;\r\n  vertical-align: middle;\r\n  z-index: 1;\r\n  will-change: opacity, transform;\r\n  transition: all .3s ease-out;\r\n}\r\n\r\n.waves-effect .waves-ripple {\r\n  position: absolute;\r\n  border-radius: 50%;\r\n  width: 20px;\r\n  height: 20px;\r\n  margin-top: -10px;\r\n  margin-left: -10px;\r\n  opacity: 0;\r\n  background: rgba(0, 0, 0, 0.2);\r\n  transition: all 0.7s ease-out;\r\n  transition-property: opacity, -webkit-transform;\r\n  transition-property: transform, opacity;\r\n  transition-property: transform, opacity, -webkit-transform;\r\n  -webkit-transform: scale(0);\r\n          transform: scale(0);\r\n  pointer-events: none;\r\n}\r\n\r\n.waves-effect.waves-light .waves-ripple {\r\n  background-color: rgba(255, 255, 255, 0.45);\r\n}\r\n\r\n.waves-effect.waves-red .waves-ripple {\r\n  background-color: rgba(244, 67, 54, 0.7);\r\n}\r\n\r\n.waves-effect.waves-yellow .waves-ripple {\r\n  background-color: rgba(255, 235, 59, 0.7);\r\n}\r\n\r\n.waves-effect.waves-orange .waves-ripple {\r\n  background-color: rgba(255, 152, 0, 0.7);\r\n}\r\n\r\n.waves-effect.waves-purple .waves-ripple {\r\n  background-color: rgba(156, 39, 176, 0.7);\r\n}\r\n\r\n.waves-effect.waves-green .waves-ripple {\r\n  background-color: rgba(76, 175, 80, 0.7);\r\n}\r\n\r\n.waves-effect.waves-teal .waves-ripple {\r\n  background-color: rgba(0, 150, 136, 0.7);\r\n}\r\n\r\n.waves-effect input[type=\"button\"], .waves-effect input[type=\"reset\"], .waves-effect input[type=\"submit\"] {\r\n  border: 0;\r\n  font-style: normal;\r\n  font-size: inherit;\r\n  text-transform: inherit;\r\n  background: none;\r\n}\r\n\r\n.waves-effect img {\r\n  position: relative;\r\n  z-index: -1;\r\n}\r\n\r\n.waves-notransition {\r\n  transition: none !important;\r\n}\r\n\r\n.waves-circle {\r\n  -webkit-transform: translateZ(0);\r\n          transform: translateZ(0);\r\n  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);\r\n}\r\n\r\n.waves-input-wrapper {\r\n  border-radius: 0.2em;\r\n  vertical-align: bottom;\r\n}\r\n\r\n.waves-input-wrapper .waves-button-input {\r\n  position: relative;\r\n  top: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n.waves-circle {\r\n  text-align: center;\r\n  width: 2.5em;\r\n  height: 2.5em;\r\n  line-height: 2.5em;\r\n  border-radius: 50%;\r\n  -webkit-mask-image: none;\r\n}\r\n\r\n.waves-block {\r\n  display: block;\r\n}\r\n\r\n/* Firefox Bug: link not triggered */\r\n.waves-effect .waves-ripple {\r\n  z-index: -1;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: #fafafa;\r\n  padding: 0;\r\n  max-height: 70%;\r\n  width: 55%;\r\n  margin: auto;\r\n  overflow-y: auto;\r\n  border-radius: 2px;\r\n  will-change: top, opacity;\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .modal {\r\n    width: 80%;\r\n  }\r\n}\r\n\r\n.modal h1, .modal h2, .modal h3, .modal h4 {\r\n  margin-top: 0;\r\n}\r\n\r\n.modal .modal-content {\r\n  padding: 24px;\r\n}\r\n\r\n.modal .modal-close {\r\n  cursor: pointer;\r\n}\r\n\r\n.modal .modal-footer {\r\n  border-radius: 0 0 2px 2px;\r\n  background-color: #fafafa;\r\n  padding: 4px 6px;\r\n  height: 56px;\r\n  width: 100%;\r\n}\r\n\r\n.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {\r\n  float: right;\r\n  margin: 6px 0;\r\n}\r\n\r\n.lean-overlay {\r\n  position: fixed;\r\n  z-index: 999;\r\n  top: -100px;\r\n  left: 0;\r\n  bottom: 0;\r\n  right: 0;\r\n  height: 125%;\r\n  width: 100%;\r\n  background: #000;\r\n  display: none;\r\n  will-change: opacity;\r\n}\r\n\r\n.modal.modal-fixed-footer {\r\n  padding: 0;\r\n  height: 70%;\r\n}\r\n\r\n.modal.modal-fixed-footer .modal-content {\r\n  position: absolute;\r\n  height: calc(100% - 56px);\r\n  max-height: 100%;\r\n  width: 100%;\r\n  overflow-y: auto;\r\n}\r\n\r\n.modal.modal-fixed-footer .modal-footer {\r\n  border-top: 1px solid rgba(0, 0, 0, 0.1);\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n\r\n.modal.bottom-sheet {\r\n  top: auto;\r\n  bottom: -100%;\r\n  margin: 0;\r\n  width: 100%;\r\n  max-height: 45%;\r\n  border-radius: 0;\r\n  will-change: bottom, opacity;\r\n}\r\n\r\n.collapsible {\r\n  border-top: 1px solid #ddd;\r\n  border-right: 1px solid #ddd;\r\n  border-left: 1px solid #ddd;\r\n  margin: 0.5rem 0 1rem 0;\r\n}\r\n\r\n.collapsible-header {\r\n  display: block;\r\n  cursor: pointer;\r\n  min-height: 3rem;\r\n  line-height: 3rem;\r\n  padding: 0 1rem;\r\n  background-color: #fff;\r\n  border-bottom: 1px solid #ddd;\r\n}\r\n\r\n.collapsible-header i {\r\n  width: 2rem;\r\n  font-size: 1.6rem;\r\n  line-height: 3rem;\r\n  display: block;\r\n  float: left;\r\n  text-align: center;\r\n  margin-right: 1rem;\r\n}\r\n\r\n.collapsible-body {\r\n  display: none;\r\n  border-bottom: 1px solid #ddd;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.collapsible-body p {\r\n  margin: 0;\r\n  padding: 2rem;\r\n}\r\n\r\n.side-nav .collapsible,\r\n.side-nav.fixed .collapsible {\r\n  border: none;\r\n  box-shadow: none;\r\n}\r\n\r\n.side-nav .collapsible li,\r\n.side-nav.fixed .collapsible li {\r\n  padding: 0;\r\n}\r\n\r\n.side-nav .collapsible-header,\r\n.side-nav.fixed .collapsible-header {\r\n  background-color: transparent;\r\n  border: none;\r\n  line-height: inherit;\r\n  height: inherit;\r\n  padding: 0 16px;\r\n}\r\n\r\n.side-nav .collapsible-header:hover,\r\n.side-nav.fixed .collapsible-header:hover {\r\n  background-color: rgba(0, 0, 0, 0.05);\r\n}\r\n\r\n.side-nav .collapsible-header i,\r\n.side-nav.fixed .collapsible-header i {\r\n  line-height: inherit;\r\n}\r\n\r\n.side-nav .collapsible-body,\r\n.side-nav.fixed .collapsible-body {\r\n  border: 0;\r\n  background-color: #fff;\r\n}\r\n\r\n.side-nav .collapsible-body li a,\r\n.side-nav.fixed .collapsible-body li a {\r\n  padding: 0 23.5px 0 31px;\r\n}\r\n\r\n.collapsible.popout {\r\n  border: none;\r\n  box-shadow: none;\r\n}\r\n\r\n.collapsible.popout > li {\r\n  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\r\n  margin: 0 24px;\r\n  transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);\r\n}\r\n\r\n.collapsible.popout > li.active {\r\n  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);\r\n  margin: 16px 0;\r\n}\r\n\r\n.chip {\r\n  display: inline-block;\r\n  height: 32px;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  color: rgba(0, 0, 0, 0.6);\r\n  line-height: 32px;\r\n  padding: 0 12px;\r\n  border-radius: 16px;\r\n  background-color: #e4e4e4;\r\n  margin-bottom: 5px;\r\n  margin-right: 5px;\r\n}\r\n\r\n.chip img {\r\n  float: left;\r\n  margin: 0 8px 0 -12px;\r\n  height: 32px;\r\n  width: 32px;\r\n  border-radius: 50%;\r\n}\r\n\r\n.chip .close {\r\n  cursor: pointer;\r\n  float: right;\r\n  font-size: 16px;\r\n  line-height: 32px;\r\n  padding-left: 8px;\r\n}\r\n\r\n.chips {\r\n  border: none;\r\n  border-bottom: 1px solid #9e9e9e;\r\n  box-shadow: none;\r\n  margin-bottom: 30px;\r\n  min-height: 45px;\r\n  outline: none;\r\n  padding-bottom: 5px;\r\n  transition: all .3s;\r\n}\r\n\r\n.chips.focus {\r\n  border-bottom: 1px solid #26a69a;\r\n  box-shadow: 0 1px 0 0 #26a69a;\r\n}\r\n\r\n.chips:hover {\r\n  cursor: text;\r\n}\r\n\r\n.chips .chip.selected {\r\n  background-color: #26a69a;\r\n  color: #fff;\r\n}\r\n\r\n.chips .input {\r\n  background: none;\r\n  border: 0;\r\n  color: rgba(0, 0, 0, 0.6);\r\n  display: inline-block;\r\n  font-size: 13px;\r\n  font-weight: 500;\r\n  height: 32px;\r\n  margin-right: 20px;\r\n  line-height: 32px;\r\n  outline: 0;\r\n  padding: 0 !important;\r\n  width: 120px !important;\r\n}\r\n\r\n.chips .input:focus {\r\n  border: 0 !important;\r\n  box-shadow: none !important;\r\n}\r\n\r\n.materialboxed {\r\n  display: block;\r\n  cursor: -webkit-zoom-in;\r\n  cursor: zoom-in;\r\n  position: relative;\r\n  transition: opacity .4s;\r\n}\r\n\r\n.materialboxed:hover {\r\n  will-change: left, top, width, height;\r\n}\r\n\r\n.materialboxed:hover:not(.active) {\r\n  opacity: .8;\r\n}\r\n\r\n.materialboxed.active {\r\n  cursor: -webkit-zoom-out;\r\n  cursor: zoom-out;\r\n}\r\n\r\n#materialbox-overlay {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #292929;\r\n  z-index: 1000;\r\n  will-change: opacity;\r\n}\r\n\r\n.materialbox-caption {\r\n  position: fixed;\r\n  display: none;\r\n  color: #fff;\r\n  line-height: 50px;\r\n  bottom: 0;\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0% 15%;\r\n  height: 50px;\r\n  z-index: 1000;\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nselect:focus {\r\n  outline: 1px solid #c9f3ef;\r\n}\r\n\r\nbutton:focus {\r\n  outline: none;\r\n  background-color: #2ab7a9;\r\n}\r\n\r\nlabel {\r\n  font-size: 0.8rem;\r\n  color: #9e9e9e;\r\n}\r\n\r\n/* Text Inputs + Textarea\r\n   ========================================================================== */\r\n/* Style Placeholders */\r\n::-webkit-input-placeholder {\r\n  color: #d1d1d1;\r\n}\r\n\r\n:-moz-placeholder {\r\n  /* Firefox 18- */\r\n  color: #d1d1d1;\r\n}\r\n\r\n::-moz-placeholder {\r\n  /* Firefox 19+ */\r\n  color: #d1d1d1;\r\n}\r\n\r\n:-ms-input-placeholder {\r\n  color: #d1d1d1;\r\n}\r\n\r\n/* Text inputs */\r\ninput:not([type]),\r\ninput[type=text],\r\ninput[type=password],\r\ninput[type=email],\r\ninput[type=url],\r\ninput[type=time],\r\ninput[type=date],\r\ninput[type=datetime],\r\ninput[type=datetime-local],\r\ninput[type=tel],\r\ninput[type=number],\r\ninput[type=search],\r\ntextarea.materialize-textarea {\r\n  background-color: transparent;\r\n  border: none;\r\n  border-bottom: 1px solid #9e9e9e;\r\n  border-radius: 0;\r\n  outline: none;\r\n  height: 3rem;\r\n  width: 100%;\r\n  font-size: 1rem;\r\n  margin: 0 0 20px 0;\r\n  padding: 0;\r\n  box-shadow: none;\r\n  box-sizing: content-box;\r\n  transition: all 0.3s;\r\n}\r\n\r\ninput:not([type]):disabled, input:not([type])[readonly=\"readonly\"],\r\ninput[type=text]:disabled,\r\ninput[type=text][readonly=\"readonly\"],\r\ninput[type=password]:disabled,\r\ninput[type=password][readonly=\"readonly\"],\r\ninput[type=email]:disabled,\r\ninput[type=email][readonly=\"readonly\"],\r\ninput[type=url]:disabled,\r\ninput[type=url][readonly=\"readonly\"],\r\ninput[type=time]:disabled,\r\ninput[type=time][readonly=\"readonly\"],\r\ninput[type=date]:disabled,\r\ninput[type=date][readonly=\"readonly\"],\r\ninput[type=datetime]:disabled,\r\ninput[type=datetime][readonly=\"readonly\"],\r\ninput[type=datetime-local]:disabled,\r\ninput[type=datetime-local][readonly=\"readonly\"],\r\ninput[type=tel]:disabled,\r\ninput[type=tel][readonly=\"readonly\"],\r\ninput[type=number]:disabled,\r\ninput[type=number][readonly=\"readonly\"],\r\ninput[type=search]:disabled,\r\ninput[type=search][readonly=\"readonly\"],\r\ntextarea.materialize-textarea:disabled,\r\ntextarea.materialize-textarea[readonly=\"readonly\"] {\r\n  color: rgba(0, 0, 0, 0.26);\r\n  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);\r\n}\r\n\r\ninput:not([type]):disabled + label,\r\ninput:not([type])[readonly=\"readonly\"] + label,\r\ninput[type=text]:disabled + label,\r\ninput[type=text][readonly=\"readonly\"] + label,\r\ninput[type=password]:disabled + label,\r\ninput[type=password][readonly=\"readonly\"] + label,\r\ninput[type=email]:disabled + label,\r\ninput[type=email][readonly=\"readonly\"] + label,\r\ninput[type=url]:disabled + label,\r\ninput[type=url][readonly=\"readonly\"] + label,\r\ninput[type=time]:disabled + label,\r\ninput[type=time][readonly=\"readonly\"] + label,\r\ninput[type=date]:disabled + label,\r\ninput[type=date][readonly=\"readonly\"] + label,\r\ninput[type=datetime]:disabled + label,\r\ninput[type=datetime][readonly=\"readonly\"] + label,\r\ninput[type=datetime-local]:disabled + label,\r\ninput[type=datetime-local][readonly=\"readonly\"] + label,\r\ninput[type=tel]:disabled + label,\r\ninput[type=tel][readonly=\"readonly\"] + label,\r\ninput[type=number]:disabled + label,\r\ninput[type=number][readonly=\"readonly\"] + label,\r\ninput[type=search]:disabled + label,\r\ninput[type=search][readonly=\"readonly\"] + label,\r\ntextarea.materialize-textarea:disabled + label,\r\ntextarea.materialize-textarea[readonly=\"readonly\"] + label {\r\n  color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\ninput:not([type]):focus:not([readonly]),\r\ninput[type=text]:focus:not([readonly]),\r\ninput[type=password]:focus:not([readonly]),\r\ninput[type=email]:focus:not([readonly]),\r\ninput[type=url]:focus:not([readonly]),\r\ninput[type=time]:focus:not([readonly]),\r\ninput[type=date]:focus:not([readonly]),\r\ninput[type=datetime]:focus:not([readonly]),\r\ninput[type=datetime-local]:focus:not([readonly]),\r\ninput[type=tel]:focus:not([readonly]),\r\ninput[type=number]:focus:not([readonly]),\r\ninput[type=search]:focus:not([readonly]),\r\ntextarea.materialize-textarea:focus:not([readonly]) {\r\n  border-bottom: 1px solid #26a69a;\r\n  box-shadow: 0 1px 0 0 #26a69a;\r\n}\r\n\r\ninput:not([type]):focus:not([readonly]) + label,\r\ninput[type=text]:focus:not([readonly]) + label,\r\ninput[type=password]:focus:not([readonly]) + label,\r\ninput[type=email]:focus:not([readonly]) + label,\r\ninput[type=url]:focus:not([readonly]) + label,\r\ninput[type=time]:focus:not([readonly]) + label,\r\ninput[type=date]:focus:not([readonly]) + label,\r\ninput[type=datetime]:focus:not([readonly]) + label,\r\ninput[type=datetime-local]:focus:not([readonly]) + label,\r\ninput[type=tel]:focus:not([readonly]) + label,\r\ninput[type=number]:focus:not([readonly]) + label,\r\ninput[type=search]:focus:not([readonly]) + label,\r\ntextarea.materialize-textarea:focus:not([readonly]) + label {\r\n  color: #26a69a;\r\n}\r\n\r\ninput:not([type]).valid, input:not([type]):focus.valid,\r\ninput[type=text].valid,\r\ninput[type=text]:focus.valid,\r\ninput[type=password].valid,\r\ninput[type=password]:focus.valid,\r\ninput[type=email].valid,\r\ninput[type=email]:focus.valid,\r\ninput[type=url].valid,\r\ninput[type=url]:focus.valid,\r\ninput[type=time].valid,\r\ninput[type=time]:focus.valid,\r\ninput[type=date].valid,\r\ninput[type=date]:focus.valid,\r\ninput[type=datetime].valid,\r\ninput[type=datetime]:focus.valid,\r\ninput[type=datetime-local].valid,\r\ninput[type=datetime-local]:focus.valid,\r\ninput[type=tel].valid,\r\ninput[type=tel]:focus.valid,\r\ninput[type=number].valid,\r\ninput[type=number]:focus.valid,\r\ninput[type=search].valid,\r\ninput[type=search]:focus.valid,\r\ntextarea.materialize-textarea.valid,\r\ntextarea.materialize-textarea:focus.valid {\r\n  border-bottom: 1px solid #4CAF50;\r\n  box-shadow: 0 1px 0 0 #4CAF50;\r\n}\r\n\r\ninput:not([type]).valid + label:after,\r\ninput:not([type]):focus.valid + label:after,\r\ninput[type=text].valid + label:after,\r\ninput[type=text]:focus.valid + label:after,\r\ninput[type=password].valid + label:after,\r\ninput[type=password]:focus.valid + label:after,\r\ninput[type=email].valid + label:after,\r\ninput[type=email]:focus.valid + label:after,\r\ninput[type=url].valid + label:after,\r\ninput[type=url]:focus.valid + label:after,\r\ninput[type=time].valid + label:after,\r\ninput[type=time]:focus.valid + label:after,\r\ninput[type=date].valid + label:after,\r\ninput[type=date]:focus.valid + label:after,\r\ninput[type=datetime].valid + label:after,\r\ninput[type=datetime]:focus.valid + label:after,\r\ninput[type=datetime-local].valid + label:after,\r\ninput[type=datetime-local]:focus.valid + label:after,\r\ninput[type=tel].valid + label:after,\r\ninput[type=tel]:focus.valid + label:after,\r\ninput[type=number].valid + label:after,\r\ninput[type=number]:focus.valid + label:after,\r\ninput[type=search].valid + label:after,\r\ninput[type=search]:focus.valid + label:after,\r\ntextarea.materialize-textarea.valid + label:after,\r\ntextarea.materialize-textarea:focus.valid + label:after {\r\n  content: attr(data-success);\r\n  color: #4CAF50;\r\n  opacity: 1;\r\n}\r\n\r\ninput:not([type]).invalid, input:not([type]):focus.invalid,\r\ninput[type=text].invalid,\r\ninput[type=text]:focus.invalid,\r\ninput[type=password].invalid,\r\ninput[type=password]:focus.invalid,\r\ninput[type=email].invalid,\r\ninput[type=email]:focus.invalid,\r\ninput[type=url].invalid,\r\ninput[type=url]:focus.invalid,\r\ninput[type=time].invalid,\r\ninput[type=time]:focus.invalid,\r\ninput[type=date].invalid,\r\ninput[type=date]:focus.invalid,\r\ninput[type=datetime].invalid,\r\ninput[type=datetime]:focus.invalid,\r\ninput[type=datetime-local].invalid,\r\ninput[type=datetime-local]:focus.invalid,\r\ninput[type=tel].invalid,\r\ninput[type=tel]:focus.invalid,\r\ninput[type=number].invalid,\r\ninput[type=number]:focus.invalid,\r\ninput[type=search].invalid,\r\ninput[type=search]:focus.invalid,\r\ntextarea.materialize-textarea.invalid,\r\ntextarea.materialize-textarea:focus.invalid {\r\n  border-bottom: 1px solid #F44336;\r\n  box-shadow: 0 1px 0 0 #F44336;\r\n}\r\n\r\ninput:not([type]).invalid + label:after,\r\ninput:not([type]):focus.invalid + label:after,\r\ninput[type=text].invalid + label:after,\r\ninput[type=text]:focus.invalid + label:after,\r\ninput[type=password].invalid + label:after,\r\ninput[type=password]:focus.invalid + label:after,\r\ninput[type=email].invalid + label:after,\r\ninput[type=email]:focus.invalid + label:after,\r\ninput[type=url].invalid + label:after,\r\ninput[type=url]:focus.invalid + label:after,\r\ninput[type=time].invalid + label:after,\r\ninput[type=time]:focus.invalid + label:after,\r\ninput[type=date].invalid + label:after,\r\ninput[type=date]:focus.invalid + label:after,\r\ninput[type=datetime].invalid + label:after,\r\ninput[type=datetime]:focus.invalid + label:after,\r\ninput[type=datetime-local].invalid + label:after,\r\ninput[type=datetime-local]:focus.invalid + label:after,\r\ninput[type=tel].invalid + label:after,\r\ninput[type=tel]:focus.invalid + label:after,\r\ninput[type=number].invalid + label:after,\r\ninput[type=number]:focus.invalid + label:after,\r\ninput[type=search].invalid + label:after,\r\ninput[type=search]:focus.invalid + label:after,\r\ntextarea.materialize-textarea.invalid + label:after,\r\ntextarea.materialize-textarea:focus.invalid + label:after {\r\n  content: attr(data-error);\r\n  color: #F44336;\r\n  opacity: 1;\r\n}\r\n\r\ninput:not([type]).validate + label,\r\ninput[type=text].validate + label,\r\ninput[type=password].validate + label,\r\ninput[type=email].validate + label,\r\ninput[type=url].validate + label,\r\ninput[type=time].validate + label,\r\ninput[type=date].validate + label,\r\ninput[type=datetime].validate + label,\r\ninput[type=datetime-local].validate + label,\r\ninput[type=tel].validate + label,\r\ninput[type=number].validate + label,\r\ninput[type=search].validate + label,\r\ntextarea.materialize-textarea.validate + label {\r\n  width: 100%;\r\n  pointer-events: none;\r\n}\r\n\r\ninput:not([type]) + label:after,\r\ninput[type=text] + label:after,\r\ninput[type=password] + label:after,\r\ninput[type=email] + label:after,\r\ninput[type=url] + label:after,\r\ninput[type=time] + label:after,\r\ninput[type=date] + label:after,\r\ninput[type=datetime] + label:after,\r\ninput[type=datetime-local] + label:after,\r\ninput[type=tel] + label:after,\r\ninput[type=number] + label:after,\r\ninput[type=search] + label:after,\r\ntextarea.materialize-textarea + label:after {\r\n  display: block;\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 60px;\r\n  opacity: 0;\r\n  transition: .2s opacity ease-out, .2s color ease-out;\r\n}\r\n\r\n.input-field {\r\n  position: relative;\r\n  margin-top: 1rem;\r\n}\r\n\r\n.input-field.col label {\r\n  left: 0.75rem;\r\n}\r\n\r\n.input-field.col .prefix ~ label,\r\n.input-field.col .prefix ~ .validate ~ label {\r\n  width: calc(100% - 3rem - 1.5rem);\r\n}\r\n\r\n.input-field label {\r\n  color: #9e9e9e;\r\n  position: absolute;\r\n  top: 0.8rem;\r\n  font-size: 1rem;\r\n  cursor: text;\r\n  transition: .2s ease-out;\r\n}\r\n\r\n.input-field label.active {\r\n  font-size: 0.8rem;\r\n  -webkit-transform: translateY(-140%);\r\n          transform: translateY(-140%);\r\n}\r\n\r\n.input-field .prefix {\r\n  position: absolute;\r\n  width: 3rem;\r\n  font-size: 2rem;\r\n  transition: color .2s;\r\n}\r\n\r\n.input-field .prefix.active {\r\n  color: #26a69a;\r\n}\r\n\r\n.input-field .prefix ~ input,\r\n.input-field .prefix ~ textarea,\r\n.input-field .prefix ~ label,\r\n.input-field .prefix ~ .validate ~ label,\r\n.input-field .prefix ~ .autocomplete-content {\r\n  margin-left: 3rem;\r\n  width: 92%;\r\n  width: calc(100% - 3rem);\r\n}\r\n\r\n.input-field .prefix ~ label {\r\n  margin-left: 3rem;\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .input-field .prefix ~ input {\r\n    width: 86%;\r\n    width: calc(100% - 3rem);\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .input-field .prefix ~ input {\r\n    width: 80%;\r\n    width: calc(100% - 3rem);\r\n  }\r\n}\r\n\r\n/* Search Field */\r\n.input-field input[type=search] {\r\n  display: block;\r\n  line-height: inherit;\r\n  padding-left: 4rem;\r\n  width: calc(100% - 4rem);\r\n}\r\n\r\n.input-field input[type=search]:focus {\r\n  background-color: #fff;\r\n  border: 0;\r\n  box-shadow: none;\r\n  color: #444;\r\n}\r\n\r\n.input-field input[type=search]:focus + label i,\r\n.input-field input[type=search]:focus ~ .mdi-navigation-close,\r\n.input-field input[type=search]:focus ~ .material-icons {\r\n  color: #444;\r\n}\r\n\r\n.input-field input[type=search] + label {\r\n  left: 1rem;\r\n}\r\n\r\n.input-field input[type=search] ~ .mdi-navigation-close,\r\n.input-field input[type=search] ~ .material-icons {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 1rem;\r\n  color: transparent;\r\n  cursor: pointer;\r\n  font-size: 2rem;\r\n  transition: .3s color;\r\n}\r\n\r\n/* Textarea */\r\ntextarea {\r\n  width: 100%;\r\n  height: 3rem;\r\n  background-color: transparent;\r\n}\r\n\r\ntextarea.materialize-textarea {\r\n  overflow-y: hidden;\r\n  /* prevents scroll bar flash */\r\n  padding: .8rem 0 1.6rem 0;\r\n  /* prevents text jump on Enter keypress */\r\n  resize: none;\r\n  min-height: 3rem;\r\n}\r\n\r\n.hiddendiv {\r\n  display: none;\r\n  white-space: pre-wrap;\r\n  word-wrap: break-word;\r\n  overflow-wrap: break-word;\r\n  /* future version of deprecated 'word-wrap' */\r\n  padding-top: 1.2rem;\r\n  /* prevents text jump on Enter keypress */\r\n}\r\n\r\n/* Autocomplete */\r\n.autocomplete-content {\r\n  margin-top: -15px;\r\n  display: block;\r\n  opacity: 1;\r\n  position: static;\r\n}\r\n\r\n.autocomplete-content li .highlight {\r\n  color: #444;\r\n}\r\n\r\n.autocomplete-content li img {\r\n  height: 40px;\r\n  width: 40px;\r\n  margin: 5px 15px;\r\n}\r\n\r\n/* Radio Buttons\r\n   ========================================================================== */\r\n[type=\"radio\"]:not(:checked),\r\n[type=\"radio\"]:checked {\r\n  position: absolute;\r\n  left: -9999px;\r\n  opacity: 0;\r\n}\r\n\r\n[type=\"radio\"]:not(:checked) + label,\r\n[type=\"radio\"]:checked + label {\r\n  position: relative;\r\n  padding-left: 35px;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  height: 25px;\r\n  line-height: 25px;\r\n  font-size: 1rem;\r\n  transition: .28s ease;\r\n  /* webkit (konqueror) browsers */\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n}\r\n\r\n[type=\"radio\"] + label:before,\r\n[type=\"radio\"] + label:after {\r\n  content: '';\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  margin: 4px;\r\n  width: 16px;\r\n  height: 16px;\r\n  z-index: 0;\r\n  transition: .28s ease;\r\n}\r\n\r\n/* Unchecked styles */\r\n[type=\"radio\"]:not(:checked) + label:before,\r\n[type=\"radio\"]:not(:checked) + label:after,\r\n[type=\"radio\"]:checked + label:before,\r\n[type=\"radio\"]:checked + label:after,\r\n[type=\"radio\"].with-gap:checked + label:before,\r\n[type=\"radio\"].with-gap:checked + label:after {\r\n  border-radius: 50%;\r\n}\r\n\r\n[type=\"radio\"]:not(:checked) + label:before,\r\n[type=\"radio\"]:not(:checked) + label:after {\r\n  border: 2px solid #5a5a5a;\r\n}\r\n\r\n[type=\"radio\"]:not(:checked) + label:after {\r\n  z-index: -1;\r\n  -webkit-transform: scale(0);\r\n          transform: scale(0);\r\n}\r\n\r\n/* Checked styles */\r\n[type=\"radio\"]:checked + label:before {\r\n  border: 2px solid transparent;\r\n}\r\n\r\n[type=\"radio\"]:checked + label:after,\r\n[type=\"radio\"].with-gap:checked + label:before,\r\n[type=\"radio\"].with-gap:checked + label:after {\r\n  border: 2px solid #26a69a;\r\n}\r\n\r\n[type=\"radio\"]:checked + label:after,\r\n[type=\"radio\"].with-gap:checked + label:after {\r\n  background-color: #26a69a;\r\n  z-index: 0;\r\n}\r\n\r\n[type=\"radio\"]:checked + label:after {\r\n  -webkit-transform: scale(1.02);\r\n          transform: scale(1.02);\r\n}\r\n\r\n/* Radio With gap */\r\n[type=\"radio\"].with-gap:checked + label:after {\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n}\r\n\r\n/* Focused styles */\r\n[type=\"radio\"].tabbed:focus + label:before {\r\n  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n/* Disabled Radio With gap */\r\n[type=\"radio\"].with-gap:disabled:checked + label:before {\r\n  border: 2px solid rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n[type=\"radio\"].with-gap:disabled:checked + label:after {\r\n  border: none;\r\n  background-color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n/* Disabled style */\r\n[type=\"radio\"]:disabled:not(:checked) + label:before,\r\n[type=\"radio\"]:disabled:checked + label:before {\r\n  background-color: transparent;\r\n  border-color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n[type=\"radio\"]:disabled + label {\r\n  color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n[type=\"radio\"]:disabled:not(:checked) + label:before {\r\n  border-color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n[type=\"radio\"]:disabled:checked + label:after {\r\n  background-color: rgba(0, 0, 0, 0.26);\r\n  border-color: #BDBDBD;\r\n}\r\n\r\n/* Checkboxes\r\n   ========================================================================== */\r\n/* CUSTOM CSS CHECKBOXES */\r\nform p {\r\n  margin-bottom: 10px;\r\n  text-align: left;\r\n}\r\n\r\nform p:last-child {\r\n  margin-bottom: 0;\r\n}\r\n\r\n/* Remove default checkbox */\r\n[type=\"checkbox\"]:not(:checked),\r\n[type=\"checkbox\"]:checked {\r\n  position: absolute;\r\n  left: -9999px;\r\n  opacity: 0;\r\n}\r\n\r\n[type=\"checkbox\"] {\r\n  /* checkbox aspect */\r\n}\r\n\r\n[type=\"checkbox\"] + label {\r\n  position: relative;\r\n  padding-left: 35px;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  height: 25px;\r\n  line-height: 25px;\r\n  font-size: 1rem;\r\n  -webkit-user-select: none;\r\n  /* webkit (safari, chrome) browsers */\r\n  -moz-user-select: none;\r\n  /* mozilla browsers */\r\n  -khtml-user-select: none;\r\n  /* webkit (konqueror) browsers */\r\n  -ms-user-select: none;\r\n  /* IE10+ */\r\n}\r\n\r\n[type=\"checkbox\"] + label:before,\r\n[type=\"checkbox\"]:not(.filled-in) + label:after {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 18px;\r\n  height: 18px;\r\n  z-index: 0;\r\n  border: 2px solid #5a5a5a;\r\n  border-radius: 1px;\r\n  margin-top: 2px;\r\n  transition: .2s;\r\n}\r\n\r\n[type=\"checkbox\"]:not(.filled-in) + label:after {\r\n  border: 0;\r\n  -webkit-transform: scale(0);\r\n          transform: scale(0);\r\n}\r\n\r\n[type=\"checkbox\"]:not(:checked):disabled + label:before {\r\n  border: none;\r\n  background-color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n[type=\"checkbox\"].tabbed:focus + label:after {\r\n  -webkit-transform: scale(1);\r\n          transform: scale(1);\r\n  border: 0;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);\r\n  background-color: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n[type=\"checkbox\"]:checked + label:before {\r\n  top: -4px;\r\n  left: -5px;\r\n  width: 12px;\r\n  height: 22px;\r\n  border-top: 2px solid transparent;\r\n  border-left: 2px solid transparent;\r\n  border-right: 2px solid #26a69a;\r\n  border-bottom: 2px solid #26a69a;\r\n  -webkit-transform: rotate(40deg);\r\n          transform: rotate(40deg);\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n  -webkit-transform-origin: 100% 100%;\r\n          transform-origin: 100% 100%;\r\n}\r\n\r\n[type=\"checkbox\"]:checked:disabled + label:before {\r\n  border-right: 2px solid rgba(0, 0, 0, 0.26);\r\n  border-bottom: 2px solid rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n/* Indeterminate checkbox */\r\n[type=\"checkbox\"]:indeterminate + label:before {\r\n  top: -11px;\r\n  left: -12px;\r\n  width: 10px;\r\n  height: 22px;\r\n  border-top: none;\r\n  border-left: none;\r\n  border-right: 2px solid #26a69a;\r\n  border-bottom: none;\r\n  -webkit-transform: rotate(90deg);\r\n          transform: rotate(90deg);\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n  -webkit-transform-origin: 100% 100%;\r\n          transform-origin: 100% 100%;\r\n}\r\n\r\n[type=\"checkbox\"]:indeterminate:disabled + label:before {\r\n  border-right: 2px solid rgba(0, 0, 0, 0.26);\r\n  background-color: transparent;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in + label:after {\r\n  border-radius: 2px;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in + label:before,\r\n[type=\"checkbox\"].filled-in + label:after {\r\n  content: '';\r\n  left: 0;\r\n  position: absolute;\r\n  /* .1s delay is for check animation */\r\n  transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;\r\n  z-index: 1;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:not(:checked) + label:before {\r\n  width: 0;\r\n  height: 0;\r\n  border: 3px solid transparent;\r\n  left: 6px;\r\n  top: 10px;\r\n  -webkit-transform: rotateZ(37deg);\r\n  transform: rotateZ(37deg);\r\n  -webkit-transform-origin: 20% 40%;\r\n  transform-origin: 100% 100%;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:not(:checked) + label:after {\r\n  height: 20px;\r\n  width: 20px;\r\n  background-color: transparent;\r\n  border: 2px solid #5a5a5a;\r\n  top: 0px;\r\n  z-index: 0;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:checked + label:before {\r\n  top: 0;\r\n  left: 1px;\r\n  width: 8px;\r\n  height: 13px;\r\n  border-top: 2px solid transparent;\r\n  border-left: 2px solid transparent;\r\n  border-right: 2px solid #fff;\r\n  border-bottom: 2px solid #fff;\r\n  -webkit-transform: rotateZ(37deg);\r\n  transform: rotateZ(37deg);\r\n  -webkit-transform-origin: 100% 100%;\r\n  transform-origin: 100% 100%;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:checked + label:after {\r\n  top: 0;\r\n  width: 20px;\r\n  height: 20px;\r\n  border: 2px solid #26a69a;\r\n  background-color: #26a69a;\r\n  z-index: 0;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in.tabbed:focus + label:after {\r\n  border-radius: 2px;\r\n  border-color: #5a5a5a;\r\n  background-color: rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n[type=\"checkbox\"].filled-in.tabbed:checked:focus + label:after {\r\n  border-radius: 2px;\r\n  background-color: #26a69a;\r\n  border-color: #26a69a;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:disabled:not(:checked) + label:before {\r\n  background-color: transparent;\r\n  border: 2px solid transparent;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:disabled:not(:checked) + label:after {\r\n  border-color: transparent;\r\n  background-color: #BDBDBD;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:disabled:checked + label:before {\r\n  background-color: transparent;\r\n}\r\n\r\n[type=\"checkbox\"].filled-in:disabled:checked + label:after {\r\n  background-color: #BDBDBD;\r\n  border-color: #BDBDBD;\r\n}\r\n\r\n/* Switch\r\n   ========================================================================== */\r\n.switch,\r\n.switch * {\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -khtml-user-select: none;\r\n  -ms-user-select: none;\r\n}\r\n\r\n.switch label {\r\n  cursor: pointer;\r\n}\r\n\r\n.switch label input[type=checkbox] {\r\n  opacity: 0;\r\n  width: 0;\r\n  height: 0;\r\n}\r\n\r\n.switch label input[type=checkbox]:checked + .lever {\r\n  background-color: #84c7c1;\r\n}\r\n\r\n.switch label input[type=checkbox]:checked + .lever:after {\r\n  background-color: #26a69a;\r\n  left: 24px;\r\n}\r\n\r\n.switch label .lever {\r\n  content: \"\";\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 40px;\r\n  height: 15px;\r\n  background-color: #818181;\r\n  border-radius: 15px;\r\n  margin-right: 10px;\r\n  transition: background 0.3s ease;\r\n  vertical-align: middle;\r\n  margin: 0 16px;\r\n}\r\n\r\n.switch label .lever:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  display: inline-block;\r\n  width: 21px;\r\n  height: 21px;\r\n  background-color: #F1F1F1;\r\n  border-radius: 21px;\r\n  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);\r\n  left: -5px;\r\n  top: -3px;\r\n  transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;\r\n}\r\n\r\ninput[type=checkbox]:checked:not(:disabled) ~ .lever:active::after,\r\ninput[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::after {\r\n  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);\r\n}\r\n\r\ninput[type=checkbox]:not(:disabled) ~ .lever:active:after,\r\ninput[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {\r\n  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);\r\n}\r\n\r\n.switch input[type=checkbox][disabled] + .lever {\r\n  cursor: default;\r\n}\r\n\r\n.switch label input[type=checkbox][disabled] + .lever:after,\r\n.switch label input[type=checkbox][disabled]:checked + .lever:after {\r\n  background-color: #BDBDBD;\r\n}\r\n\r\n/* Select Field\r\n   ========================================================================== */\r\nselect {\r\n  display: none;\r\n}\r\n\r\nselect.browser-default {\r\n  display: block;\r\n}\r\n\r\nselect {\r\n  background-color: rgba(255, 255, 255, 0.9);\r\n  width: 100%;\r\n  padding: 5px;\r\n  border: 1px solid #f2f2f2;\r\n  border-radius: 2px;\r\n  height: 3rem;\r\n}\r\n\r\n.select-label {\r\n  position: absolute;\r\n}\r\n\r\n.select-wrapper {\r\n  position: relative;\r\n}\r\n\r\n.select-wrapper input.select-dropdown {\r\n  position: relative;\r\n  cursor: pointer;\r\n  background-color: transparent;\r\n  border: none;\r\n  border-bottom: 1px solid #9e9e9e;\r\n  outline: none;\r\n  height: 3rem;\r\n  line-height: 3rem;\r\n  width: 100%;\r\n  font-size: 1rem;\r\n  margin: 0 0 20px 0;\r\n  padding: 0;\r\n  display: block;\r\n}\r\n\r\n.select-wrapper span.caret {\r\n  color: initial;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 16px;\r\n  font-size: 10px;\r\n}\r\n\r\n.select-wrapper span.caret.disabled {\r\n  color: rgba(0, 0, 0, 0.26);\r\n}\r\n\r\n.select-wrapper + label {\r\n  position: absolute;\r\n  top: -14px;\r\n  font-size: 0.8rem;\r\n}\r\n\r\nselect:disabled {\r\n  color: rgba(0, 0, 0, 0.3);\r\n}\r\n\r\n.select-wrapper input.select-dropdown:disabled {\r\n  color: rgba(0, 0, 0, 0.3);\r\n  cursor: default;\r\n  -webkit-user-select: none;\r\n  /* webkit (safari, chrome) browsers */\r\n  -moz-user-select: none;\r\n  /* mozilla browsers */\r\n  -ms-user-select: none;\r\n  /* IE10+ */\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.3);\r\n}\r\n\r\n.select-wrapper i {\r\n  color: rgba(0, 0, 0, 0.3);\r\n}\r\n\r\n.select-dropdown li.disabled,\r\n.select-dropdown li.disabled > span,\r\n.select-dropdown li.optgroup {\r\n  color: rgba(0, 0, 0, 0.3);\r\n  background-color: transparent;\r\n}\r\n\r\n.prefix ~ .select-wrapper {\r\n  margin-left: 3rem;\r\n  width: 92%;\r\n  width: calc(100% - 3rem);\r\n}\r\n\r\n.prefix ~ label {\r\n  margin-left: 3rem;\r\n}\r\n\r\n.select-dropdown li img {\r\n  height: 40px;\r\n  width: 40px;\r\n  margin: 5px 15px;\r\n  float: right;\r\n}\r\n\r\n.select-dropdown li.optgroup {\r\n  border-top: 1px solid #eee;\r\n}\r\n\r\n.select-dropdown li.optgroup.selected > span {\r\n  color: rgba(0, 0, 0, 0.7);\r\n}\r\n\r\n.select-dropdown li.optgroup > span {\r\n  color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.select-dropdown li.optgroup ~ li.optgroup-option {\r\n  padding-left: 1rem;\r\n}\r\n\r\n/* File Input\r\n   ========================================================================== */\r\n.file-field {\r\n  position: relative;\r\n}\r\n\r\n.file-field .file-path-wrapper {\r\n  overflow: hidden;\r\n  padding-left: 10px;\r\n}\r\n\r\n.file-field input.file-path {\r\n  width: 100%;\r\n}\r\n\r\n.file-field .btn, .file-field .btn-large {\r\n  float: left;\r\n  height: 3rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n.file-field span {\r\n  cursor: pointer;\r\n}\r\n\r\n.file-field input[type=file] {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  left: 0;\r\n  bottom: 0;\r\n  width: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-size: 20px;\r\n  cursor: pointer;\r\n  opacity: 0;\r\n  filter: alpha(opacity=0);\r\n}\r\n\r\n/* Range\r\n   ========================================================================== */\r\n.range-field {\r\n  position: relative;\r\n}\r\n\r\ninput[type=range],\r\ninput[type=range] + .thumb {\r\n  cursor: pointer;\r\n}\r\n\r\ninput[type=range] {\r\n  position: relative;\r\n  background-color: transparent;\r\n  border: none;\r\n  outline: none;\r\n  width: 100%;\r\n  margin: 15px 0;\r\n  padding: 0;\r\n}\r\n\r\ninput[type=range]:focus {\r\n  outline: none;\r\n}\r\n\r\ninput[type=range] + .thumb {\r\n  position: absolute;\r\n  border: none;\r\n  height: 0;\r\n  width: 0;\r\n  border-radius: 50%;\r\n  background-color: #26a69a;\r\n  top: 10px;\r\n  margin-left: -6px;\r\n  -webkit-transform-origin: 50% 50%;\r\n          transform-origin: 50% 50%;\r\n  -webkit-transform: rotate(-45deg);\r\n          transform: rotate(-45deg);\r\n}\r\n\r\ninput[type=range] + .thumb .value {\r\n  display: block;\r\n  width: 30px;\r\n  text-align: center;\r\n  color: #26a69a;\r\n  font-size: 0;\r\n  -webkit-transform: rotate(45deg);\r\n          transform: rotate(45deg);\r\n}\r\n\r\ninput[type=range] + .thumb.active {\r\n  border-radius: 50% 50% 50% 0;\r\n}\r\n\r\ninput[type=range] + .thumb.active .value {\r\n  color: #fff;\r\n  margin-left: -1px;\r\n  margin-top: 8px;\r\n  font-size: 10px;\r\n}\r\n\r\ninput[type=range] {\r\n  -webkit-appearance: none;\r\n}\r\n\r\ninput[type=range]::-webkit-slider-runnable-track {\r\n  height: 3px;\r\n  background: #c2c0c2;\r\n  border: none;\r\n}\r\n\r\ninput[type=range]::-webkit-slider-thumb {\r\n  -webkit-appearance: none;\r\n  border: none;\r\n  height: 14px;\r\n  width: 14px;\r\n  border-radius: 50%;\r\n  background-color: #26a69a;\r\n  -webkit-transform-origin: 50% 50%;\r\n          transform-origin: 50% 50%;\r\n  margin: -5px 0 0 0;\r\n  transition: .3s;\r\n}\r\n\r\ninput[type=range]:focus::-webkit-slider-runnable-track {\r\n  background: #ccc;\r\n}\r\n\r\ninput[type=range] {\r\n  /* fix for FF unable to apply focus style bug  */\r\n  border: 1px solid white;\r\n  /*required for proper track sizing in FF*/\r\n}\r\n\r\ninput[type=range]::-moz-range-track {\r\n  height: 3px;\r\n  background: #ddd;\r\n  border: none;\r\n}\r\n\r\ninput[type=range]::-moz-range-thumb {\r\n  border: none;\r\n  height: 14px;\r\n  width: 14px;\r\n  border-radius: 50%;\r\n  background: #26a69a;\r\n  margin-top: -5px;\r\n}\r\n\r\ninput[type=range]:-moz-focusring {\r\n  outline: 1px solid #fff;\r\n  outline-offset: -1px;\r\n}\r\n\r\ninput[type=range]:focus::-moz-range-track {\r\n  background: #ccc;\r\n}\r\n\r\ninput[type=range]::-ms-track {\r\n  height: 3px;\r\n  background: transparent;\r\n  border-color: transparent;\r\n  border-width: 6px 0;\r\n  /*remove default tick marks*/\r\n  color: transparent;\r\n}\r\n\r\ninput[type=range]::-ms-fill-lower {\r\n  background: #777;\r\n}\r\n\r\ninput[type=range]::-ms-fill-upper {\r\n  background: #ddd;\r\n}\r\n\r\ninput[type=range]::-ms-thumb {\r\n  border: none;\r\n  height: 14px;\r\n  width: 14px;\r\n  border-radius: 50%;\r\n  background: #26a69a;\r\n}\r\n\r\ninput[type=range]:focus::-ms-fill-lower {\r\n  background: #888;\r\n}\r\n\r\ninput[type=range]:focus::-ms-fill-upper {\r\n  background: #ccc;\r\n}\r\n\r\n/***************\r\n    Nav List\r\n***************/\r\n.table-of-contents.fixed {\r\n  position: fixed;\r\n}\r\n\r\n.table-of-contents li {\r\n  padding: 2px 0;\r\n}\r\n\r\n.table-of-contents a {\r\n  display: inline-block;\r\n  font-weight: 300;\r\n  color: #757575;\r\n  padding-left: 20px;\r\n  height: 1.5rem;\r\n  line-height: 1.5rem;\r\n  letter-spacing: .4;\r\n  display: inline-block;\r\n}\r\n\r\n.table-of-contents a:hover {\r\n  color: #a8a8a8;\r\n  padding-left: 19px;\r\n  border-left: 1px solid #ea4a4f;\r\n}\r\n\r\n.table-of-contents a.active {\r\n  font-weight: 500;\r\n  padding-left: 18px;\r\n  border-left: 2px solid #ea4a4f;\r\n}\r\n\r\n.side-nav {\r\n  position: fixed;\r\n  width: 300px;\r\n  left: 0;\r\n  top: 0;\r\n  margin: 0;\r\n  -webkit-transform: translateX(-100%);\r\n          transform: translateX(-100%);\r\n  height: 100%;\r\n  height: calc(100% + 60px);\r\n  height: -moz-calc(100%);\r\n  padding-bottom: 60px;\r\n  background-color: #fff;\r\n  z-index: 999;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n  overflow-y: auto;\r\n  will-change: transform;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n  -webkit-transform: translateX(-105%);\r\n          transform: translateX(-105%);\r\n}\r\n\r\n.side-nav.right-aligned {\r\n  right: 0;\r\n  -webkit-transform: translateX(105%);\r\n          transform: translateX(105%);\r\n  left: auto;\r\n  -webkit-transform: translateX(100%);\r\n          transform: translateX(100%);\r\n}\r\n\r\n.side-nav .collapsible {\r\n  margin: 0;\r\n}\r\n\r\n.side-nav li {\r\n  float: none;\r\n  line-height: 48px;\r\n}\r\n\r\n.side-nav li.active {\r\n  background-color: rgba(0, 0, 0, 0.05);\r\n}\r\n\r\n.side-nav a {\r\n  color: rgba(0, 0, 0, 0.87);\r\n  display: block;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  height: 48px;\r\n  line-height: 48px;\r\n  padding: 0 32px;\r\n}\r\n\r\n.side-nav a:hover {\r\n  background-color: rgba(0, 0, 0, 0.05);\r\n}\r\n\r\n.side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {\r\n  margin: 10px 15px;\r\n}\r\n\r\n.side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {\r\n  color: #fff;\r\n}\r\n\r\n.side-nav a.btn-flat {\r\n  color: #343434;\r\n}\r\n\r\n.side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {\r\n  background-color: #2bbbad;\r\n}\r\n\r\n.side-nav a.btn-floating:hover {\r\n  background-color: #26a69a;\r\n}\r\n\r\n.side-nav li > a > i,\r\n.side-nav li > a > [class^=\"mdi-\"], .side-nav li > a > [class*=\"mdi-\"],\r\n.side-nav li > a > i.material-icons {\r\n  float: left;\r\n  line-height: 48px;\r\n  margin: 0 32px 0 0;\r\n  width: 24px;\r\n  color: rgba(0, 0, 0, 0.54);\r\n}\r\n\r\n.side-nav .divider {\r\n  margin: 8px 0 0 0;\r\n}\r\n\r\n.side-nav .subheader {\r\n  cursor: initial;\r\n  pointer-events: none;\r\n  color: rgba(0, 0, 0, 0.54);\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  line-height: 48px;\r\n}\r\n\r\n.side-nav .subheader:hover {\r\n  background-color: transparent;\r\n}\r\n\r\n.side-nav .userView {\r\n  overflow: hidden;\r\n  position: relative;\r\n  padding: 32px 32px 0;\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.side-nav .userView a {\r\n  height: auto;\r\n  padding: 0;\r\n}\r\n\r\n.side-nav .userView a:hover {\r\n  background-color: transparent;\r\n}\r\n\r\n.side-nav .userView .background {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: -1;\r\n}\r\n\r\n.side-nav .userView .circle, .side-nav .userView .name, .side-nav .userView .email {\r\n  display: block;\r\n}\r\n\r\n.side-nav .userView .circle {\r\n  height: 64px;\r\n  width: 64px;\r\n}\r\n\r\n.side-nav .userView .name,\r\n.side-nav .userView .email {\r\n  font-weight: 14px;\r\n  line-height: 24px;\r\n}\r\n\r\n.side-nav .userView .name {\r\n  margin-top: 16px;\r\n  font-weight: 500;\r\n}\r\n\r\n.side-nav .userView .email {\r\n  padding-bottom: 16px;\r\n  font-weight: 400;\r\n}\r\n\r\n.drag-target {\r\n  height: 100%;\r\n  width: 10px;\r\n  position: fixed;\r\n  top: 0;\r\n  z-index: 998;\r\n}\r\n\r\n.side-nav.fixed a {\r\n  display: block;\r\n  padding: 0 16px;\r\n  color: rgba(0, 0, 0, 0.87);\r\n}\r\n\r\n.side-nav.fixed {\r\n  left: 0;\r\n  -webkit-transform: translateX(0);\r\n          transform: translateX(0);\r\n  position: fixed;\r\n}\r\n\r\n.side-nav.fixed.right-aligned {\r\n  right: 0;\r\n  left: auto;\r\n}\r\n\r\n@media only screen and (max-width: 992px) {\r\n  .side-nav.fixed {\r\n    -webkit-transform: translateX(-105%);\r\n            transform: translateX(-105%);\r\n  }\r\n  .side-nav.fixed.right-aligned {\r\n    -webkit-transform: translateX(105%);\r\n            transform: translateX(105%);\r\n  }\r\n  .side-nav a {\r\n    padding: 0 16px;\r\n  }\r\n  .side-nav .userView {\r\n    padding: 16px 16px 0;\r\n  }\r\n}\r\n\r\n.side-nav .collapsible-body li.active,\r\n.side-nav.fixed .collapsible-body li.active {\r\n  background-color: #ee6e73;\r\n}\r\n\r\n.side-nav .collapsible-body li.active a,\r\n.side-nav.fixed .collapsible-body li.active a {\r\n  color: #fff;\r\n}\r\n\r\n#sidenav-overlay {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  height: 120vh;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  z-index: 997;\r\n  will-change: opacity;\r\n}\r\n\r\n/*\r\n    @license\r\n    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.\r\n    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt\r\n    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt\r\n    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt\r\n    Code distributed by Google as part of the polymer project is also\r\n    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt\r\n */\r\n/**************************/\r\n/* STYLES FOR THE SPINNER */\r\n/**************************/\r\n/*\r\n * Constants:\r\n *      STROKEWIDTH = 3px\r\n *      ARCSIZE     = 270 degrees (amount of circle the arc takes up)\r\n *      ARCTIME     = 1333ms (time it takes to expand and contract arc)\r\n *      ARCSTARTROT = 216 degrees (how much the start location of the arc\r\n *                                should rotate each time, 216 gives us a\r\n *                                5 pointed star shape (it's 360/5 * 3).\r\n *                                For a 7 pointed star, we might do\r\n *                                360/7 * 3 = 154.286)\r\n *      CONTAINERWIDTH = 28px\r\n *      SHRINK_TIME = 400ms\r\n */\r\n.preloader-wrapper {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 48px;\r\n  height: 48px;\r\n}\r\n\r\n.preloader-wrapper.small {\r\n  width: 36px;\r\n  height: 36px;\r\n}\r\n\r\n.preloader-wrapper.big {\r\n  width: 64px;\r\n  height: 64px;\r\n}\r\n\r\n.preloader-wrapper.active {\r\n  /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */\r\n  -webkit-animation: container-rotate 1568ms linear infinite;\r\n  animation: container-rotate 1568ms linear infinite;\r\n}\r\n\r\n@-webkit-keyframes container-rotate {\r\n  to {\r\n    -webkit-transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n@keyframes container-rotate {\r\n  to {\r\n    -webkit-transform: rotate(360deg);\r\n            transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.spinner-layer {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  opacity: 0;\r\n  border-color: #26a69a;\r\n}\r\n\r\n.spinner-blue,\r\n.spinner-blue-only {\r\n  border-color: #4285f4;\r\n}\r\n\r\n.spinner-red,\r\n.spinner-red-only {\r\n  border-color: #db4437;\r\n}\r\n\r\n.spinner-yellow,\r\n.spinner-yellow-only {\r\n  border-color: #f4b400;\r\n}\r\n\r\n.spinner-green,\r\n.spinner-green-only {\r\n  border-color: #0f9d58;\r\n}\r\n\r\n/**\r\n * IMPORTANT NOTE ABOUT CSS ANIMATION PROPERTIES (keanulee):\r\n *\r\n * iOS Safari (tested on iOS 8.1) does not handle animation-delay very well - it doesn't\r\n * guarantee that the animation will start _exactly_ after that value. So we avoid using\r\n * animation-delay and instead set custom keyframes for each color (as redundant as it\r\n * seems).\r\n *\r\n * We write out each animation in full (instead of separating animation-name,\r\n * animation-duration, etc.) because under the polyfill, Safari does not recognize those\r\n * specific properties properly, treats them as -webkit-animation, and overrides the\r\n * other animation rules. See https://github.com/Polymer/platform/issues/53.\r\n */\r\n.active .spinner-layer.spinner-blue {\r\n  /* durations: 4 * ARCTIME */\r\n  -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n.active .spinner-layer.spinner-red {\r\n  /* durations: 4 * ARCTIME */\r\n  -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n.active .spinner-layer.spinner-yellow {\r\n  /* durations: 4 * ARCTIME */\r\n  -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n.active .spinner-layer.spinner-green {\r\n  /* durations: 4 * ARCTIME */\r\n  -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n.active .spinner-layer,\r\n.active .spinner-layer.spinner-blue-only,\r\n.active .spinner-layer.spinner-red-only,\r\n.active .spinner-layer.spinner-yellow-only,\r\n.active .spinner-layer.spinner-green-only {\r\n  /* durations: 4 * ARCTIME */\r\n  opacity: 1;\r\n  -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n@-webkit-keyframes fill-unfill-rotate {\r\n  12.5% {\r\n    -webkit-transform: rotate(135deg);\r\n  }\r\n  /* 0.5 * ARCSIZE */\r\n  25% {\r\n    -webkit-transform: rotate(270deg);\r\n  }\r\n  /* 1   * ARCSIZE */\r\n  37.5% {\r\n    -webkit-transform: rotate(405deg);\r\n  }\r\n  /* 1.5 * ARCSIZE */\r\n  50% {\r\n    -webkit-transform: rotate(540deg);\r\n  }\r\n  /* 2   * ARCSIZE */\r\n  62.5% {\r\n    -webkit-transform: rotate(675deg);\r\n  }\r\n  /* 2.5 * ARCSIZE */\r\n  75% {\r\n    -webkit-transform: rotate(810deg);\r\n  }\r\n  /* 3   * ARCSIZE */\r\n  87.5% {\r\n    -webkit-transform: rotate(945deg);\r\n  }\r\n  /* 3.5 * ARCSIZE */\r\n  to {\r\n    -webkit-transform: rotate(1080deg);\r\n  }\r\n  /* 4   * ARCSIZE */\r\n}\r\n\r\n@keyframes fill-unfill-rotate {\r\n  12.5% {\r\n    -webkit-transform: rotate(135deg);\r\n            transform: rotate(135deg);\r\n  }\r\n  /* 0.5 * ARCSIZE */\r\n  25% {\r\n    -webkit-transform: rotate(270deg);\r\n            transform: rotate(270deg);\r\n  }\r\n  /* 1   * ARCSIZE */\r\n  37.5% {\r\n    -webkit-transform: rotate(405deg);\r\n            transform: rotate(405deg);\r\n  }\r\n  /* 1.5 * ARCSIZE */\r\n  50% {\r\n    -webkit-transform: rotate(540deg);\r\n            transform: rotate(540deg);\r\n  }\r\n  /* 2   * ARCSIZE */\r\n  62.5% {\r\n    -webkit-transform: rotate(675deg);\r\n            transform: rotate(675deg);\r\n  }\r\n  /* 2.5 * ARCSIZE */\r\n  75% {\r\n    -webkit-transform: rotate(810deg);\r\n            transform: rotate(810deg);\r\n  }\r\n  /* 3   * ARCSIZE */\r\n  87.5% {\r\n    -webkit-transform: rotate(945deg);\r\n            transform: rotate(945deg);\r\n  }\r\n  /* 3.5 * ARCSIZE */\r\n  to {\r\n    -webkit-transform: rotate(1080deg);\r\n            transform: rotate(1080deg);\r\n  }\r\n  /* 4   * ARCSIZE */\r\n}\r\n\r\n@-webkit-keyframes blue-fade-in-out {\r\n  from {\r\n    opacity: 1;\r\n  }\r\n  25% {\r\n    opacity: 1;\r\n  }\r\n  26% {\r\n    opacity: 0;\r\n  }\r\n  89% {\r\n    opacity: 0;\r\n  }\r\n  90% {\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n  }\r\n}\r\n\r\n@keyframes blue-fade-in-out {\r\n  from {\r\n    opacity: 1;\r\n  }\r\n  25% {\r\n    opacity: 1;\r\n  }\r\n  26% {\r\n    opacity: 0;\r\n  }\r\n  89% {\r\n    opacity: 0;\r\n  }\r\n  90% {\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n  }\r\n}\r\n\r\n@-webkit-keyframes red-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  15% {\r\n    opacity: 0;\r\n  }\r\n  25% {\r\n    opacity: 1;\r\n  }\r\n  50% {\r\n    opacity: 1;\r\n  }\r\n  51% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@keyframes red-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  15% {\r\n    opacity: 0;\r\n  }\r\n  25% {\r\n    opacity: 1;\r\n  }\r\n  50% {\r\n    opacity: 1;\r\n  }\r\n  51% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@-webkit-keyframes yellow-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  40% {\r\n    opacity: 0;\r\n  }\r\n  50% {\r\n    opacity: 1;\r\n  }\r\n  75% {\r\n    opacity: 1;\r\n  }\r\n  76% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@keyframes yellow-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  40% {\r\n    opacity: 0;\r\n  }\r\n  50% {\r\n    opacity: 1;\r\n  }\r\n  75% {\r\n    opacity: 1;\r\n  }\r\n  76% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@-webkit-keyframes green-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  65% {\r\n    opacity: 0;\r\n  }\r\n  75% {\r\n    opacity: 1;\r\n  }\r\n  90% {\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@keyframes green-fade-in-out {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  65% {\r\n    opacity: 0;\r\n  }\r\n  75% {\r\n    opacity: 1;\r\n  }\r\n  90% {\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n/**\r\n * Patch the gap that appear between the two adjacent div.circle-clipper while the\r\n * spinner is rotating (appears on Chrome 38, Safari 7.1, and IE 11).\r\n */\r\n.gap-patch {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 45%;\r\n  width: 10%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  border-color: inherit;\r\n}\r\n\r\n.gap-patch .circle {\r\n  width: 1000%;\r\n  left: -450%;\r\n}\r\n\r\n.circle-clipper {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 50%;\r\n  height: 100%;\r\n  overflow: hidden;\r\n  border-color: inherit;\r\n}\r\n\r\n.circle-clipper .circle {\r\n  width: 200%;\r\n  height: 100%;\r\n  border-width: 3px;\r\n  /* STROKEWIDTH */\r\n  border-style: solid;\r\n  border-color: inherit;\r\n  border-bottom-color: transparent !important;\r\n  border-radius: 50%;\r\n  -webkit-animation: none;\r\n  animation: none;\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.circle-clipper.left .circle {\r\n  left: 0;\r\n  border-right-color: transparent !important;\r\n  -webkit-transform: rotate(129deg);\r\n  transform: rotate(129deg);\r\n}\r\n\r\n.circle-clipper.right .circle {\r\n  left: -100%;\r\n  border-left-color: transparent !important;\r\n  -webkit-transform: rotate(-129deg);\r\n  transform: rotate(-129deg);\r\n}\r\n\r\n.active .circle-clipper.left .circle {\r\n  /* duration: ARCTIME */\r\n  -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n.active .circle-clipper.right .circle {\r\n  /* duration: ARCTIME */\r\n  -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n  animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;\r\n}\r\n\r\n@-webkit-keyframes left-spin {\r\n  from {\r\n    -webkit-transform: rotate(130deg);\r\n  }\r\n  50% {\r\n    -webkit-transform: rotate(-5deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(130deg);\r\n  }\r\n}\r\n\r\n@keyframes left-spin {\r\n  from {\r\n    -webkit-transform: rotate(130deg);\r\n            transform: rotate(130deg);\r\n  }\r\n  50% {\r\n    -webkit-transform: rotate(-5deg);\r\n            transform: rotate(-5deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(130deg);\r\n            transform: rotate(130deg);\r\n  }\r\n}\r\n\r\n@-webkit-keyframes right-spin {\r\n  from {\r\n    -webkit-transform: rotate(-130deg);\r\n  }\r\n  50% {\r\n    -webkit-transform: rotate(5deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(-130deg);\r\n  }\r\n}\r\n\r\n@keyframes right-spin {\r\n  from {\r\n    -webkit-transform: rotate(-130deg);\r\n            transform: rotate(-130deg);\r\n  }\r\n  50% {\r\n    -webkit-transform: rotate(5deg);\r\n            transform: rotate(5deg);\r\n  }\r\n  to {\r\n    -webkit-transform: rotate(-130deg);\r\n            transform: rotate(-130deg);\r\n  }\r\n}\r\n\r\n#spinnerContainer.cooldown {\r\n  /* duration: SHRINK_TIME */\r\n  -webkit-animation: container-rotate 1568ms linear infinite, fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);\r\n  animation: container-rotate 1568ms linear infinite, fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);\r\n}\r\n\r\n@-webkit-keyframes fade-out {\r\n  from {\r\n    opacity: 1;\r\n  }\r\n  to {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n@keyframes fade-out {\r\n  from {\r\n    opacity: 1;\r\n  }\r\n  to {\r\n    opacity: 0;\r\n  }\r\n}\r\n\r\n.slider {\r\n  position: relative;\r\n  height: 400px;\r\n  width: 100%;\r\n}\r\n\r\n.slider.fullscreen {\r\n  height: 100%;\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n}\r\n\r\n.slider.fullscreen ul.slides {\r\n  height: 100%;\r\n}\r\n\r\n.slider.fullscreen ul.indicators {\r\n  z-index: 2;\r\n  bottom: 30px;\r\n}\r\n\r\n.slider .slides {\r\n  background-color: #9e9e9e;\r\n  margin: 0;\r\n  height: 400px;\r\n}\r\n\r\n.slider .slides li {\r\n  opacity: 0;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n  width: 100%;\r\n  height: inherit;\r\n  overflow: hidden;\r\n}\r\n\r\n.slider .slides li img {\r\n  height: 100%;\r\n  width: 100%;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n.slider .slides li .caption {\r\n  color: #fff;\r\n  position: absolute;\r\n  top: 15%;\r\n  left: 15%;\r\n  width: 70%;\r\n  opacity: 0;\r\n}\r\n\r\n.slider .slides li .caption p {\r\n  color: #e0e0e0;\r\n}\r\n\r\n.slider .slides li.active {\r\n  z-index: 2;\r\n}\r\n\r\n.slider .indicators {\r\n  position: absolute;\r\n  text-align: center;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: 0;\r\n}\r\n\r\n.slider .indicators .indicator-item {\r\n  display: inline-block;\r\n  position: relative;\r\n  cursor: pointer;\r\n  height: 16px;\r\n  width: 16px;\r\n  margin: 0 12px;\r\n  background-color: #e0e0e0;\r\n  transition: background-color .3s;\r\n  border-radius: 50%;\r\n}\r\n\r\n.slider .indicators .indicator-item.active {\r\n  background-color: #4CAF50;\r\n}\r\n\r\n.carousel {\r\n  overflow: hidden;\r\n  position: relative;\r\n  width: 100%;\r\n  height: 400px;\r\n  -webkit-perspective: 500px;\r\n          perspective: 500px;\r\n  -webkit-transform-style: preserve-3d;\r\n          transform-style: preserve-3d;\r\n  -webkit-transform-origin: 0% 50%;\r\n          transform-origin: 0% 50%;\r\n}\r\n\r\n.carousel.carousel-slider {\r\n  top: 0;\r\n  left: 0;\r\n  height: 0;\r\n}\r\n\r\n.carousel.carousel-slider .carousel-fixed-item {\r\n  position: absolute;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 20px;\r\n  z-index: 1;\r\n}\r\n\r\n.carousel.carousel-slider .carousel-fixed-item.with-indicators {\r\n  bottom: 68px;\r\n}\r\n\r\n.carousel.carousel-slider .carousel-item {\r\n  width: 100%;\r\n  height: 100%;\r\n  min-height: 400px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.carousel.carousel-slider .carousel-item h2 {\r\n  font-size: 24px;\r\n  font-weight: 500;\r\n  line-height: 32px;\r\n}\r\n\r\n.carousel.carousel-slider .carousel-item p {\r\n  font-size: 15px;\r\n}\r\n\r\n.carousel .carousel-item {\r\n  display: none;\r\n  width: 200px;\r\n  height: 400px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.carousel .carousel-item img {\r\n  width: 100%;\r\n}\r\n\r\n.carousel .indicators {\r\n  position: absolute;\r\n  text-align: center;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: 0;\r\n}\r\n\r\n.carousel .indicators .indicator-item {\r\n  display: inline-block;\r\n  position: relative;\r\n  cursor: pointer;\r\n  height: 8px;\r\n  width: 8px;\r\n  margin: 24px 4px;\r\n  background-color: rgba(255, 255, 255, 0.5);\r\n  transition: background-color .3s;\r\n  border-radius: 50%;\r\n}\r\n\r\n.carousel .indicators .indicator-item.active {\r\n  background-color: #fff;\r\n}\r\n\r\n/* ==========================================================================\r\n   $BASE-PICKER\r\n   ========================================================================== */\r\n/**\r\n * Note: the root picker element should *NOT* be styled more than what's here.\r\n */\r\n.picker {\r\n  font-size: 16px;\r\n  text-align: left;\r\n  line-height: 1.2;\r\n  color: #000000;\r\n  position: absolute;\r\n  z-index: 10000;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n/**\r\n * The picker input element.\r\n */\r\n.picker__input {\r\n  cursor: default;\r\n}\r\n\r\n/**\r\n * When the picker is opened, the input element is \"activated\".\r\n */\r\n.picker__input.picker__input--active {\r\n  border-color: #0089ec;\r\n}\r\n\r\n/**\r\n * The holder is the only \"scrollable\" top-level container element.\r\n */\r\n.picker__holder {\r\n  width: 100%;\r\n  overflow-y: auto;\r\n  -webkit-overflow-scrolling: touch;\r\n}\r\n\r\n/*!\r\n * Default mobile-first, responsive styling for pickadate.js\r\n * Demo: http://amsul.github.io/pickadate.js\r\n */\r\n/**\r\n * Note: the root picker element should *NOT* be styled more than what's here.\r\n */\r\n/**\r\n * Make the holder and frame fullscreen.\r\n */\r\n.picker__holder,\r\n.picker__frame {\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  top: 100%;\r\n}\r\n\r\n/**\r\n * The holder should overlay the entire screen.\r\n */\r\n.picker__holder {\r\n  position: fixed;\r\n  transition: background 0.15s ease-out, top 0s 0.15s;\r\n  -webkit-backface-visibility: hidden;\r\n}\r\n\r\n/**\r\n * The frame that bounds the box contents of the picker.\r\n */\r\n.picker__frame {\r\n  position: absolute;\r\n  margin: 0 auto;\r\n  min-width: 256px;\r\n  width: 300px;\r\n  max-height: 350px;\r\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)\";\r\n  filter: alpha(opacity=0);\r\n  -moz-opacity: 0;\r\n  opacity: 0;\r\n  transition: all 0.15s ease-out;\r\n}\r\n\r\n@media (min-height: 28.875em) {\r\n  .picker__frame {\r\n    overflow: visible;\r\n    top: auto;\r\n    bottom: -100%;\r\n    max-height: 80%;\r\n  }\r\n}\r\n\r\n@media (min-height: 40.125em) {\r\n  .picker__frame {\r\n    margin-bottom: 7.5%;\r\n  }\r\n}\r\n\r\n/**\r\n * The wrapper sets the stage to vertically align the box contents.\r\n */\r\n.picker__wrap {\r\n  display: table;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n@media (min-height: 28.875em) {\r\n  .picker__wrap {\r\n    display: block;\r\n  }\r\n}\r\n\r\n/**\r\n * The box contains all the picker contents.\r\n */\r\n.picker__box {\r\n  background: #ffffff;\r\n  display: table-cell;\r\n  vertical-align: middle;\r\n}\r\n\r\n@media (min-height: 28.875em) {\r\n  .picker__box {\r\n    display: block;\r\n    border: 1px solid #777777;\r\n    border-top-color: #898989;\r\n    border-bottom-width: 0;\r\n    border-radius: 5px 5px 0 0;\r\n    box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24);\r\n  }\r\n}\r\n\r\n/**\r\n * When the picker opens...\r\n */\r\n.picker--opened .picker__holder {\r\n  top: 0;\r\n  background: transparent;\r\n  -ms-filter: \"progid:DXImageTransform.Microsoft.gradient(startColorstr=#1E000000,endColorstr=#1E000000)\";\r\n  zoom: 1;\r\n  background: rgba(0, 0, 0, 0.32);\r\n  transition: background 0.15s ease-out;\r\n}\r\n\r\n.picker--opened .picker__frame {\r\n  top: 0;\r\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  -moz-opacity: 1;\r\n  opacity: 1;\r\n}\r\n\r\n@media (min-height: 35.875em) {\r\n  .picker--opened .picker__frame {\r\n    top: 10%;\r\n    bottom: auto;\r\n  }\r\n}\r\n\r\n/**\r\n * For `large` screens, transform into an inline picker.\r\n */\r\n/* ==========================================================================\r\n   CUSTOM MATERIALIZE STYLES\r\n   ========================================================================== */\r\n.picker__input.picker__input--active {\r\n  border-color: #E3F2FD;\r\n}\r\n\r\n.picker__frame {\r\n  margin: 0 auto;\r\n  max-width: 325px;\r\n}\r\n\r\n@media (min-height: 38.875em) {\r\n  .picker--opened .picker__frame {\r\n    top: 10%;\r\n    bottom: auto;\r\n  }\r\n}\r\n\r\n/* ==========================================================================\r\n   $BASE-DATE-PICKER\r\n   ========================================================================== */\r\n/**\r\n * The picker box.\r\n */\r\n.picker__box {\r\n  padding: 0 1em;\r\n}\r\n\r\n/**\r\n * The header containing the month and year stuff.\r\n */\r\n.picker__header {\r\n  text-align: center;\r\n  position: relative;\r\n  margin-top: .75em;\r\n}\r\n\r\n/**\r\n * The month and year labels.\r\n */\r\n.picker__month,\r\n.picker__year {\r\n  display: inline-block;\r\n  margin-left: .25em;\r\n  margin-right: .25em;\r\n}\r\n\r\n/**\r\n * The month and year selectors.\r\n */\r\n.picker__select--month,\r\n.picker__select--year {\r\n  height: 2em;\r\n  padding: 0;\r\n  margin-left: .25em;\r\n  margin-right: .25em;\r\n}\r\n\r\n.picker__select--month.browser-default {\r\n  display: inline;\r\n  background-color: #FFFFFF;\r\n  width: 40%;\r\n}\r\n\r\n.picker__select--year.browser-default {\r\n  display: inline;\r\n  background-color: #FFFFFF;\r\n  width: 26%;\r\n}\r\n\r\n.picker__select--month:focus,\r\n.picker__select--year:focus {\r\n  border-color: rgba(0, 0, 0, 0.05);\r\n}\r\n\r\n/**\r\n * The month navigation buttons.\r\n */\r\n.picker__nav--prev,\r\n.picker__nav--next {\r\n  position: absolute;\r\n  padding: .5em 1.25em;\r\n  width: 1em;\r\n  height: 1em;\r\n  box-sizing: content-box;\r\n  top: -0.25em;\r\n}\r\n\r\n.picker__nav--prev {\r\n  left: -1em;\r\n  padding-right: 1.25em;\r\n}\r\n\r\n.picker__nav--next {\r\n  right: -1em;\r\n  padding-left: 1.25em;\r\n}\r\n\r\n.picker__nav--disabled,\r\n.picker__nav--disabled:hover,\r\n.picker__nav--disabled:before,\r\n.picker__nav--disabled:before:hover {\r\n  cursor: default;\r\n  background: none;\r\n  border-right-color: #f5f5f5;\r\n  border-left-color: #f5f5f5;\r\n}\r\n\r\n/**\r\n * The calendar table of dates\r\n */\r\n.picker__table {\r\n  text-align: center;\r\n  border-collapse: collapse;\r\n  border-spacing: 0;\r\n  table-layout: fixed;\r\n  font-size: 1rem;\r\n  width: 100%;\r\n  margin-top: .75em;\r\n  margin-bottom: .5em;\r\n}\r\n\r\n.picker__table th, .picker__table td {\r\n  text-align: center;\r\n}\r\n\r\n.picker__table td {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n/**\r\n * The weekday labels\r\n */\r\n.picker__weekday {\r\n  width: 14.285714286%;\r\n  font-size: .75em;\r\n  padding-bottom: .25em;\r\n  color: #999999;\r\n  font-weight: 500;\r\n  /* Increase the spacing a tad */\r\n}\r\n\r\n@media (min-height: 33.875em) {\r\n  .picker__weekday {\r\n    padding-bottom: .5em;\r\n  }\r\n}\r\n\r\n/**\r\n * The days on the calendar\r\n */\r\n.picker__day--today {\r\n  position: relative;\r\n  color: #595959;\r\n  letter-spacing: -.3;\r\n  padding: .75rem 0;\r\n  font-weight: 400;\r\n  border: 1px solid transparent;\r\n}\r\n\r\n.picker__day--disabled:before {\r\n  border-top-color: #aaaaaa;\r\n}\r\n\r\n.picker__day--infocus:hover {\r\n  cursor: pointer;\r\n  color: #000;\r\n  font-weight: 500;\r\n}\r\n\r\n.picker__day--outfocus {\r\n  display: none;\r\n  padding: .75rem 0;\r\n  color: #fff;\r\n}\r\n\r\n.picker__day--outfocus:hover {\r\n  cursor: pointer;\r\n  color: #dddddd;\r\n  font-weight: 500;\r\n}\r\n\r\n.picker__day--highlighted:hover,\r\n.picker--focused .picker__day--highlighted {\r\n  cursor: pointer;\r\n}\r\n\r\n.picker__day--selected,\r\n.picker__day--selected:hover,\r\n.picker--focused .picker__day--selected {\r\n  border-radius: 50%;\r\n  -webkit-transform: scale(0.75);\r\n          transform: scale(0.75);\r\n  background: #0089ec;\r\n  color: #ffffff;\r\n}\r\n\r\n.picker__day--disabled,\r\n.picker__day--disabled:hover,\r\n.picker--focused .picker__day--disabled {\r\n  background: #f5f5f5;\r\n  border-color: #f5f5f5;\r\n  color: #dddddd;\r\n  cursor: default;\r\n}\r\n\r\n.picker__day--highlighted.picker__day--disabled,\r\n.picker__day--highlighted.picker__day--disabled:hover {\r\n  background: #bbbbbb;\r\n}\r\n\r\n/**\r\n * The footer containing the \"today\", \"clear\", and \"close\" buttons.\r\n */\r\n.picker__footer {\r\n  text-align: center;\r\n  display: -webkit-flex;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-align-items: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  -webkit-justify-content: space-between;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n}\r\n\r\n.picker__button--today,\r\n.picker__button--clear,\r\n.picker__button--close {\r\n  border: 1px solid #ffffff;\r\n  background: #ffffff;\r\n  font-size: .8em;\r\n  padding: .66em 0;\r\n  font-weight: bold;\r\n  width: 33%;\r\n  display: inline-block;\r\n  vertical-align: bottom;\r\n}\r\n\r\n.picker__button--today:hover,\r\n.picker__button--clear:hover,\r\n.picker__button--close:hover {\r\n  cursor: pointer;\r\n  color: #000000;\r\n  background: #b1dcfb;\r\n  border-bottom-color: #b1dcfb;\r\n}\r\n\r\n.picker__button--today:focus,\r\n.picker__button--clear:focus,\r\n.picker__button--close:focus {\r\n  background: #b1dcfb;\r\n  border-color: rgba(0, 0, 0, 0.05);\r\n  outline: none;\r\n}\r\n\r\n.picker__button--today:before,\r\n.picker__button--clear:before,\r\n.picker__button--close:before {\r\n  position: relative;\r\n  display: inline-block;\r\n  height: 0;\r\n}\r\n\r\n.picker__button--today:before,\r\n.picker__button--clear:before {\r\n  content: \" \";\r\n  margin-right: .45em;\r\n}\r\n\r\n.picker__button--today:before {\r\n  top: -0.05em;\r\n  width: 0;\r\n  border-top: 0.66em solid #0059bc;\r\n  border-left: .66em solid transparent;\r\n}\r\n\r\n.picker__button--clear:before {\r\n  top: -0.25em;\r\n  width: .66em;\r\n  border-top: 3px solid #ee2200;\r\n}\r\n\r\n.picker__button--close:before {\r\n  content: \"\\D7\";\r\n  top: -0.1em;\r\n  vertical-align: top;\r\n  font-size: 1.1em;\r\n  margin-right: .35em;\r\n  color: #777777;\r\n}\r\n\r\n.picker__button--today[disabled],\r\n.picker__button--today[disabled]:hover {\r\n  background: #f5f5f5;\r\n  border-color: #f5f5f5;\r\n  color: #dddddd;\r\n  cursor: default;\r\n}\r\n\r\n.picker__button--today[disabled]:before {\r\n  border-top-color: #aaaaaa;\r\n}\r\n\r\n/* ==========================================================================\r\n   CUSTOM MATERIALIZE STYLES\r\n   ========================================================================== */\r\n.picker__box {\r\n  border-radius: 2px;\r\n  overflow: hidden;\r\n}\r\n\r\n.picker__date-display {\r\n  text-align: center;\r\n  background-color: #26a69a;\r\n  color: #fff;\r\n  padding-bottom: 15px;\r\n  font-weight: 300;\r\n}\r\n\r\n.picker__nav--prev:hover,\r\n.picker__nav--next:hover {\r\n  cursor: pointer;\r\n  color: #000000;\r\n  background: #a1ded8;\r\n}\r\n\r\n.picker__weekday-display {\r\n  background-color: #1f897f;\r\n  padding: 10px;\r\n  font-weight: 200;\r\n  letter-spacing: .5;\r\n  font-size: 1rem;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.picker__month-display {\r\n  text-transform: uppercase;\r\n  font-size: 2rem;\r\n}\r\n\r\n.picker__day-display {\r\n  font-size: 4.5rem;\r\n  font-weight: 400;\r\n}\r\n\r\n.picker__year-display {\r\n  font-size: 1.8rem;\r\n  color: rgba(255, 255, 255, 0.4);\r\n}\r\n\r\n.picker__box {\r\n  padding: 0;\r\n}\r\n\r\n.picker__calendar-container {\r\n  padding: 0 1rem;\r\n}\r\n\r\n.picker__calendar-container thead {\r\n  border: none;\r\n}\r\n\r\n.picker__table {\r\n  margin-top: 0;\r\n  margin-bottom: .5em;\r\n}\r\n\r\n.picker__day--infocus {\r\n  color: #595959;\r\n  letter-spacing: -.3;\r\n  padding: .75rem 0;\r\n  font-weight: 400;\r\n  border: 1px solid transparent;\r\n}\r\n\r\n.picker__day.picker__day--today {\r\n  color: #26a69a;\r\n}\r\n\r\n.picker__day.picker__day--today.picker__day--selected {\r\n  color: #fff;\r\n}\r\n\r\n.picker__weekday {\r\n  font-size: .9rem;\r\n}\r\n\r\n.picker__day--selected,\r\n.picker__day--selected:hover,\r\n.picker--focused .picker__day--selected {\r\n  border-radius: 50%;\r\n  -webkit-transform: scale(0.9);\r\n          transform: scale(0.9);\r\n  background-color: #26a69a;\r\n  color: #ffffff;\r\n}\r\n\r\n.picker__day--selected.picker__day--outfocus,\r\n.picker__day--selected:hover.picker__day--outfocus,\r\n.picker--focused .picker__day--selected.picker__day--outfocus {\r\n  background-color: #a1ded8;\r\n}\r\n\r\n.picker__footer {\r\n  text-align: right;\r\n  padding: 5px 10px;\r\n}\r\n\r\n.picker__close, .picker__today {\r\n  font-size: 1.1rem;\r\n  padding: 0 1rem;\r\n  color: #26a69a;\r\n}\r\n\r\n.picker__nav--prev:before,\r\n.picker__nav--next:before {\r\n  content: \" \";\r\n  border-top: .5em solid transparent;\r\n  border-bottom: .5em solid transparent;\r\n  border-right: 0.75em solid #676767;\r\n  width: 0;\r\n  height: 0;\r\n  display: block;\r\n  margin: 0 auto;\r\n}\r\n\r\n.picker__nav--next:before {\r\n  border-right: 0;\r\n  border-left: 0.75em solid #676767;\r\n}\r\n\r\nbutton.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {\r\n  background-color: #a1ded8;\r\n}\r\n\r\n/* ==========================================================================\r\n   $BASE-TIME-PICKER\r\n   ========================================================================== */\r\n/**\r\n * The list of times.\r\n */\r\n.picker__list {\r\n  list-style: none;\r\n  padding: 0.75em 0 4.2em;\r\n  margin: 0;\r\n}\r\n\r\n/**\r\n * The times on the clock.\r\n */\r\n.picker__list-item {\r\n  border-bottom: 1px solid #dddddd;\r\n  border-top: 1px solid #dddddd;\r\n  margin-bottom: -1px;\r\n  position: relative;\r\n  background: #ffffff;\r\n  padding: .75em 1.25em;\r\n}\r\n\r\n@media (min-height: 46.75em) {\r\n  .picker__list-item {\r\n    padding: .5em 1em;\r\n  }\r\n}\r\n\r\n/* Hovered time */\r\n.picker__list-item:hover {\r\n  cursor: pointer;\r\n  color: #000000;\r\n  background: #b1dcfb;\r\n  border-color: #0089ec;\r\n  z-index: 10;\r\n}\r\n\r\n/* Highlighted and hovered/focused time */\r\n.picker__list-item--highlighted {\r\n  border-color: #0089ec;\r\n  z-index: 10;\r\n}\r\n\r\n.picker__list-item--highlighted:hover,\r\n.picker--focused .picker__list-item--highlighted {\r\n  cursor: pointer;\r\n  color: #000000;\r\n  background: #b1dcfb;\r\n}\r\n\r\n/* Selected and hovered/focused time */\r\n.picker__list-item--selected,\r\n.picker__list-item--selected:hover,\r\n.picker--focused .picker__list-item--selected {\r\n  background: #0089ec;\r\n  color: #ffffff;\r\n  z-index: 10;\r\n}\r\n\r\n/* Disabled time */\r\n.picker__list-item--disabled,\r\n.picker__list-item--disabled:hover,\r\n.picker--focused .picker__list-item--disabled {\r\n  background: #f5f5f5;\r\n  border-color: #f5f5f5;\r\n  color: #dddddd;\r\n  cursor: default;\r\n  border-color: #dddddd;\r\n  z-index: auto;\r\n}\r\n\r\n/**\r\n * The clear button\r\n */\r\n.picker--time .picker__button--clear {\r\n  display: block;\r\n  width: 80%;\r\n  margin: 1em auto 0;\r\n  padding: 1em 1.25em;\r\n  background: none;\r\n  border: 0;\r\n  font-weight: 500;\r\n  font-size: .67em;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  color: #666;\r\n}\r\n\r\n.picker--time .picker__button--clear:hover,\r\n.picker--time .picker__button--clear:focus {\r\n  color: #000000;\r\n  background: #b1dcfb;\r\n  background: #ee2200;\r\n  border-color: #ee2200;\r\n  cursor: pointer;\r\n  color: #ffffff;\r\n  outline: none;\r\n}\r\n\r\n.picker--time .picker__button--clear:before {\r\n  top: -0.25em;\r\n  color: #666;\r\n  font-size: 1.25em;\r\n  font-weight: bold;\r\n}\r\n\r\n.picker--time .picker__button--clear:hover:before,\r\n.picker--time .picker__button--clear:focus:before {\r\n  color: #ffffff;\r\n}\r\n\r\n/* ==========================================================================\r\n   $DEFAULT-TIME-PICKER\r\n   ========================================================================== */\r\n/**\r\n * The frame the bounds the time picker.\r\n */\r\n.picker--time .picker__frame {\r\n  min-width: 256px;\r\n  max-width: 320px;\r\n}\r\n\r\n/**\r\n * The picker box.\r\n */\r\n.picker--time .picker__box {\r\n  font-size: 1em;\r\n  background: #f2f2f2;\r\n  padding: 0;\r\n}\r\n\r\n@media (min-height: 40.125em) {\r\n  .picker--time .picker__box {\r\n    margin-bottom: 5em;\r\n  }\r\n}\r\n"; });
 /*!
  * Materialize v0.97.7 (http://materializecss.com)
@@ -31199,418 +31756,6 @@ complete:function(){"function"==typeof c.ready&&c.ready()}}))}}}),a.fn.extend({c
 var b=a(this).index();c(k,b,d),i.find("li").eq(b).find(":checkbox").prop("checked",!0)});var r=function(b,c){if(c){b.find("li.selected").removeClass("selected");var d=a(c);d.addClass("selected"),i.scrollTo(d)}},s=[],t=function(b){if(9==b.which)return void q.trigger("close");if(40==b.which&&!i.is(":visible"))return void q.trigger("open");if(13!=b.which||i.is(":visible")){b.preventDefault();var c=String.fromCharCode(b.which).toLowerCase(),d=[9,13,27,38,40];if(c&&-1===d.indexOf(b.which)){s.push(c);var f=s.join(""),g=i.find("li").filter(function(){return 0===a(this).text().toLowerCase().indexOf(f)})[0];g&&r(i,g)}if(13==b.which){var h=i.find("li.selected:not(.disabled)")[0];h&&(a(h).trigger("click"),e||q.trigger("close"))}40==b.which&&(g=i.find("li.selected").length?i.find("li.selected").next("li:not(.disabled)")[0]:i.find("li:not(.disabled)")[0],r(i,g)),27==b.which&&q.trigger("close"),38==b.which&&(g=i.find("li.selected").prev("li:not(.disabled)")[0],g&&r(i,g)),setTimeout(function(){s=[]},1e3)}};q.on("keydown",t)}})}}(jQuery),function(a){var b={init:function(b){var c={indicators:!0,height:400,transition:500,interval:6e3};return b=a.extend(c,b),this.each(function(){function c(a,b){a.hasClass("center-align")?a.velocity({opacity:0,translateY:-100},{duration:b,queue:!1}):a.hasClass("right-align")?a.velocity({opacity:0,translateX:100},{duration:b,queue:!1}):a.hasClass("left-align")&&a.velocity({opacity:0,translateX:-100},{duration:b,queue:!1})}function d(a){a>=j.length?a=0:0>a&&(a=j.length-1),k=i.find(".active").index(),k!=a&&(e=j.eq(k),$caption=e.find(".caption"),e.removeClass("active"),e.velocity({opacity:0},{duration:b.transition,queue:!1,easing:"easeOutQuad",complete:function(){j.not(".active").velocity({opacity:0,translateX:0,translateY:0},{duration:0,queue:!1})}}),c($caption,b.transition),b.indicators&&f.eq(k).removeClass("active"),j.eq(a).velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,delay:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).addClass("active"),b.indicators&&f.eq(a).addClass("active"))}var e,f,g,h=a(this),i=h.find("ul.slides").first(),j=i.find("> li"),k=i.find(".active").index();-1!=k&&(e=j.eq(k)),h.hasClass("fullscreen")||(b.indicators?h.height(b.height+40):h.height(b.height),i.height(b.height)),j.find(".caption").each(function(){c(a(this),0)}),j.find("img").each(function(){var b="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";a(this).attr("src")!==b&&(a(this).css("background-image","url("+a(this).attr("src")+")"),a(this).attr("src",b))}),b.indicators&&(f=a('<ul class="indicators"></ul>'),j.each(function(c){var e=a('<li class="indicator-item"></li>');e.click(function(){var c=i.parent(),e=c.find(a(this)).index();d(e),clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),f.append(e)}),h.append(f),f=h.find("ul.indicators").find("li.indicator-item")),e?e.show():(j.first().addClass("active").velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),k=0,e=j.eq(k),b.indicators&&f.eq(k).addClass("active")),e.find("img").each(function(){e.find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,queue:!1,easing:"easeOutQuad"})}),g=setInterval(function(){k=i.find(".active").index(),d(k+1)},b.transition+b.interval);var l=!1,m=!1,n=!1;h.hammer({prevent_default:!1}).bind("pan",function(a){if("touch"===a.gesture.pointerType){clearInterval(g);var b=a.gesture.direction,c=a.gesture.deltaX,d=a.gesture.velocityX;$curr_slide=i.find(".active"),$curr_slide.velocity({translateX:c},{duration:50,queue:!1,easing:"easeOutQuad"}),4===b&&(c>h.innerWidth()/2||-.65>d)?n=!0:2===b&&(c<-1*h.innerWidth()/2||d>.65)&&(m=!0);var e;m&&(e=$curr_slide.next(),0===e.length&&(e=j.first()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"})),n&&(e=$curr_slide.prev(),0===e.length&&(e=j.last()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"}))}}).bind("panend",function(a){"touch"===a.gesture.pointerType&&($curr_slide=i.find(".active"),l=!1,curr_index=i.find(".active").index(),!n&&!m||j.length<=1?$curr_slide.velocity({translateX:0},{duration:300,queue:!1,easing:"easeOutQuad"}):m?(d(curr_index+1),$curr_slide.velocity({translateX:-1*h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})):n&&(d(curr_index-1),$curr_slide.velocity({translateX:h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})),m=!1,n=!1,clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval))}),h.on("sliderPause",function(){clearInterval(g)}),h.on("sliderStart",function(){clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),h.on("sliderNext",function(){k=i.find(".active").index(),d(k+1)}),h.on("sliderPrev",function(){k=i.find(".active").index(),d(k-1)})})},pause:function(){a(this).trigger("sliderPause")},start:function(){a(this).trigger("sliderStart")},next:function(){a(this).trigger("sliderNext")},prev:function(){a(this).trigger("sliderPrev")}};a.fn.slider=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.tooltip"):b.init.apply(this,arguments)}}(jQuery),function(a){a(document).ready(function(){a(document).on("click.card",".card",function(b){a(this).find("> .card-reveal").length&&(a(b.target).is(a(".card-reveal .card-title"))||a(b.target).is(a(".card-reveal .card-title i"))?a(this).find(".card-reveal").velocity({translateY:0},{duration:225,queue:!1,easing:"easeInOutQuad",complete:function(){a(this).css({display:"none"})}}):(a(b.target).is(a(".card .activator"))||a(b.target).is(a(".card .activator i")))&&(a(b.target).closest(".card").css("overflow","hidden"),a(this).find(".card-reveal").css({display:"block"}).velocity("stop",!1).velocity({translateY:"-100%"},{duration:300,queue:!1,easing:"easeInOutQuad"})))})})}(jQuery),function(a){var b=!1,c={data:[],placeholder:"",secondaryPlaceholder:""};a(document).ready(function(){a(document).on("click",".chip .close",function(b){var c=a(this).closest(".chips");c.data("initialized")||a(this).closest(".chip").remove()})}),a.fn.material_chip=function(d){var e=this;return this.$el=a(this),this.$document=a(document),this.SELS={CHIPS:".chips",CHIP:".chip",INPUT:"input",DELETE:".material-icons",SELECTED_CHIP:".selected"},"data"===d?this.$el.data("chips"):"options"===d?this.$el.data("options"):(this.$el.data("options",a.extend({},c,d)),this.init=function(){var b=0;e.$el.each(function(){var c=a(this);if(!c.data("initialized")){var d=c.data("options");(!d.data||!d.data instanceof Array)&&(d.data=[]),c.data("chips",d.data),c.data("index",b),c.data("initialized",!0),c.hasClass(e.SELS.CHIPS)||c.addClass("chips"),e.chips(c),b++}})},this.handleEvents=function(){var b=e.SELS;e.$document.on("click",b.CHIPS,function(c){a(c.target).find(b.INPUT).focus()}),e.$document.on("click",b.CHIP,function(c){a(b.CHIP).removeClass("selected"),a(this).toggleClass("selected")}),e.$document.on("keydown",function(c){if(!a(c.target).is("input, textarea")){var d,f=e.$document.find(b.CHIP+b.SELECTED_CHIP),g=f.closest(b.CHIPS),h=f.siblings(b.CHIP).length;if(f.length)if(8===c.which||46===c.which){c.preventDefault();var i=g.data("index");d=f.index(),e.deleteChip(i,d,g);var j=null;h>d+1?j=d:(d===h||d+1===h)&&(j=h-1),0>j&&(j=null),null!==j&&e.selectChip(i,j,g),h||g.find("input").focus()}else if(37===c.which){if(d=f.index()-1,0>d)return;a(b.CHIP).removeClass("selected"),e.selectChip(g.data("index"),d,g)}else if(39===c.which){if(d=f.index()+1,a(b.CHIP).removeClass("selected"),d>h)return void g.find("input").focus();e.selectChip(g.data("index"),d,g)}}}),e.$document.on("focusin",b.CHIPS+" "+b.INPUT,function(c){a(c.target).closest(b.CHIPS).addClass("focus"),a(b.CHIP).removeClass("selected")}),e.$document.on("focusout",b.CHIPS+" "+b.INPUT,function(c){a(c.target).closest(b.CHIPS).removeClass("focus")}),e.$document.on("keydown",b.CHIPS+" "+b.INPUT,function(c){var d=a(c.target),f=d.closest(b.CHIPS),g=f.data("index"),h=f.children(b.CHIP).length;return 13===c.which?(c.preventDefault(),e.addChip(g,{tag:d.val()},f),void d.val("")):8!==c.keyCode&&37!==c.keyCode||""!==d.val()||!h?void 0:(e.selectChip(g,h-1,f),void d.blur())}),e.$document.on("click",b.CHIPS+" "+b.DELETE,function(c){var d=a(c.target),f=d.closest(b.CHIPS),g=d.closest(b.CHIP);c.stopPropagation(),e.deleteChip(f.data("index"),g.index(),f),f.find("input").focus()})},this.chips=function(a){var b="";a.data("options");a.data("chips").forEach(function(a){b+=e.renderChip(a)}),b+='<input class="input" placeholder="">',a.html(b),e.setPlaceholder(a)},this.renderChip=function(a){if(a.tag){var b='<div class="chip">'+a.tag;return a.image&&(b+=' <img src="'+a.image+'"> '),b+='<i class="material-icons close">close</i>',b+="</div>"}},this.setPlaceholder=function(a){var b=a.data("options");a.data("chips").length&&b.placeholder?a.find("input").prop("placeholder",b.placeholder):!a.data("chips").length&&b.secondaryPlaceholder&&a.find("input").prop("placeholder",b.secondaryPlaceholder)},this.isValid=function(a,b){for(var c=a.data("chips"),d=!1,e=0;e<c.length;e++)if(c[e].tag===b.tag)return void(d=!0);return""!==b.tag&&!d},this.addChip=function(b,c,d){if(e.isValid(d,c)){var f=(d.data("options"),e.renderChip(c));d.data("chips").push(c),a(f).insertBefore(d.find("input")),d.trigger("chip.add",c),e.setPlaceholder(d)}},this.deleteChip=function(a,b,c){var d=c.data("chips")[b];c.find(".chip").eq(b).remove(),c.data("chips").splice(b,1),c.trigger("chip.delete",d),e.setPlaceholder(c)},this.selectChip=function(a,b,c){var d=c.find(".chip").eq(b);d&&!1===d.hasClass("selected")&&(d.addClass("selected"),c.trigger("chip.select",c.data("chips")[b]))},this.getChipsElement=function(a,b){return b.eq(a)},this.init(),void(b||(this.handleEvents(),b=!0)))}}(jQuery),function(a){a.fn.pushpin=function(b){var c={top:0,bottom:1/0,offset:0};return"remove"===b?(this.each(function(){(id=a(this).data("pushpin-id"))&&(a(window).off("scroll."+id),a(this).removeData("pushpin-id").removeClass("pin-top pinned pin-bottom").removeAttr("style"))}),!1):(b=a.extend(c,b),$index=0,this.each(function(){function c(a){a.removeClass("pin-top"),a.removeClass("pinned"),a.removeClass("pin-bottom")}function d(d,e){d.each(function(){b.top<=e&&b.bottom>=e&&!a(this).hasClass("pinned")&&(c(a(this)),a(this).css("top",b.offset),a(this).addClass("pinned")),e<b.top&&!a(this).hasClass("pin-top")&&(c(a(this)),a(this).css("top",0),a(this).addClass("pin-top")),e>b.bottom&&!a(this).hasClass("pin-bottom")&&(c(a(this)),a(this).addClass("pin-bottom"),a(this).css("top",b.bottom-g))})}var e=Materialize.guid(),f=a(this),g=a(this).offset().top;a(this).data("pushpin-id",e),d(f,a(window).scrollTop()),a(window).on("scroll."+e,function(){var c=a(window).scrollTop()+b.offset;d(f,c)})}))}}(jQuery),function(a){a(document).ready(function(){a.fn.reverse=[].reverse,a(document).on("mouseenter.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(c){var d=a(this);b(d)}),a(document).on("mouseleave.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(b){var d=a(this);c(d)}),a(document).on("click.fixedActionBtn",".fixed-action-btn.click-to-toggle > a",function(d){var e=a(this),f=e.parent();f.hasClass("active")?c(f):b(f)})}),a.fn.extend({openFAB:function(){b(a(this))},closeFAB:function(){c(a(this))}});var b=function(b){if($this=b,$this.hasClass("active")===!1){var c,d,e=$this.hasClass("horizontal");e===!0?d=40:c=40,$this.addClass("active"),$this.find("ul .btn-floating").velocity({scaleY:".4",scaleX:".4",translateY:c+"px",translateX:d+"px"},{duration:0});var f=0;$this.find("ul .btn-floating").reverse().each(function(){a(this).velocity({opacity:"1",scaleX:"1",scaleY:"1",translateY:"0",translateX:"0"},{duration:80,delay:f}),f+=40})}},c=function(a){$this=a;var b,c,d=$this.hasClass("horizontal");d===!0?c=40:b=40,$this.removeClass("active");$this.find("ul .btn-floating").velocity("stop",!0),$this.find("ul .btn-floating").velocity({opacity:"0",scaleX:".4",scaleY:".4",translateY:b+"px",translateX:c+"px"},{duration:80})}}(jQuery),function(a){Materialize.fadeInImage=function(b){var c;if("string"==typeof b)c=a(b);else{if("object"!=typeof b)return;c=b}c.css({opacity:0}),a(c).velocity({opacity:1},{duration:650,queue:!1,easing:"easeOutSine"}),a(c).velocity({opacity:1},{duration:1300,queue:!1,easing:"swing",step:function(b,c){c.start=100;var d=b/100,e=150-(100-b)/1.75;100>e&&(e=100),b>=0&&a(this).css({"-webkit-filter":"grayscale("+d+")brightness("+e+"%)",filter:"grayscale("+d+")brightness("+e+"%)"})}})},Materialize.showStaggeredList=function(b){var c;if("string"==typeof b)c=a(b);else{if("object"!=typeof b)return;c=b}var d=0;c.find("li").velocity({translateX:"-100px"},{duration:0}),c.find("li").each(function(){a(this).velocity({opacity:"1",translateX:"0"},{duration:800,delay:d,easing:[60,10]}),d+=120})},a(document).ready(function(){var b=!1,c=!1;a(".dismissable").each(function(){a(this).hammer({prevent_default:!1}).bind("pan",function(d){if("touch"===d.gesture.pointerType){var e=a(this),f=d.gesture.direction,g=d.gesture.deltaX,h=d.gesture.velocityX;e.velocity({translateX:g},{duration:50,queue:!1,easing:"easeOutQuad"}),4===f&&(g>e.innerWidth()/2||-.75>h)&&(b=!0),2===f&&(g<-1*e.innerWidth()/2||h>.75)&&(c=!0)}}).bind("panend",function(d){if(Math.abs(d.gesture.deltaX)<a(this).innerWidth()/2&&(c=!1,b=!1),"touch"===d.gesture.pointerType){var e=a(this);if(b||c){var f;f=b?e.innerWidth():-1*e.innerWidth(),e.velocity({translateX:f},{duration:100,queue:!1,easing:"easeOutQuad",complete:function(){e.css("border","none"),e.velocity({height:0,padding:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){e.remove()}})}})}else e.velocity({translateX:0},{duration:100,queue:!1,easing:"easeOutQuad"});b=!1,c=!1}})})})}(jQuery),function(a){Materialize.scrollFire=function(a){var b=!1;window.addEventListener("scroll",function(){b=!0}),setInterval(function(){if(b){b=!1;for(var c=window.pageYOffset+window.innerHeight,d=0;d<a.length;d++){var e=a[d],f=e.selector,g=e.offset,h=e.callback,i=document.querySelector(f);if(null!==i){var j=i.getBoundingClientRect().top+window.pageYOffset;if(c>j+g&&e.done!==!0){if("function"==typeof h)h.call(this,i);else if("string"==typeof h){var k=new Function(h);k(i)}e.done=!0}}}}},100)}}(jQuery),function(a){"function"==typeof define&&define.amd?define("picker",["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):this.Picker=a(jQuery)}(function(a){function b(f,g,i,l){function m(){return b._.node("div",b._.node("div",b._.node("div",b._.node("div",y.component.nodes(t.open),v.box),v.wrap),v.frame),v.holder)}function n(){w.data(g,y).addClass(v.input).attr("tabindex",-1).val(w.data("value")?y.get("select",u.format):f.value),u.editable||w.on("focus."+t.id+" click."+t.id,function(a){a.preventDefault(),y.$root.eq(0).focus()}).on("keydown."+t.id,q),e(f,{haspopup:!0,expanded:!1,readonly:!1,owns:f.id+"_root"})}function o(){y.$root.on({keydown:q,focusin:function(a){y.$root.removeClass(v.focused),a.stopPropagation()},"mousedown click":function(b){var c=b.target;c!=y.$root.children()[0]&&(b.stopPropagation(),"mousedown"!=b.type||a(c).is("input, select, textarea, button, option")||(b.preventDefault(),y.$root.eq(0).focus()))}}).on({focus:function(){w.addClass(v.target)},blur:function(){w.removeClass(v.target)}}).on("focus.toOpen",r).on("click","[data-pick], [data-nav], [data-clear], [data-close]",function(){var b=a(this),c=b.data(),d=b.hasClass(v.navDisabled)||b.hasClass(v.disabled),e=h();e=e&&(e.type||e.href),(d||e&&!a.contains(y.$root[0],e))&&y.$root.eq(0).focus(),!d&&c.nav?y.set("highlight",y.component.item.highlight,{nav:c.nav}):!d&&"pick"in c?y.set("select",c.pick):c.clear?y.clear().close(!0):c.close&&y.close(!0)}),e(y.$root[0],"hidden",!0)}function p(){var b;u.hiddenName===!0?(b=f.name,f.name=""):(b=["string"==typeof u.hiddenPrefix?u.hiddenPrefix:"","string"==typeof u.hiddenSuffix?u.hiddenSuffix:"_submit"],b=b[0]+f.name+b[1]),y._hidden=a('<input type=hidden name="'+b+'"'+(w.data("value")||f.value?' value="'+y.get("select",u.formatSubmit)+'"':"")+">")[0],w.on("change."+t.id,function(){y._hidden.value=f.value?y.get("select",u.formatSubmit):""}),u.container?a(u.container).append(y._hidden):w.after(y._hidden)}function q(a){var b=a.keyCode,c=/^(8|46)$/.test(b);return 27==b?(y.close(),!1):void((32==b||c||!t.open&&y.component.key[b])&&(a.preventDefault(),a.stopPropagation(),c?y.clear().close():y.open()))}function r(a){a.stopPropagation(),"focus"==a.type&&y.$root.addClass(v.focused),y.open()}if(!f)return b;var s=!1,t={id:f.id||"P"+Math.abs(~~(Math.random()*new Date))},u=i?a.extend(!0,{},i.defaults,l):l||{},v=a.extend({},b.klasses(),u.klass),w=a(f),x=function(){return this.start()},y=x.prototype={constructor:x,$node:w,start:function(){return t&&t.start?y:(t.methods={},t.start=!0,t.open=!1,t.type=f.type,f.autofocus=f==h(),f.readOnly=!u.editable,f.id=f.id||t.id,"text"!=f.type&&(f.type="text"),y.component=new i(y,u),y.$root=a(b._.node("div",m(),v.picker,'id="'+f.id+'_root" tabindex="0"')),o(),u.formatSubmit&&p(),n(),u.container?a(u.container).append(y.$root):w.after(y.$root),y.on({start:y.component.onStart,render:y.component.onRender,stop:y.component.onStop,open:y.component.onOpen,close:y.component.onClose,set:y.component.onSet}).on({start:u.onStart,render:u.onRender,stop:u.onStop,open:u.onOpen,close:u.onClose,set:u.onSet}),s=c(y.$root.children()[0]),f.autofocus&&y.open(),y.trigger("start").trigger("render"))},render:function(a){return a?y.$root.html(m()):y.$root.find("."+v.box).html(y.component.nodes(t.open)),y.trigger("render")},stop:function(){return t.start?(y.close(),y._hidden&&y._hidden.parentNode.removeChild(y._hidden),y.$root.remove(),w.removeClass(v.input).removeData(g),setTimeout(function(){w.off("."+t.id)},0),f.type=t.type,f.readOnly=!1,y.trigger("stop"),t.methods={},t.start=!1,y):y},open:function(c){return t.open?y:(w.addClass(v.active),e(f,"expanded",!0),setTimeout(function(){y.$root.addClass(v.opened),e(y.$root[0],"hidden",!1)},0),c!==!1&&(t.open=!0,s&&k.css("overflow","hidden").css("padding-right","+="+d()),y.$root.eq(0).focus(),j.on("click."+t.id+" focusin."+t.id,function(a){var b=a.target;b!=f&&b!=document&&3!=a.which&&y.close(b===y.$root.children()[0])}).on("keydown."+t.id,function(c){var d=c.keyCode,e=y.component.key[d],f=c.target;27==d?y.close(!0):f!=y.$root[0]||!e&&13!=d?a.contains(y.$root[0],f)&&13==d&&(c.preventDefault(),f.click()):(c.preventDefault(),e?b._.trigger(y.component.key.go,y,[b._.trigger(e)]):y.$root.find("."+v.highlighted).hasClass(v.disabled)||y.set("select",y.component.item.highlight).close())})),y.trigger("open"))},close:function(a){return a&&(y.$root.off("focus.toOpen").eq(0).focus(),setTimeout(function(){y.$root.on("focus.toOpen",r)},0)),w.removeClass(v.active),e(f,"expanded",!1),setTimeout(function(){y.$root.removeClass(v.opened+" "+v.focused),e(y.$root[0],"hidden",!0)},0),t.open?(t.open=!1,s&&k.css("overflow","").css("padding-right","-="+d()),j.off("."+t.id),y.trigger("close")):y},clear:function(a){return y.set("clear",null,a)},set:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(d=g&&a.isPlainObject(c)?c:d||{},b){g||(h[b]=c);for(e in h)f=h[e],e in y.component.item&&(void 0===f&&(f=null),y.component.set(e,f,d)),("select"==e||"clear"==e)&&w.val("clear"==e?"":y.get(e,u.format)).trigger("change");y.render()}return d.muted?y:y.trigger("set",h)},get:function(a,c){if(a=a||"value",null!=t[a])return t[a];if("valueSubmit"==a){if(y._hidden)return y._hidden.value;a="value"}if("value"==a)return f.value;if(a in y.component.item){if("string"==typeof c){var d=y.component.get(a);return d?b._.trigger(y.component.formats.toString,y.component,[c,d]):""}return y.component.get(a)}},on:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(b){g||(h[b]=c);for(e in h)f=h[e],d&&(e="_"+e),t.methods[e]=t.methods[e]||[],t.methods[e].push(f)}return y},off:function(){var a,b,c=arguments;for(a=0,namesCount=c.length;a<namesCount;a+=1)b=c[a],b in t.methods&&delete t.methods[b];return y},trigger:function(a,c){var d=function(a){var d=t.methods[a];d&&d.map(function(a){b._.trigger(a,y,[c])})};return d("_"+a),d(a),y}};return new x}function c(a){var b,c="position";return a.currentStyle?b=a.currentStyle[c]:window.getComputedStyle&&(b=getComputedStyle(a)[c]),"fixed"==b}function d(){if(k.height()<=i.height())return 0;var b=a('<div style="visibility:hidden;width:100px" />').appendTo("body"),c=b[0].offsetWidth;b.css("overflow","scroll");var d=a('<div style="width:100%" />').appendTo(b),e=d[0].offsetWidth;return b.remove(),c-e}function e(b,c,d){if(a.isPlainObject(c))for(var e in c)f(b,e,c[e]);else f(b,c,d)}function f(a,b,c){a.setAttribute(("role"==b?"":"aria-")+b,c)}function g(b,c){a.isPlainObject(b)||(b={attribute:c}),c="";for(var d in b){var e=("role"==d?"":"aria-")+d,f=b[d];c+=null==f?"":e+'="'+b[d]+'"'}return c}function h(){try{return document.activeElement}catch(a){}}var i=a(window),j=a(document),k=a(document.documentElement);return b.klasses=function(a){return a=a||"picker",{picker:a,opened:a+"--opened",focused:a+"--focused",input:a+"__input",active:a+"__input--active",target:a+"__input--target",holder:a+"__holder",frame:a+"__frame",wrap:a+"__wrap",box:a+"__box"}},b._={group:function(a){for(var c,d="",e=b._.trigger(a.min,a);e<=b._.trigger(a.max,a,[e]);e+=a.i)c=b._.trigger(a.item,a,[e]),d+=b._.node(a.node,c[0],c[1],c[2]);return d},node:function(b,c,d,e){return c?(c=a.isArray(c)?c.join(""):c,d=d?' class="'+d+'"':"",e=e?" "+e:"","<"+b+d+e+">"+c+"</"+b+">"):""},lead:function(a){return(10>a?"0":"")+a},trigger:function(a,b,c){return"function"==typeof a?a.apply(b,c||[]):a},digits:function(a){return/\d/.test(a[1])?2:1},isDate:function(a){return{}.toString.call(a).indexOf("Date")>-1&&this.isInteger(a.getDate())},isInteger:function(a){return{}.toString.call(a).indexOf("Number")>-1&&a%1===0},ariaAttr:g},b.extend=function(c,d){a.fn[c]=function(e,f){var g=this.data(c);return"picker"==e?g:g&&"string"==typeof e?b._.trigger(g[e],g,[f]):this.each(function(){var f=a(this);f.data(c)||new b(this,c,d,e)})},a.fn[c].defaults=d.defaults},b}),function(a){"function"==typeof define&&define.amd?define('materialize-css/js/materialize.min',["picker","jquery"],a):"object"==typeof exports?module.exports=a(require("./picker.js"),require("jquery")):a(Picker,jQuery)}(function(a,b){function c(a,b){var c=this,d=a.$node[0],e=d.value,f=a.$node.data("value"),g=f||e,h=f?b.formatSubmit:b.format,i=function(){return d.currentStyle?"rtl"==d.currentStyle.direction:"rtl"==getComputedStyle(a.$root[0]).direction};c.settings=b,c.$node=a.$node,c.queue={min:"measure create",max:"measure create",now:"now create",select:"parse create validate",highlight:"parse navigate create validate",view:"parse create validate viewset",disable:"deactivate",enable:"activate"},c.item={},c.item.clear=null,c.item.disable=(b.disable||[]).slice(0),c.item.enable=-function(a){return a[0]===!0?a.shift():-1}(c.item.disable),c.set("min",b.min).set("max",b.max).set("now"),g?c.set("select",g,{format:h}):c.set("select",null).set("highlight",c.item.now),c.key={40:7,38:-7,39:function(){return i()?-1:1},37:function(){return i()?1:-1},go:function(a){var b=c.item.highlight,d=new Date(b.year,b.month,b.date+a);c.set("highlight",d,{interval:a}),this.render()}},a.on("render",function(){a.$root.find("."+b.klass.selectMonth).on("change",function(){var c=this.value;c&&(a.set("highlight",[a.get("view").year,c,a.get("highlight").date]),a.$root.find("."+b.klass.selectMonth).trigger("focus"))}),a.$root.find("."+b.klass.selectYear).on("change",function(){var c=this.value;c&&(a.set("highlight",[c,a.get("view").month,a.get("highlight").date]),a.$root.find("."+b.klass.selectYear).trigger("focus"))})},1).on("open",function(){var d="";c.disabled(c.get("now"))&&(d=":not(."+b.klass.buttonToday+")"),a.$root.find("button"+d+", select").attr("disabled",!1)},1).on("close",function(){a.$root.find("button, select").attr("disabled",!0)},1)}var d=7,e=6,f=a._;c.prototype.set=function(a,b,c){var d=this,e=d.item;return null===b?("clear"==a&&(a="select"),e[a]=b,d):(e["enable"==a?"disable":"flip"==a?"enable":a]=d.queue[a].split(" ").map(function(e){return b=d[e](a,b,c)}).pop(),"select"==a?d.set("highlight",e.select,c):"highlight"==a?d.set("view",e.highlight,c):a.match(/^(flip|min|max|disable|enable)$/)&&(e.select&&d.disabled(e.select)&&d.set("select",e.select,c),e.highlight&&d.disabled(e.highlight)&&d.set("highlight",e.highlight,c)),d)},c.prototype.get=function(a){return this.item[a]},c.prototype.create=function(a,c,d){var e,g=this;return c=void 0===c?a:c,c==-(1/0)||c==1/0?e=c:b.isPlainObject(c)&&f.isInteger(c.pick)?c=c.obj:b.isArray(c)?(c=new Date(c[0],c[1],c[2]),c=f.isDate(c)?c:g.create().obj):c=f.isInteger(c)||f.isDate(c)?g.normalize(new Date(c),d):g.now(a,c,d),{year:e||c.getFullYear(),month:e||c.getMonth(),date:e||c.getDate(),day:e||c.getDay(),obj:e||c,pick:e||c.getTime()}},c.prototype.createRange=function(a,c){var d=this,e=function(a){return a===!0||b.isArray(a)||f.isDate(a)?d.create(a):a};return f.isInteger(a)||(a=e(a)),f.isInteger(c)||(c=e(c)),f.isInteger(a)&&b.isPlainObject(c)?a=[c.year,c.month,c.date+a]:f.isInteger(c)&&b.isPlainObject(a)&&(c=[a.year,a.month,a.date+c]),{from:e(a),to:e(c)}},c.prototype.withinRange=function(a,b){return a=this.createRange(a.from,a.to),b.pick>=a.from.pick&&b.pick<=a.to.pick},c.prototype.overlapRanges=function(a,b){var c=this;return a=c.createRange(a.from,a.to),b=c.createRange(b.from,b.to),c.withinRange(a,b.from)||c.withinRange(a,b.to)||c.withinRange(b,a.from)||c.withinRange(b,a.to)},c.prototype.now=function(a,b,c){return b=new Date,c&&c.rel&&b.setDate(b.getDate()+c.rel),this.normalize(b,c)},c.prototype.navigate=function(a,c,d){var e,f,g,h,i=b.isArray(c),j=b.isPlainObject(c),k=this.item.view;if(i||j){for(j?(f=c.year,g=c.month,h=c.date):(f=+c[0],g=+c[1],h=+c[2]),d&&d.nav&&k&&k.month!==g&&(f=k.year,g=k.month),e=new Date(f,g+(d&&d.nav?d.nav:0),1),f=e.getFullYear(),g=e.getMonth();new Date(f,g,h).getMonth()!==g;)h-=1;c=[f,g,h]}return c},c.prototype.normalize=function(a){return a.setHours(0,0,0,0),a},c.prototype.measure=function(a,b){var c=this;return b?"string"==typeof b?b=c.parse(a,b):f.isInteger(b)&&(b=c.now(a,b,{rel:b})):b="min"==a?-(1/0):1/0,b},c.prototype.viewset=function(a,b){return this.create([b.year,b.month,1])},c.prototype.validate=function(a,c,d){var e,g,h,i,j=this,k=c,l=d&&d.interval?d.interval:1,m=-1===j.item.enable,n=j.item.min,o=j.item.max,p=m&&j.item.disable.filter(function(a){if(b.isArray(a)){var d=j.create(a).pick;d<c.pick?e=!0:d>c.pick&&(g=!0)}return f.isInteger(a)}).length;if((!d||!d.nav)&&(!m&&j.disabled(c)||m&&j.disabled(c)&&(p||e||g)||!m&&(c.pick<=n.pick||c.pick>=o.pick)))for(m&&!p&&(!g&&l>0||!e&&0>l)&&(l*=-1);j.disabled(c)&&(Math.abs(l)>1&&(c.month<k.month||c.month>k.month)&&(c=k,l=l>0?1:-1),c.pick<=n.pick?(h=!0,l=1,c=j.create([n.year,n.month,n.date+(c.pick===n.pick?0:-1)])):c.pick>=o.pick&&(i=!0,l=-1,c=j.create([o.year,o.month,o.date+(c.pick===o.pick?0:1)])),!h||!i);)c=j.create([c.year,c.month,c.date+l]);return c},c.prototype.disabled=function(a){var c=this,d=c.item.disable.filter(function(d){return f.isInteger(d)?a.day===(c.settings.firstDay?d:d-1)%7:b.isArray(d)||f.isDate(d)?a.pick===c.create(d).pick:b.isPlainObject(d)?c.withinRange(d,a):void 0});return d=d.length&&!d.filter(function(a){return b.isArray(a)&&"inverted"==a[3]||b.isPlainObject(a)&&a.inverted}).length,-1===c.item.enable?!d:d||a.pick<c.item.min.pick||a.pick>c.item.max.pick},c.prototype.parse=function(a,b,c){var d=this,e={};return b&&"string"==typeof b?(c&&c.format||(c=c||{},c.format=d.settings.format),d.formats.toArray(c.format).map(function(a){var c=d.formats[a],g=c?f.trigger(c,d,[b,e]):a.replace(/^!/,"").length;c&&(e[a]=b.substr(0,g)),b=b.substr(g)}),[e.yyyy||e.yy,+(e.mm||e.m)-1,e.dd||e.d]):b},c.prototype.formats=function(){function a(a,b,c){var d=a.match(/\w+/)[0];return c.mm||c.m||(c.m=b.indexOf(d)+1),d.length}function b(a){return a.match(/\w+/)[0].length}return{d:function(a,b){return a?f.digits(a):b.date},dd:function(a,b){return a?2:f.lead(b.date)},ddd:function(a,c){return a?b(a):this.settings.weekdaysShort[c.day]},dddd:function(a,c){return a?b(a):this.settings.weekdaysFull[c.day]},m:function(a,b){return a?f.digits(a):b.month+1},mm:function(a,b){return a?2:f.lead(b.month+1)},mmm:function(b,c){var d=this.settings.monthsShort;return b?a(b,d,c):d[c.month]},mmmm:function(b,c){var d=this.settings.monthsFull;return b?a(b,d,c):d[c.month]},yy:function(a,b){return a?2:(""+b.year).slice(2)},yyyy:function(a,b){return a?4:b.year},toArray:function(a){return a.split(/(d{1,4}|m{1,4}|y{4}|yy|!.)/g)},toString:function(a,b){var c=this;return c.formats.toArray(a).map(function(a){return f.trigger(c.formats[a],c,[0,b])||a.replace(/^!/,"")}).join("")}}}(),c.prototype.isDateExact=function(a,c){var d=this;return f.isInteger(a)&&f.isInteger(c)||"boolean"==typeof a&&"boolean"==typeof c?a===c:(f.isDate(a)||b.isArray(a))&&(f.isDate(c)||b.isArray(c))?d.create(a).pick===d.create(c).pick:b.isPlainObject(a)&&b.isPlainObject(c)?d.isDateExact(a.from,c.from)&&d.isDateExact(a.to,c.to):!1},c.prototype.isDateOverlap=function(a,c){var d=this,e=d.settings.firstDay?1:0;return f.isInteger(a)&&(f.isDate(c)||b.isArray(c))?(a=a%7+e,a===d.create(c).day+1):f.isInteger(c)&&(f.isDate(a)||b.isArray(a))?(c=c%7+e,c===d.create(a).day+1):b.isPlainObject(a)&&b.isPlainObject(c)?d.overlapRanges(a,c):!1},c.prototype.flipEnable=function(a){var b=this.item;b.enable=a||(-1==b.enable?1:-1)},c.prototype.deactivate=function(a,c){var d=this,e=d.item.disable.slice(0);return"flip"==c?d.flipEnable():c===!1?(d.flipEnable(1),e=[]):c===!0?(d.flipEnable(-1),e=[]):c.map(function(a){for(var c,g=0;g<e.length;g+=1)if(d.isDateExact(a,e[g])){c=!0;break}c||(f.isInteger(a)||f.isDate(a)||b.isArray(a)||b.isPlainObject(a)&&a.from&&a.to)&&e.push(a)}),e},c.prototype.activate=function(a,c){var d=this,e=d.item.disable,g=e.length;return"flip"==c?d.flipEnable():c===!0?(d.flipEnable(1),e=[]):c===!1?(d.flipEnable(-1),e=[]):c.map(function(a){var c,h,i,j;for(i=0;g>i;i+=1){if(h=e[i],d.isDateExact(h,a)){c=e[i]=null,j=!0;break}if(d.isDateOverlap(h,a)){b.isPlainObject(a)?(a.inverted=!0,c=a):b.isArray(a)?(c=a,c[3]||c.push("inverted")):f.isDate(a)&&(c=[a.getFullYear(),a.getMonth(),a.getDate(),"inverted"]);break}}if(c)for(i=0;g>i;i+=1)if(d.isDateExact(e[i],a)){e[i]=null;break}if(j)for(i=0;g>i;i+=1)if(d.isDateOverlap(e[i],a)){e[i]=null;break}c&&e.push(c)}),e.filter(function(a){return null!=a})},c.prototype.nodes=function(a){var b=this,c=b.settings,g=b.item,h=g.now,i=g.select,j=g.highlight,k=g.view,l=g.disable,m=g.min,n=g.max,o=function(a,b){return c.firstDay&&(a.push(a.shift()),b.push(b.shift())),f.node("thead",f.node("tr",f.group({min:0,max:d-1,i:1,node:"th",item:function(d){return[a[d],c.klass.weekdays,'scope=col title="'+b[d]+'"']}})))}((c.showWeekdaysFull?c.weekdaysFull:c.weekdaysLetter).slice(0),c.weekdaysFull.slice(0)),p=function(a){return f.node("div"," ",c.klass["nav"+(a?"Next":"Prev")]+(a&&k.year>=n.year&&k.month>=n.month||!a&&k.year<=m.year&&k.month<=m.month?" "+c.klass.navDisabled:""),"data-nav="+(a||-1)+" "+f.ariaAttr({role:"button",controls:b.$node[0].id+"_table"})+' title="'+(a?c.labelMonthNext:c.labelMonthPrev)+'"')},q=function(d){var e=c.showMonthsShort?c.monthsShort:c.monthsFull;return"short_months"==d&&(e=c.monthsShort),c.selectMonths&&void 0==d?f.node("select",f.group({min:0,max:11,i:1,node:"option",item:function(a){return[e[a],0,"value="+a+(k.month==a?" selected":"")+(k.year==m.year&&a<m.month||k.year==n.year&&a>n.month?" disabled":"")]}}),c.klass.selectMonth+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"
 })+' title="'+c.labelMonthSelect+'"'):"short_months"==d?null!=i?f.node("div",e[i.month]):f.node("div",e[k.month]):f.node("div",e[k.month],c.klass.month)},r=function(d){var e=k.year,g=c.selectYears===!0?5:~~(c.selectYears/2);if(g){var h=m.year,i=n.year,j=e-g,l=e+g;if(h>j&&(l+=h-j,j=h),l>i){var o=j-h,p=l-i;j-=o>p?p:o,l=i}if(c.selectYears&&void 0==d)return f.node("select",f.group({min:j,max:l,i:1,node:"option",item:function(a){return[a,0,"value="+a+(e==a?" selected":"")]}}),c.klass.selectYear+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"})+' title="'+c.labelYearSelect+'"')}return"raw"==d?f.node("div",e):f.node("div",e,c.klass.year)};return createDayLabel=function(){return null!=i?f.node("div",i.date):f.node("div",h.date)},createWeekdayLabel=function(){var a;a=null!=i?i.day:h.day;var b=c.weekdaysFull[a];return b},f.node("div",f.node("div",createWeekdayLabel(),"picker__weekday-display")+f.node("div",q("short_months"),c.klass.month_display)+f.node("div",createDayLabel(),c.klass.day_display)+f.node("div",r("raw"),c.klass.year_display),c.klass.date_display)+f.node("div",f.node("div",(c.selectYears?q()+r():q()+r())+p()+p(1),c.klass.header)+f.node("table",o+f.node("tbody",f.group({min:0,max:e-1,i:1,node:"tr",item:function(a){var e=c.firstDay&&0===b.create([k.year,k.month,1]).day?-7:0;return[f.group({min:d*a-k.day+e+1,max:function(){return this.min+d-1},i:1,node:"td",item:function(a){a=b.create([k.year,k.month,a+(c.firstDay?1:0)]);var d=i&&i.pick==a.pick,e=j&&j.pick==a.pick,g=l&&b.disabled(a)||a.pick<m.pick||a.pick>n.pick,o=f.trigger(b.formats.toString,b,[c.format,a]);return[f.node("div",a.date,function(b){return b.push(k.month==a.month?c.klass.infocus:c.klass.outfocus),h.pick==a.pick&&b.push(c.klass.now),d&&b.push(c.klass.selected),e&&b.push(c.klass.highlighted),g&&b.push(c.klass.disabled),b.join(" ")}([c.klass.day]),"data-pick="+a.pick+" "+f.ariaAttr({role:"gridcell",label:o,selected:d&&b.$node.val()===o?!0:null,activedescendant:e?!0:null,disabled:g?!0:null})),"",f.ariaAttr({role:"presentation"})]}})]}})),c.klass.table,'id="'+b.$node[0].id+'_table" '+f.ariaAttr({role:"grid",controls:b.$node[0].id,readonly:!0})),c.klass.calendar_container)+f.node("div",f.node("button",c.today,"btn-flat picker__today","type=button data-pick="+h.pick+(a&&!b.disabled(h)?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.clear,"btn-flat picker__clear","type=button data-clear=1"+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.close,"btn-flat picker__close","type=button data-close=true "+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id})),c.klass.footer)},c.defaults=function(a){return{labelMonthNext:"Next month",labelMonthPrev:"Previous month",labelMonthSelect:"Select a month",labelYearSelect:"Select a year",monthsFull:["January","February","March","April","May","June","July","August","September","October","November","December"],monthsShort:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],weekdaysFull:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],weekdaysShort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],weekdaysLetter:["S","M","T","W","T","F","S"],today:"Today",clear:"Clear",close:"Close",format:"d mmmm, yyyy",klass:{table:a+"table",header:a+"header",date_display:a+"date-display",day_display:a+"day-display",month_display:a+"month-display",year_display:a+"year-display",calendar_container:a+"calendar-container",navPrev:a+"nav--prev",navNext:a+"nav--next",navDisabled:a+"nav--disabled",month:a+"month",year:a+"year",selectMonth:a+"select--month",selectYear:a+"select--year",weekdays:a+"weekday",day:a+"day",disabled:a+"day--disabled",selected:a+"day--selected",highlighted:a+"day--highlighted",now:a+"day--today",infocus:a+"day--infocus",outfocus:a+"day--outfocus",footer:a+"footer",buttonClear:a+"button--clear",buttonToday:a+"button--today",buttonClose:a+"button--close"}}}(a.klasses().picker+"__"),a.extend("pickadate",c)}),function(a){function b(){var b=+a(this).attr("length"),c=+a(this).val().length,d=b>=c;a(this).parent().find('span[class="character-counter"]').html(c+"/"+b),e(d,a(this))}function c(b){var c=b.parent().find('span[class="character-counter"]');c.length||(c=a("<span/>").addClass("character-counter").css("float","right").css("font-size","12px").css("height",1),b.parent().append(c))}function d(){a(this).parent().find('span[class="character-counter"]').html("")}function e(a,b){var c=b.hasClass("invalid");a&&c?b.removeClass("invalid"):a||c||(b.removeClass("valid"),b.addClass("invalid"))}a.fn.characterCounter=function(){return this.each(function(){var e=a(this),f=e.parent().find('span[class="character-counter"]');if(!f.length){var g=void 0!==e.attr("length");g&&(e.on("input",b),e.on("focus",b),e.on("blur",d),c(e))}})},a(document).ready(function(){a("input, textarea").characterCounter()})}(jQuery),function(a){var b={init:function(b){var c={time_constant:200,dist:-100,shift:0,padding:0,full_width:!1,indicators:!1,no_wrap:!1};return b=a.extend(c,b),this.each(function(){function c(){"undefined"!=typeof window.ontouchstart&&(H[0].addEventListener("touchstart",l),H[0].addEventListener("touchmove",m),H[0].addEventListener("touchend",n)),H[0].addEventListener("mousedown",l),H[0].addEventListener("mousemove",m),H[0].addEventListener("mouseup",n),H[0].addEventListener("mouseleave",n),H[0].addEventListener("click",j)}function d(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientX:a.clientX}function e(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientY:a.clientY}function f(a){return a>=t?a%t:0>a?f(t+a%t):a}function g(a){var c,d,e,g,h,i,j;if(p="number"==typeof a?a:p,q=Math.floor((p+s/2)/s),e=p-q*s,g=0>e?1:-1,h=-g*e*2/s,d=t>>1,b.full_width?j="translateX(0)":(j="translateX("+(H[0].clientWidth-item_width)/2+"px) ",j+="translateY("+(H[0].clientHeight-item_width)/2+"px)"),I){var k=q%t,l=G.find(".indicator-item.active");l.index()!==k&&(l.removeClass("active"),G.find(".indicator-item").eq(k).addClass("active"))}for((!b.no_wrap||q>=0&&t>q)&&(i=o[f(q)],i.style[A]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h*c+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,i.style.opacity=tweenedOpacity,i.style.display="block"),c=1;d>=c;++c)b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&0>e?1-h:1):(zTranslation=b.dist*(2*c+h*g),tweenedOpacity=1-.2*(2*c+h*g)),(!b.no_wrap||t>q+c)&&(i=o[f(q+c)],i.style[A]=j+" translateX("+(b.shift+(s*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity,i.style.display="block"),b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&e>0?1-h:1):(zTranslation=b.dist*(2*c-h*g),tweenedOpacity=1-.2*(2*c-h*g)),(!b.no_wrap||q-c>=0)&&(i=o[f(q-c)],i.style[A]=j+" translateX("+(-b.shift+(-s*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity,i.style.display="block");(!b.no_wrap||q>=0&&t>q)&&(i=o[f(q)],i.style[A]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,i.style.opacity=tweenedOpacity,i.style.display="block")}function h(){var a,b,c,d;a=Date.now(),b=a-C,C=a,c=p-B,B=p,d=1e3*c/(1+b),z=.8*d+.2*z}function i(){var a,c;w&&(a=Date.now()-C,c=w*Math.exp(-a/b.time_constant),c>2||-2>c?(g(x-c),requestAnimationFrame(i)):g(x))}function j(c){if(E)return c.preventDefault(),c.stopPropagation(),!1;if(!b.full_width){var d=a(c.target).closest(".carousel-item").index(),e=q%t-d;0!==e&&(c.preventDefault(),c.stopPropagation()),k(d)}}function k(a){var c=q%t-a;b.no_wrap||(0>c?Math.abs(c+t)<Math.abs(c)&&(c+=t):c>0&&Math.abs(c-t)<c&&(c-=t)),0>c?H.trigger("carouselNext",[Math.abs(c)]):c>0&&H.trigger("carouselPrev",[c])}function l(a){r=!0,E=!1,F=!1,u=d(a),v=e(a),z=w=0,B=p,C=Date.now(),clearInterval(D),D=setInterval(h,100)}function m(a){var b,c,f;if(r)if(b=d(a),y=e(a),c=u-b,f=Math.abs(v-y),30>f&&!F)(c>2||-2>c)&&(E=!0,u=b,g(p+c));else{if(E)return a.preventDefault(),a.stopPropagation(),!1;F=!0}return E?(a.preventDefault(),a.stopPropagation(),!1):void 0}function n(a){return r?(r=!1,clearInterval(D),x=p,(z>10||-10>z)&&(w=.9*z,x=p+w),x=Math.round(x/s)*s,b.no_wrap&&(x>=s*(t-1)?x=s*(t-1):0>x&&(x=0)),w=x-p,C=Date.now(),requestAnimationFrame(i),E&&(a.preventDefault(),a.stopPropagation()),!1):void 0}var o,p,q,r,s,t,u,v,w,x,z,A,B,C,D,E,F,G=a('<ul class="indicators"></ul>'),H=a(this),I=H.attr("data-indicators")||b.indicators;if(H.hasClass("initialized"))return a(this).trigger("carouselNext",[1e-6]),!0;if(b.full_width){b.dist=0;var J=H.find(".carousel-item img").first();J.length?imageHeight=J.load(function(){H.css("height",a(this).height())}):(imageHeight=H.find(".carousel-item").first().height(),H.css("height",imageHeight)),I&&H.find(".carousel-fixed-item").addClass("with-indicators")}H.addClass("initialized"),r=!1,p=x=0,o=[],item_width=H.find(".carousel-item").first().innerWidth(),s=2*item_width+b.padding,H.find(".carousel-item").each(function(b){if(o.push(a(this)[0]),I){var c=a('<li class="indicator-item"></li>');0===b&&c.addClass("active"),c.click(function(){var b=a(this).index();k(b)}),G.append(c)}}),I&&H.append(G),t=o.length,A="transform",["webkit","Moz","O","ms"].every(function(a){var b=a+"Transform";return"undefined"!=typeof document.body.style[b]?(A=b,!1):!0}),window.onresize=g,c(),g(p),a(this).on("carouselNext",function(a,b){void 0===b&&(b=1),x=p+s*b,p!==x&&(w=x-p,C=Date.now(),requestAnimationFrame(i))}),a(this).on("carouselPrev",function(a,b){void 0===b&&(b=1),x=p-s*b,p!==x&&(w=x-p,C=Date.now(),requestAnimationFrame(i))}),a(this).on("carouselSet",function(a,b){void 0===b&&(b=0),k(b)})})},next:function(b){a(this).trigger("carouselNext",[b])},prev:function(b){a(this).trigger("carouselPrev",[b])},set:function(b){a(this).trigger("carouselSet",[b])}};a.fn.carousel=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.carousel"):b.init.apply(this,arguments)}}(jQuery);;define('materialize-css', ['materialize-css/js/materialize.min'], function (main) { return main; });
 
-define('aurelia-templating-router/aurelia-templating-router',['exports', 'aurelia-router', './route-loader', './router-view', './route-href'], function (exports, _aureliaRouter, _routeLoader, _routerView, _routeHref) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.configure = exports.RouteHref = exports.RouterView = exports.TemplatingRouteLoader = undefined;
-
-
-  function configure(config) {
-    config.singleton(_aureliaRouter.RouteLoader, _routeLoader.TemplatingRouteLoader).singleton(_aureliaRouter.Router, _aureliaRouter.AppRouter).globalResources('./router-view', './route-href');
-
-    config.container.registerAlias(_aureliaRouter.Router, _aureliaRouter.AppRouter);
-  }
-
-  exports.TemplatingRouteLoader = _routeLoader.TemplatingRouteLoader;
-  exports.RouterView = _routerView.RouterView;
-  exports.RouteHref = _routeHref.RouteHref;
-  exports.configure = configure;
-});;define('aurelia-templating-router', ['aurelia-templating-router/aurelia-templating-router'], function (main) { return main; });
-
-define('aurelia-templating-router/route-loader',['exports', 'aurelia-dependency-injection', 'aurelia-templating', 'aurelia-router', 'aurelia-path', 'aurelia-metadata'], function (exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaRouter, _aureliaPath, _aureliaMetadata) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.TemplatingRouteLoader = undefined;
-
-  
-
-  function _possibleConstructorReturn(self, call) {
-    if (!self) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-  }
-
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-      constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-  }
-
-  var _dec, _class;
-
-  var TemplatingRouteLoader = exports.TemplatingRouteLoader = (_dec = (0, _aureliaDependencyInjection.inject)(_aureliaTemplating.CompositionEngine), _dec(_class = function (_RouteLoader) {
-    _inherits(TemplatingRouteLoader, _RouteLoader);
-
-    function TemplatingRouteLoader(compositionEngine) {
-      
-
-      var _this = _possibleConstructorReturn(this, _RouteLoader.call(this));
-
-      _this.compositionEngine = compositionEngine;
-      return _this;
-    }
-
-    TemplatingRouteLoader.prototype.loadRoute = function loadRoute(router, config) {
-      var childContainer = router.container.createChild();
-      var instruction = {
-        viewModel: (0, _aureliaPath.relativeToFile)(config.moduleId, _aureliaMetadata.Origin.get(router.container.viewModel.constructor).moduleId),
-        childContainer: childContainer,
-        view: config.view || config.viewStrategy,
-        router: router
-      };
-
-      childContainer.getChildRouter = function () {
-        var childRouter = void 0;
-
-        childContainer.registerHandler(_aureliaRouter.Router, function (c) {
-          return childRouter || (childRouter = router.createChild(childContainer));
-        });
-
-        return childContainer.get(_aureliaRouter.Router);
-      };
-
-      return this.compositionEngine.ensureViewModel(instruction);
-    };
-
-    return TemplatingRouteLoader;
-  }(_aureliaRouter.RouteLoader)) || _class);
-});
-define('aurelia-templating-router/router-view',['exports', 'aurelia-dependency-injection', 'aurelia-templating', 'aurelia-router', 'aurelia-metadata', 'aurelia-pal'], function (exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaRouter, _aureliaMetadata, _aureliaPal) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.RouterView = undefined;
-
-  function _initDefineProp(target, property, descriptor, context) {
-    if (!descriptor) return;
-    Object.defineProperty(target, property, {
-      enumerable: descriptor.enumerable,
-      configurable: descriptor.configurable,
-      writable: descriptor.writable,
-      value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
-    });
-  }
-
-  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
-    var desc = {};
-    Object['ke' + 'ys'](descriptor).forEach(function (key) {
-      desc[key] = descriptor[key];
-    });
-    desc.enumerable = !!desc.enumerable;
-    desc.configurable = !!desc.configurable;
-
-    if ('value' in desc || desc.initializer) {
-      desc.writable = true;
-    }
-
-    desc = decorators.slice().reverse().reduce(function (desc, decorator) {
-      return decorator(target, property, desc) || desc;
-    }, desc);
-
-    if (context && desc.initializer !== void 0) {
-      desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
-      desc.initializer = undefined;
-    }
-
-    if (desc.initializer === void 0) {
-      Object['define' + 'Property'](target, property, desc);
-      desc = null;
-    }
-
-    return desc;
-  }
-
-  function _initializerWarningHelper(descriptor, context) {
-    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
-  }
-
-  var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
-
-  
-
-  var SwapStrategies = function () {
-    function SwapStrategies() {
-      
-    }
-
-    SwapStrategies.prototype.before = function before(viewSlot, previousView, callback) {
-      var promise = Promise.resolve(callback());
-
-      if (previousView !== undefined) {
-        return promise.then(function () {
-          return viewSlot.remove(previousView, true);
-        });
-      }
-
-      return promise;
-    };
-
-    SwapStrategies.prototype.with = function _with(viewSlot, previousView, callback) {
-      var promise = Promise.resolve(callback());
-
-      if (previousView !== undefined) {
-        return Promise.all([viewSlot.remove(previousView, true), promise]);
-      }
-
-      return promise;
-    };
-
-    SwapStrategies.prototype.after = function after(viewSlot, previousView, callback) {
-      return Promise.resolve(viewSlot.removeAll(true)).then(callback);
-    };
-
-    return SwapStrategies;
-  }();
-
-  var swapStrategies = new SwapStrategies();
-
-  var RouterView = exports.RouterView = (_dec = (0, _aureliaTemplating.customElement)('router-view'), _dec2 = (0, _aureliaDependencyInjection.inject)(_aureliaPal.DOM.Element, _aureliaDependencyInjection.Container, _aureliaTemplating.ViewSlot, _aureliaRouter.Router, _aureliaTemplating.ViewLocator, _aureliaTemplating.CompositionTransaction, _aureliaTemplating.CompositionEngine), _dec(_class = (0, _aureliaTemplating.noView)(_class = _dec2(_class = (_class2 = function () {
-    function RouterView(element, container, viewSlot, router, viewLocator, compositionTransaction, compositionEngine) {
-      
-
-      _initDefineProp(this, 'swapOrder', _descriptor, this);
-
-      _initDefineProp(this, 'layoutView', _descriptor2, this);
-
-      _initDefineProp(this, 'layoutViewModel', _descriptor3, this);
-
-      _initDefineProp(this, 'layoutModel', _descriptor4, this);
-
-      this.element = element;
-      this.container = container;
-      this.viewSlot = viewSlot;
-      this.router = router;
-      this.viewLocator = viewLocator;
-      this.compositionTransaction = compositionTransaction;
-      this.compositionEngine = compositionEngine;
-      this.router.registerViewPort(this, this.element.getAttribute('name'));
-
-      if (!('initialComposition' in compositionTransaction)) {
-        compositionTransaction.initialComposition = true;
-        this.compositionTransactionNotifier = compositionTransaction.enlist();
-      }
-    }
-
-    RouterView.prototype.created = function created(owningView) {
-      this.owningView = owningView;
-    };
-
-    RouterView.prototype.bind = function bind(bindingContext, overrideContext) {
-      this.container.viewModel = bindingContext;
-      this.overrideContext = overrideContext;
-    };
-
-    RouterView.prototype.process = function process(viewPortInstruction, waitToSwap) {
-      var _this = this;
-
-      var component = viewPortInstruction.component;
-      var childContainer = component.childContainer;
-      var viewModel = component.viewModel;
-      var viewModelResource = component.viewModelResource;
-      var metadata = viewModelResource.metadata;
-      var config = component.router.currentInstruction.config;
-      var viewPort = config.viewPorts ? config.viewPorts[viewPortInstruction.name] : {};
-
-      var layoutInstruction = {
-        viewModel: viewPort.layoutViewModel || config.layoutViewModel || this.layoutViewModel,
-        view: viewPort.layoutView || config.layoutView || this.layoutView,
-        model: viewPort.layoutModel || config.layoutModel || this.layoutModel,
-        router: viewPortInstruction.component.router,
-        childContainer: childContainer,
-        viewSlot: this.viewSlot
-      };
-
-      var viewStrategy = this.viewLocator.getViewStrategy(component.view || viewModel);
-      if (viewStrategy && component.view) {
-        viewStrategy.makeRelativeTo(_aureliaMetadata.Origin.get(component.router.container.viewModel.constructor).moduleId);
-      }
-
-      return metadata.load(childContainer, viewModelResource.value, null, viewStrategy, true).then(function (viewFactory) {
-        if (!_this.compositionTransactionNotifier) {
-          _this.compositionTransactionOwnershipToken = _this.compositionTransaction.tryCapture();
-        }
-
-        if (layoutInstruction.viewModel || layoutInstruction.view) {
-          viewPortInstruction.layoutInstruction = layoutInstruction;
-        }
-
-        viewPortInstruction.controller = metadata.create(childContainer, _aureliaTemplating.BehaviorInstruction.dynamic(_this.element, viewModel, viewFactory));
-
-        if (waitToSwap) {
-          return;
-        }
-
-        _this.swap(viewPortInstruction);
-      });
-    };
-
-    RouterView.prototype.swap = function swap(viewPortInstruction) {
-      var _this2 = this;
-
-      var work = function work() {
-        var previousView = _this2.view;
-        var swapStrategy = void 0;
-        var viewSlot = _this2.viewSlot;
-        var layoutInstruction = viewPortInstruction.layoutInstruction;
-
-        swapStrategy = _this2.swapOrder in swapStrategies ? swapStrategies[_this2.swapOrder] : swapStrategies.after;
-
-        swapStrategy(viewSlot, previousView, function () {
-          var waitForView = void 0;
-
-          if (layoutInstruction) {
-            if (!layoutInstruction.viewModel) {
-              layoutInstruction.viewModel = {};
-            }
-
-            waitForView = _this2.compositionEngine.createController(layoutInstruction).then(function (layout) {
-              _aureliaTemplating.ShadowDOM.distributeView(viewPortInstruction.controller.view, layout.slots || layout.view.slots);
-              return layout.view || layout;
-            });
-          } else {
-            waitForView = Promise.resolve(viewPortInstruction.controller.view);
-          }
-
-          return waitForView.then(function (newView) {
-            _this2.view = newView;
-            return viewSlot.add(newView);
-          }).then(function () {
-            _this2._notify();
-          });
-        });
-      };
-
-      viewPortInstruction.controller.automate(this.overrideContext, this.owningView);
-
-      if (this.compositionTransactionOwnershipToken) {
-        return this.compositionTransactionOwnershipToken.waitForCompositionComplete().then(function () {
-          _this2.compositionTransactionOwnershipToken = null;
-          return work();
-        });
-      }
-
-      return work();
-    };
-
-    RouterView.prototype._notify = function _notify() {
-      if (this.compositionTransactionNotifier) {
-        this.compositionTransactionNotifier.done();
-        this.compositionTransactionNotifier = null;
-      }
-    };
-
-    return RouterView;
-  }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'swapOrder', [_aureliaTemplating.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'layoutView', [_aureliaTemplating.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'layoutViewModel', [_aureliaTemplating.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'layoutModel', [_aureliaTemplating.bindable], {
-    enumerable: true,
-    initializer: null
-  })), _class2)) || _class) || _class) || _class);
-});
-define('aurelia-templating-router/route-href',['exports', 'aurelia-templating', 'aurelia-dependency-injection', 'aurelia-router', 'aurelia-pal', 'aurelia-logging'], function (exports, _aureliaTemplating, _aureliaDependencyInjection, _aureliaRouter, _aureliaPal, _aureliaLogging) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.RouteHref = undefined;
-
-  var LogManager = _interopRequireWildcard(_aureliaLogging);
-
-  function _interopRequireWildcard(obj) {
-    if (obj && obj.__esModule) {
-      return obj;
-    } else {
-      var newObj = {};
-
-      if (obj != null) {
-        for (var key in obj) {
-          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
-        }
-      }
-
-      newObj.default = obj;
-      return newObj;
-    }
-  }
-
-  
-
-  var _dec, _dec2, _dec3, _dec4, _dec5, _class;
-
-  var logger = LogManager.getLogger('route-href');
-
-  var RouteHref = exports.RouteHref = (_dec = (0, _aureliaTemplating.customAttribute)('route-href'), _dec2 = (0, _aureliaTemplating.bindable)({ name: 'route', changeHandler: 'processChange' }), _dec3 = (0, _aureliaTemplating.bindable)({ name: 'params', changeHandler: 'processChange' }), _dec4 = (0, _aureliaTemplating.bindable)({ name: 'attribute', defaultValue: 'href' }), _dec5 = (0, _aureliaDependencyInjection.inject)(_aureliaRouter.Router, _aureliaPal.DOM.Element), _dec(_class = _dec2(_class = _dec3(_class = _dec4(_class = _dec5(_class = function () {
-    function RouteHref(router, element) {
-      
-
-      this.router = router;
-      this.element = element;
-    }
-
-    RouteHref.prototype.bind = function bind() {
-      this.isActive = true;
-      this.processChange();
-    };
-
-    RouteHref.prototype.unbind = function unbind() {
-      this.isActive = false;
-    };
-
-    RouteHref.prototype.attributeChanged = function attributeChanged(value, previous) {
-      if (previous) {
-        this.element.removeAttribute(previous);
-      }
-
-      this.processChange();
-    };
-
-    RouteHref.prototype.processChange = function processChange() {
-      var _this = this;
-
-      return this.router.ensureConfigured().then(function () {
-        if (!_this.isActive) {
-          return null;
-        }
-
-        var href = _this.router.generate(_this.route, _this.params);
-        _this.element.setAttribute(_this.attribute, href);
-        return null;
-      }).catch(function (reason) {
-        logger.error(reason);
-      });
-    };
-
-    return RouteHref;
-  }()) || _class) || _class) || _class) || _class) || _class);
-});
 define('aurelia-templating-resources/aurelia-templating-resources',['exports', './compose', './if', './with', './repeat', './show', './hide', './sanitize-html', './replaceable', './focus', 'aurelia-templating', './css-resource', './html-sanitizer', './binding-mode-behaviors', './throttle-binding-behavior', './debounce-binding-behavior', './signal-binding-behavior', './binding-signaler', './update-trigger-binding-behavior', './abstract-repeater', './repeat-strategy-locator', './html-resource-plugin', './null-repeat-strategy', './array-repeat-strategy', './map-repeat-strategy', './set-repeat-strategy', './number-repeat-strategy', './repeat-utilities', './analyze-view-factory', './aurelia-hide-style'], function (exports, _compose, _if, _with, _repeat, _show, _hide, _sanitizeHtml, _replaceable, _focus, _aureliaTemplating, _cssResource, _htmlSanitizer, _bindingModeBehaviors, _throttleBindingBehavior, _debounceBindingBehavior, _signalBindingBehavior, _bindingSignaler, _updateTriggerBindingBehavior, _abstractRepeater, _repeatStrategyLocator, _htmlResourcePlugin, _nullRepeatStrategy, _arrayRepeatStrategy, _mapRepeatStrategy, _setRepeatStrategy, _numberRepeatStrategy, _repeatUtilities, _analyzeViewFactory, _aureliaHideStyle) {
   'use strict';
 
@@ -33965,6 +34110,418 @@ define('aurelia-templating-resources/dynamic-element',['exports', 'aurelia-templ
     }
     return DynamicElement;
   }
+});
+define('aurelia-templating-router/aurelia-templating-router',['exports', 'aurelia-router', './route-loader', './router-view', './route-href'], function (exports, _aureliaRouter, _routeLoader, _routerView, _routeHref) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.configure = exports.RouteHref = exports.RouterView = exports.TemplatingRouteLoader = undefined;
+
+
+  function configure(config) {
+    config.singleton(_aureliaRouter.RouteLoader, _routeLoader.TemplatingRouteLoader).singleton(_aureliaRouter.Router, _aureliaRouter.AppRouter).globalResources('./router-view', './route-href');
+
+    config.container.registerAlias(_aureliaRouter.Router, _aureliaRouter.AppRouter);
+  }
+
+  exports.TemplatingRouteLoader = _routeLoader.TemplatingRouteLoader;
+  exports.RouterView = _routerView.RouterView;
+  exports.RouteHref = _routeHref.RouteHref;
+  exports.configure = configure;
+});;define('aurelia-templating-router', ['aurelia-templating-router/aurelia-templating-router'], function (main) { return main; });
+
+define('aurelia-templating-router/route-loader',['exports', 'aurelia-dependency-injection', 'aurelia-templating', 'aurelia-router', 'aurelia-path', 'aurelia-metadata'], function (exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaRouter, _aureliaPath, _aureliaMetadata) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.TemplatingRouteLoader = undefined;
+
+  
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var _dec, _class;
+
+  var TemplatingRouteLoader = exports.TemplatingRouteLoader = (_dec = (0, _aureliaDependencyInjection.inject)(_aureliaTemplating.CompositionEngine), _dec(_class = function (_RouteLoader) {
+    _inherits(TemplatingRouteLoader, _RouteLoader);
+
+    function TemplatingRouteLoader(compositionEngine) {
+      
+
+      var _this = _possibleConstructorReturn(this, _RouteLoader.call(this));
+
+      _this.compositionEngine = compositionEngine;
+      return _this;
+    }
+
+    TemplatingRouteLoader.prototype.loadRoute = function loadRoute(router, config) {
+      var childContainer = router.container.createChild();
+      var instruction = {
+        viewModel: (0, _aureliaPath.relativeToFile)(config.moduleId, _aureliaMetadata.Origin.get(router.container.viewModel.constructor).moduleId),
+        childContainer: childContainer,
+        view: config.view || config.viewStrategy,
+        router: router
+      };
+
+      childContainer.getChildRouter = function () {
+        var childRouter = void 0;
+
+        childContainer.registerHandler(_aureliaRouter.Router, function (c) {
+          return childRouter || (childRouter = router.createChild(childContainer));
+        });
+
+        return childContainer.get(_aureliaRouter.Router);
+      };
+
+      return this.compositionEngine.ensureViewModel(instruction);
+    };
+
+    return TemplatingRouteLoader;
+  }(_aureliaRouter.RouteLoader)) || _class);
+});
+define('aurelia-templating-router/router-view',['exports', 'aurelia-dependency-injection', 'aurelia-templating', 'aurelia-router', 'aurelia-metadata', 'aurelia-pal'], function (exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaRouter, _aureliaMetadata, _aureliaPal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.RouterView = undefined;
+
+  function _initDefineProp(target, property, descriptor, context) {
+    if (!descriptor) return;
+    Object.defineProperty(target, property, {
+      enumerable: descriptor.enumerable,
+      configurable: descriptor.configurable,
+      writable: descriptor.writable,
+      value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
+    });
+  }
+
+  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
+    var desc = {};
+    Object['ke' + 'ys'](descriptor).forEach(function (key) {
+      desc[key] = descriptor[key];
+    });
+    desc.enumerable = !!desc.enumerable;
+    desc.configurable = !!desc.configurable;
+
+    if ('value' in desc || desc.initializer) {
+      desc.writable = true;
+    }
+
+    desc = decorators.slice().reverse().reduce(function (desc, decorator) {
+      return decorator(target, property, desc) || desc;
+    }, desc);
+
+    if (context && desc.initializer !== void 0) {
+      desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
+      desc.initializer = undefined;
+    }
+
+    if (desc.initializer === void 0) {
+      Object['define' + 'Property'](target, property, desc);
+      desc = null;
+    }
+
+    return desc;
+  }
+
+  function _initializerWarningHelper(descriptor, context) {
+    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
+  }
+
+  var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
+
+  
+
+  var SwapStrategies = function () {
+    function SwapStrategies() {
+      
+    }
+
+    SwapStrategies.prototype.before = function before(viewSlot, previousView, callback) {
+      var promise = Promise.resolve(callback());
+
+      if (previousView !== undefined) {
+        return promise.then(function () {
+          return viewSlot.remove(previousView, true);
+        });
+      }
+
+      return promise;
+    };
+
+    SwapStrategies.prototype.with = function _with(viewSlot, previousView, callback) {
+      var promise = Promise.resolve(callback());
+
+      if (previousView !== undefined) {
+        return Promise.all([viewSlot.remove(previousView, true), promise]);
+      }
+
+      return promise;
+    };
+
+    SwapStrategies.prototype.after = function after(viewSlot, previousView, callback) {
+      return Promise.resolve(viewSlot.removeAll(true)).then(callback);
+    };
+
+    return SwapStrategies;
+  }();
+
+  var swapStrategies = new SwapStrategies();
+
+  var RouterView = exports.RouterView = (_dec = (0, _aureliaTemplating.customElement)('router-view'), _dec2 = (0, _aureliaDependencyInjection.inject)(_aureliaPal.DOM.Element, _aureliaDependencyInjection.Container, _aureliaTemplating.ViewSlot, _aureliaRouter.Router, _aureliaTemplating.ViewLocator, _aureliaTemplating.CompositionTransaction, _aureliaTemplating.CompositionEngine), _dec(_class = (0, _aureliaTemplating.noView)(_class = _dec2(_class = (_class2 = function () {
+    function RouterView(element, container, viewSlot, router, viewLocator, compositionTransaction, compositionEngine) {
+      
+
+      _initDefineProp(this, 'swapOrder', _descriptor, this);
+
+      _initDefineProp(this, 'layoutView', _descriptor2, this);
+
+      _initDefineProp(this, 'layoutViewModel', _descriptor3, this);
+
+      _initDefineProp(this, 'layoutModel', _descriptor4, this);
+
+      this.element = element;
+      this.container = container;
+      this.viewSlot = viewSlot;
+      this.router = router;
+      this.viewLocator = viewLocator;
+      this.compositionTransaction = compositionTransaction;
+      this.compositionEngine = compositionEngine;
+      this.router.registerViewPort(this, this.element.getAttribute('name'));
+
+      if (!('initialComposition' in compositionTransaction)) {
+        compositionTransaction.initialComposition = true;
+        this.compositionTransactionNotifier = compositionTransaction.enlist();
+      }
+    }
+
+    RouterView.prototype.created = function created(owningView) {
+      this.owningView = owningView;
+    };
+
+    RouterView.prototype.bind = function bind(bindingContext, overrideContext) {
+      this.container.viewModel = bindingContext;
+      this.overrideContext = overrideContext;
+    };
+
+    RouterView.prototype.process = function process(viewPortInstruction, waitToSwap) {
+      var _this = this;
+
+      var component = viewPortInstruction.component;
+      var childContainer = component.childContainer;
+      var viewModel = component.viewModel;
+      var viewModelResource = component.viewModelResource;
+      var metadata = viewModelResource.metadata;
+      var config = component.router.currentInstruction.config;
+      var viewPort = config.viewPorts ? config.viewPorts[viewPortInstruction.name] : {};
+
+      var layoutInstruction = {
+        viewModel: viewPort.layoutViewModel || config.layoutViewModel || this.layoutViewModel,
+        view: viewPort.layoutView || config.layoutView || this.layoutView,
+        model: viewPort.layoutModel || config.layoutModel || this.layoutModel,
+        router: viewPortInstruction.component.router,
+        childContainer: childContainer,
+        viewSlot: this.viewSlot
+      };
+
+      var viewStrategy = this.viewLocator.getViewStrategy(component.view || viewModel);
+      if (viewStrategy && component.view) {
+        viewStrategy.makeRelativeTo(_aureliaMetadata.Origin.get(component.router.container.viewModel.constructor).moduleId);
+      }
+
+      return metadata.load(childContainer, viewModelResource.value, null, viewStrategy, true).then(function (viewFactory) {
+        if (!_this.compositionTransactionNotifier) {
+          _this.compositionTransactionOwnershipToken = _this.compositionTransaction.tryCapture();
+        }
+
+        if (layoutInstruction.viewModel || layoutInstruction.view) {
+          viewPortInstruction.layoutInstruction = layoutInstruction;
+        }
+
+        viewPortInstruction.controller = metadata.create(childContainer, _aureliaTemplating.BehaviorInstruction.dynamic(_this.element, viewModel, viewFactory));
+
+        if (waitToSwap) {
+          return;
+        }
+
+        _this.swap(viewPortInstruction);
+      });
+    };
+
+    RouterView.prototype.swap = function swap(viewPortInstruction) {
+      var _this2 = this;
+
+      var work = function work() {
+        var previousView = _this2.view;
+        var swapStrategy = void 0;
+        var viewSlot = _this2.viewSlot;
+        var layoutInstruction = viewPortInstruction.layoutInstruction;
+
+        swapStrategy = _this2.swapOrder in swapStrategies ? swapStrategies[_this2.swapOrder] : swapStrategies.after;
+
+        swapStrategy(viewSlot, previousView, function () {
+          var waitForView = void 0;
+
+          if (layoutInstruction) {
+            if (!layoutInstruction.viewModel) {
+              layoutInstruction.viewModel = {};
+            }
+
+            waitForView = _this2.compositionEngine.createController(layoutInstruction).then(function (layout) {
+              _aureliaTemplating.ShadowDOM.distributeView(viewPortInstruction.controller.view, layout.slots || layout.view.slots);
+              return layout.view || layout;
+            });
+          } else {
+            waitForView = Promise.resolve(viewPortInstruction.controller.view);
+          }
+
+          return waitForView.then(function (newView) {
+            _this2.view = newView;
+            return viewSlot.add(newView);
+          }).then(function () {
+            _this2._notify();
+          });
+        });
+      };
+
+      viewPortInstruction.controller.automate(this.overrideContext, this.owningView);
+
+      if (this.compositionTransactionOwnershipToken) {
+        return this.compositionTransactionOwnershipToken.waitForCompositionComplete().then(function () {
+          _this2.compositionTransactionOwnershipToken = null;
+          return work();
+        });
+      }
+
+      return work();
+    };
+
+    RouterView.prototype._notify = function _notify() {
+      if (this.compositionTransactionNotifier) {
+        this.compositionTransactionNotifier.done();
+        this.compositionTransactionNotifier = null;
+      }
+    };
+
+    return RouterView;
+  }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'swapOrder', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'layoutView', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'layoutViewModel', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'layoutModel', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  })), _class2)) || _class) || _class) || _class);
+});
+define('aurelia-templating-router/route-href',['exports', 'aurelia-templating', 'aurelia-dependency-injection', 'aurelia-router', 'aurelia-pal', 'aurelia-logging'], function (exports, _aureliaTemplating, _aureliaDependencyInjection, _aureliaRouter, _aureliaPal, _aureliaLogging) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.RouteHref = undefined;
+
+  var LogManager = _interopRequireWildcard(_aureliaLogging);
+
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+        }
+      }
+
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+
+  
+
+  var _dec, _dec2, _dec3, _dec4, _dec5, _class;
+
+  var logger = LogManager.getLogger('route-href');
+
+  var RouteHref = exports.RouteHref = (_dec = (0, _aureliaTemplating.customAttribute)('route-href'), _dec2 = (0, _aureliaTemplating.bindable)({ name: 'route', changeHandler: 'processChange' }), _dec3 = (0, _aureliaTemplating.bindable)({ name: 'params', changeHandler: 'processChange' }), _dec4 = (0, _aureliaTemplating.bindable)({ name: 'attribute', defaultValue: 'href' }), _dec5 = (0, _aureliaDependencyInjection.inject)(_aureliaRouter.Router, _aureliaPal.DOM.Element), _dec(_class = _dec2(_class = _dec3(_class = _dec4(_class = _dec5(_class = function () {
+    function RouteHref(router, element) {
+      
+
+      this.router = router;
+      this.element = element;
+    }
+
+    RouteHref.prototype.bind = function bind() {
+      this.isActive = true;
+      this.processChange();
+    };
+
+    RouteHref.prototype.unbind = function unbind() {
+      this.isActive = false;
+    };
+
+    RouteHref.prototype.attributeChanged = function attributeChanged(value, previous) {
+      if (previous) {
+        this.element.removeAttribute(previous);
+      }
+
+      this.processChange();
+    };
+
+    RouteHref.prototype.processChange = function processChange() {
+      var _this = this;
+
+      return this.router.ensureConfigured().then(function () {
+        if (!_this.isActive) {
+          return null;
+        }
+
+        var href = _this.router.generate(_this.route, _this.params);
+        _this.element.setAttribute(_this.attribute, href);
+        return null;
+      }).catch(function (reason) {
+        logger.error(reason);
+      });
+    };
+
+    return RouteHref;
+  }()) || _class) || _class) || _class) || _class) || _class);
 });
 define('aurelia-testing/aurelia-testing',['exports', './compile-spy', './view-spy', './component-tester'], function (exports, _compileSpy, _viewSpy, _componentTester) {
   'use strict';
