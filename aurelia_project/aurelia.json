@@ -108,6 +108,18 @@
           "aurelia-task-queue",
           "aurelia-templating",
           "aurelia-templating-binding",
+          "jquery",
+          {
+            "name": "materialize-css",
+            "path": "../node_modules/materialize-css/dist",
+            "main": "js/materialize.min",
+            "deps": [
+              "jquery"
+            ],
+            "resources": [
+              "css/materialize.css"
+            ]
+          },
           {
             "name": "text",
             "path": "../scripts/text"
